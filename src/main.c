@@ -1,37 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "area.h"
-#include "shape.h"
-#include "parser.h"
-#include "render.h"
-#include "layers.h"
-#include "id.h"
+#include "pixel_tracer.h"
 
 int main(){
 
-  Area* area;
+  Pixel_tracer_app  app;
+  init_app(&app);
 
-  area = create_area(80,40,1, "MainArea");
-  Layer* layer1 = create_layer(get_next_id(), "Layer-1");
-
-  add_layer_to_list(area->lst_layers , layer1);
-  set_layer_visible(layer1);
 
   Shape* sh1 = create_cercle_shape(15,15,5);
   Shape* sh2 = create_cercle_shape(20,20,7);
 
 
-  add_shape_to_layer(layer1, sh1);
-  add_shape_to_layer(layer1, sh2);
+  add_shape_to_layer(app.current_layer, sh1);
+  add_shape_to_layer(app.current_layer, sh2);
 
   while(1){
     clear_screen();
-    draw_all_layers(area);
-    draw_area(area);
+    draw_all_layers(app.current_area);
+    draw_area(app.current_area);
     rl_get_line();
     parse_ligne();
   }
 
-  delete_area(area);
+
+  destry_app(&app);
 }
 

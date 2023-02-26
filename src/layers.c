@@ -30,7 +30,7 @@ void add_layer_to_list(LayersList* layer_list, Layer* layer){
 }
 
 void remove_layer_from_list(LayersList* layer_list, Layer* layer){
-  
+  /* TODO  */
 }
 
 void set_layer_visible(Layer* layer){

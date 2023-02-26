@@ -26,7 +26,7 @@ void delete_layer(Layer* layer);
 
 LayersList* create_layers_list();
 
-void delete_layers_list();
+void delete_layers_list(LayersList* layer_list);
 
 void add_layer_to_list(LayersList* layer_list, Layer* layer);
 

@@ -25,3 +25,28 @@ void delete_area(Area* area){
   }
   free (area);
 }
+
+
+AreaList* create_area_list(){
+  AreaList* lst_area;
+  lst_area = lst_create_list();
+  return lst_area;
+
+
+}
+
+void delete_area_list(AreaList* area_list){
+  /* TODO : delete all layers on the list */
+  lst_delete_list (area_list);
+
+}
+
+void add_area_to_list(AreaList* area_list, Area* area){
+  lnode* l = lst_create_lnode(area);
+  lst_insert_tail(area_list, l);
+}
+
+void remove_area_from_list(AreaList* area_list, Area* area){
+  /* TODO  */
+
+}
