@@ -1,13 +1,14 @@
 #ifndef _PIXEL_TRACER_H_
 #define _PIXEL_TRACER_H_
 
-
-#include "area.h"
-#include "shape.h"
-#include "parser.h"
-#include "render.h"
-#include "layers.h"
+#include "list.h"
 #include "id.h"
+#include "area.h"
+#include "layers.h"
+#include "shape.h"
+#include "pixel.h"
+#include "render.h"
+
 
 
 struct pixel_tracer{
@@ -16,6 +17,7 @@ struct pixel_tracer{
   Layer* current_layer;
   Shape* current_shape;
 };
+
 
 typedef struct pixel_tracer Pixel_tracer_app ;
 

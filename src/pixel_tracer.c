@@ -1,17 +1,6 @@
 #include "pixel_tracer.h"
 
 
-
-
-
-/* struct pixel_tracer{ */
-/*   AreaList* list_area; */
-/*   Area* current_area; */
-/*   Layer* current_layer; */
-/*   Shape* current_shape; */
-/* }; */
-
-
 void init_app(Pixel_tracer_app* app){
   app->list_area = create_area_list();
   Area* area = create_area(80,40,get_next_id(), "Area1");

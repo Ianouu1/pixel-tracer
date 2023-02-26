@@ -5,7 +5,9 @@
 
 #include <stdlib.h>
 #include <string.h>
-
+#include <readline/readline.h>
+#include <readline/history.h>
+#include "pixel_tracer.h"
 
 
 struct command{
@@ -21,7 +23,8 @@ struct command{
 typedef struct command Command;
 
 
-Command*  create_commande ();
+
+Command* create_commande ();
 
 void add_int_param(Command* cmd, int p);
 
@@ -31,8 +34,9 @@ void add_str_param(Command* cmd, char* p);
 
 void free_cmd(Command* cmd);
 
-void exec_command(Command );
+void read_exec_command(Pixel_tracer_app* app);
 
+void read_from_stdin(Command* cmd);
 
 
 #endif
