@@ -15,12 +15,27 @@ int main(){
   add_shape_to_layer(app.current_layer, sh1);
   add_shape_to_layer(app.current_layer, sh2);
 
-  while(1){
-    clear_screen();
-    draw_all_layers(app.current_area);
-    draw_area(app.current_area);
-    read_exec_command(&app);
+  clear_screen();
+  draw_all_layers(app.current_area);
+  draw_area(app.current_area);
 
+  while(1){
+
+    int err = read_exec_command(&app);
+    if (err == 0 || err == 6){
+      clear_screen();
+      draw_all_layers(app.current_area);
+      draw_area(app.current_area);
+    }
+    if (err == 4){
+      break;
+    }
+    if (err == 5){
+      clear_screen();
+    }
+    if (err == 7){
+      continue;
+    }
 
   }
 

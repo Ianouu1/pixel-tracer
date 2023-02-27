@@ -34,7 +34,7 @@ void add_str_param(Command* cmd, char* p);
 
 void free_cmd(Command* cmd);
 
-void read_exec_command(Pixel_tracer_app* app);
+int read_exec_command(Pixel_tracer_app* app);
 
 void read_from_stdin(Command* cmd);
 
