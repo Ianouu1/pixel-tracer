@@ -17,6 +17,9 @@ draw: $(OBJ)
 
 .PHONY: clean mrproper
 
+indent:
+	indent -kr -brf -as -nut -ppi 2 *.c *.h
+
 clean:
 	rm -rf *.o
 	rm draw
