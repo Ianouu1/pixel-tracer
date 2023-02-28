@@ -59,8 +59,8 @@ void draw_layer_shapes(Area* area, Layer* layer){
     lnode* pixel_node = get_first_node(list_pixel);
     while(pixel_node != NULL){
       Pixel* pxl = pixel_node->data;
-      // TODO check if cell is in the area 
-      area->area[pxl->px][pxl->py] = FULL_CHAR;
+      if(pxl->px < area->height   && pxl->py < area->width)
+        area->area[pxl->px][pxl->py] = FULL_CHAR;
       pixel_node = get_next_node(list_pixel, pixel_node);
     }
     void remove_pixel_shape(list* list_pixel);

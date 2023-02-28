@@ -5,11 +5,12 @@ static char* error_messages[]={
   "",
   "commande inconnue",
   "commande manquante",
-  "erreur paramètres",
+  "erreur paramètres, consulter la commande help",
   "exit",
   "clear",
   "plot",
-  "~~~ Help ~~~"
+  "~~~ Help ~~~",
+  "done"
   /* liste à compléter */
 };
 
@@ -163,8 +164,13 @@ void print_help(){
   printf("%s\n", "clear");
   printf("%s\n", "exit");
   printf("%s\n", "point");
-  printf("%s\n", "line");
-  printf("%s\n", "cercle");
+  printf("%s\n", "line x1 y1 x2 x2");
+  printf("%s\n", "cercle x y r");
+
+  printf("%s\n", "list {layer, aria, shape}");
+  printf("%s\n", "select {layer, aria, shape}");
+  printf("%s\n", "delete {layer, aria, shape} {id}");
+
   printf("%s\n", "...");
 }
 
@@ -219,7 +225,6 @@ int  read_exec_command(Pixel_tracer_app* app){
       error_num = 3;
       goto end;
     }
-
     print_help();
     error_num = 7;
   }
@@ -230,7 +235,6 @@ int  read_exec_command(Pixel_tracer_app* app){
       error_num = 3;
       goto end;
     }
-
     error_num = 0;
   }
 
@@ -239,8 +243,8 @@ int  read_exec_command(Pixel_tracer_app* app){
       error_num = 3;
       goto end;
     }
-
-
+    Shape* sh = create_line_shape(cmd->int_params[0],cmd->int_params[1],cmd->int_params[2], cmd->int_params[3]);
+    add_shape_to_layer(app->current_layer, sh);
     error_num = 0;
   }
 
@@ -250,15 +254,52 @@ int  read_exec_command(Pixel_tracer_app* app){
       error_num = 3;
       goto end;
     }
-
-
+    Shape* sh = create_cercle_shape(cmd->int_params[0],cmd->int_params[1],cmd->int_params[2]);
+    add_shape_to_layer(app->current_layer, sh);
     error_num = 0;
   }
+
+  /* LIST commande  */
+  else if (strcmp(cmd_name, "list") == 0){
+    if(!check_nb_params(cmd,2,0,0)){
+      error_num = 3;
+      goto end;
+    }
+
+    if (strcmp(cmd->str_params[1], "area") == 0){
+
+    }
+
+    else if (strcmp(cmd->str_params[1], "layers") == 0){
+      list* layer_list = app->current_area->lst_layers ;
+      lnode* layer_node = get_first_node(layer_list);
+      while(layer_node != NULL){
+        Layer* layer = (Layer*) layer_node->data;
+        if (layer == app->current_layer){
+          printf(" * ");
+        }
+        else {
+          printf(" * ");
+        }
+        char vis = 'V';
+        if (layer->visible == 0){ vis = 'H'; }
+        printf("%3d (%c) %s \n", layer->id, vis, layer->name);
+        layer_node = get_next_node(layer_list, layer_node);
+      }
+      error_num = 8;
+    }
+
+    else if (strcmp(cmd_name, "cmd->str_params[1]") == 0){
+
+    }
+
+  }
+  /* end commande  */
+
 
  end:
   printf("%s\n", error_messages[error_num]);
   free_cmd(cmd);
-
   return error_num;
 }
 
