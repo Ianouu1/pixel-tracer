@@ -273,19 +273,19 @@ int read_exec_command(Pixel_tracer_app * app) {
         }
 
         if (strcmp(cmd->str_params[1], "areas") == 0) {
-          list *area_list = app->list_area;
-          lnode *area_node = get_first_node(area_list);
-          while (area_node != NULL) {
-            Area *area = (Area *) area_node->data;
-            if (area == app->current_area) {
-              printf(" * ");
-            } else {
-              printf(" - ");
+            list *area_list = app->list_area;
+            lnode *area_node = get_first_node(area_list);
+            while (area_node != NULL) {
+                Area *area = (Area *) area_node->data;
+                if (area == app->current_area) {
+                    printf(" * ");
+                } else {
+                    printf(" - ");
+                }
+                printf("%3d %s \n", area->id, area->name);
+                area_node = get_next_node(area_list, area_node);
             }
-            printf("%3d %s \n", area->id, area->name);
-            area_node = get_next_node(area_list, area_node);
-          }
-          error_num = 8;
+            error_num = 8;
         }
 
         else if (strcmp(cmd->str_params[1], "layers") == 0) {
@@ -318,13 +318,14 @@ int read_exec_command(Pixel_tracer_app * app) {
             while (shape_node != NULL) {
                 Shape *shp = (Shape *) shape_node->data;
                 if (shp == app->current_shape) {
-                  printf(" * ");
+                    printf(" * ");
                 } else {
-                  printf(" - ");
+                    printf(" - ");
                 }
                 char info[100];
-                sprint_shape(shp,info);
-                printf("%3d %s [%s])\n", shp->id, tab_shape[shp->shape_type], info);
+                sprint_shape(shp, info);
+                printf("%3d %s [%s])\n", shp->id,
+                       tab_shape[shp->shape_type], info);
                 shape_node = get_next_node(&shape_list, shape_node);
             }
             error_num = 8;
@@ -336,100 +337,100 @@ int read_exec_command(Pixel_tracer_app * app) {
 
     /* new commande  */
     else if (strcmp(cmd_name, "new") == 0) {
-      if (!check_nb_params(cmd, 2, 0, 0)) {
-        error_num = 3;
-        goto end;
-      }
+        if (!check_nb_params(cmd, 2, 0, 0)) {
+            error_num = 3;
+            goto end;
+        }
 
-      if (strcmp(cmd->str_params[1], "area") == 0) {
-        /* la création d'un area crée automatiquement un premier layer */
-        Area *area = create_area(80, 40, get_next_id(), "area_name");
-        add_area_to_list(app->list_area, area);
-        app->current_area = area;
+        if (strcmp(cmd->str_params[1], "area") == 0) {
+            /* la création d'un area crée automatiquement un premier layer */
+            Area *area = create_area(80, 40, get_next_id(), "area_name");
+            add_area_to_list(app->list_area, area);
+            app->current_area = area;
 
-        LayersList *layerlst = create_layers_list();
-        area->lst_layers = layerlst;
-        Layer *layer = create_layer(get_next_id(), "Layer 1");
-        add_layer_to_list(layerlst, layer);
-        app->current_layer = layer;
-        app->current_shape = NULL;
-        error_num = 8;
-      }
+            LayersList *layerlst = create_layers_list();
+            area->lst_layers = layerlst;
+            Layer *layer = create_layer(get_next_id(), "Layer 1");
+            add_layer_to_list(layerlst, layer);
+            app->current_layer = layer;
+            app->current_shape = NULL;
+            error_num = 8;
+        }
 
-      if (strcmp(cmd->str_params[1], "layer") == 0) {
-        Layer *layer = create_layer(get_next_id(), "layer_name");
-        add_layer_to_list(app->current_area->lst_layers, layer);
-        app->current_layer = layer;
-        app->current_shape = NULL;
-        error_num = 8;
-      }
+        if (strcmp(cmd->str_params[1], "layer") == 0) {
+            Layer *layer = create_layer(get_next_id(), "layer_name");
+            add_layer_to_list(app->current_area->lst_layers, layer);
+            app->current_layer = layer;
+            app->current_shape = NULL;
+            error_num = 8;
+        }
 
     }
     /* end NEW command  */
 
 
-   /* select commande  */
+    /* select commande  */
     else if (strcmp(cmd_name, "select") == 0) {
-      if (!check_nb_params(cmd, 2, 1, 0)) {
-        error_num = 3;
-        goto end;
-      }
-
-      if (strcmp(cmd->str_params[1], "area") == 0) {
-        /* la création d'un area crée automatiquement un premier layer */
-        list *area_list = app->list_area;
-        lnode *area_node = get_first_node(area_list);
-        while (area_node != NULL) {
-          Area *area = (Area *) area_node->data;
-          if (area->id == cmd->int_params[0]) {
-            app->current_area = area;
-
-            list *layer_list = area->lst_layers;
-            lnode *layer_node = get_last_node(layer_list);
-            Layer *layer = (Layer *) layer_node->data;
-
-            app->current_layer = layer;
-            app->current_shape = NULL;
-            printf("%3d %s : selected \n", area->id, area->name);
-            error_num = 8;
+        if (!check_nb_params(cmd, 2, 1, 0)) {
+            error_num = 3;
             goto end;
-          }
-          area_node = get_next_node(area_list, area_node);
         }
-        error_num = 9;
-      }
 
-      if (strcmp(cmd->str_params[1], "layer") == 0) {
-        list *layer_list = app->current_area->lst_layers;
-        lnode *layer_node = get_first_node(layer_list);
-        while (layer_node != NULL) {
-          Layer *layer = (Layer *) layer_node->data;
-          if (layer->id == cmd->int_params[0]) {
-            app->current_layer = layer;
-            app->current_shape = NULL;
-            error_num = 8;
-            goto end;
-          }
-          layer_node = get_next_node(layer_list, layer_node);
+        if (strcmp(cmd->str_params[1], "area") == 0) {
+            /* la création d'un area crée automatiquement un premier layer */
+            list *area_list = app->list_area;
+            lnode *area_node = get_first_node(area_list);
+            while (area_node != NULL) {
+                Area *area = (Area *) area_node->data;
+                if (area->id == cmd->int_params[0]) {
+                    app->current_area = area;
+
+                    list *layer_list = area->lst_layers;
+                    lnode *layer_node = get_last_node(layer_list);
+                    Layer *layer = (Layer *) layer_node->data;
+
+                    app->current_layer = layer;
+                    app->current_shape = NULL;
+                    printf("%3d %s : selected \n", area->id, area->name);
+                    error_num = 8;
+                    goto end;
+                }
+                area_node = get_next_node(area_list, area_node);
+            }
+            error_num = 9;
         }
-        error_num = 9;
-      }
 
-
-      if (strcmp(cmd->str_params[1], "shape") == 0) {
-        list *shape_list = &app->current_layer->shapes;
-        lnode *shape_node = get_first_node(shape_list);
-        while (shape_node != NULL) {
-          Shape *shape = (Shape *) shape_node->data;
-          if (shape->id == cmd->int_params[0]) {
-            app->current_shape = shape;
-            error_num = 8;
-            goto end;
-          }
-          shape_node = get_next_node(shape_list, shape_node);
+        if (strcmp(cmd->str_params[1], "layer") == 0) {
+            list *layer_list = app->current_area->lst_layers;
+            lnode *layer_node = get_first_node(layer_list);
+            while (layer_node != NULL) {
+                Layer *layer = (Layer *) layer_node->data;
+                if (layer->id == cmd->int_params[0]) {
+                    app->current_layer = layer;
+                    app->current_shape = NULL;
+                    error_num = 8;
+                    goto end;
+                }
+                layer_node = get_next_node(layer_list, layer_node);
+            }
+            error_num = 9;
         }
-        error_num = 9;
-      }
+
+
+        if (strcmp(cmd->str_params[1], "shape") == 0) {
+            list *shape_list = &app->current_layer->shapes;
+            lnode *shape_node = get_first_node(shape_list);
+            while (shape_node != NULL) {
+                Shape *shape = (Shape *) shape_node->data;
+                if (shape->id == cmd->int_params[0]) {
+                    app->current_shape = shape;
+                    error_num = 8;
+                    goto end;
+                }
+                shape_node = get_next_node(shape_list, shape_node);
+            }
+            error_num = 9;
+        }
 
 
     }
@@ -437,26 +438,26 @@ int read_exec_command(Pixel_tracer_app * app) {
 
     /* delete commande  */
     else if (strcmp(cmd_name, "delete") == 0) {
-      if (!check_nb_params(cmd, 2, 1, 0)) {
-        error_num = 3;
-        goto end;
-      }
-
-      if (strcmp(cmd->str_params[1], "shape") == 0) {
-        list *shape_list = &app->current_layer->shapes;
-        lnode *shape_node = get_first_node(shape_list);
-        while (shape_node != NULL) {
-          Shape *shape = (Shape *) shape_node->data;
-          if (shape->id == cmd->int_params[0]) {
-            lst_delete_lnode(shape_list, shape_node);
-            app->current_shape = NULL;
-            error_num = 8;
+        if (!check_nb_params(cmd, 2, 1, 0)) {
+            error_num = 3;
             goto end;
-          }
-          shape_node = get_next_node(shape_list, shape_node);
         }
-        error_num = 9;
-      }
+
+        if (strcmp(cmd->str_params[1], "shape") == 0) {
+            list *shape_list = &app->current_layer->shapes;
+            lnode *shape_node = get_first_node(shape_list);
+            while (shape_node != NULL) {
+                Shape *shape = (Shape *) shape_node->data;
+                if (shape->id == cmd->int_params[0]) {
+                    lst_delete_lnode(shape_list, shape_node);
+                    app->current_shape = NULL;
+                    error_num = 8;
+                    goto end;
+                }
+                shape_node = get_next_node(shape_list, shape_node);
+            }
+            error_num = 9;
+        }
     }
 
   end:
