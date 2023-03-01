@@ -32,6 +32,7 @@ void clear_screen() {
 
 
 void draw_all_layers(Area * area) {
+    clear_area(area);
     list *layer_list = area->lst_layers;
     lnode *layer_node = get_first_node(layer_list);
     while (layer_node != NULL) {
