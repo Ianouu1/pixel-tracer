@@ -184,6 +184,17 @@ int check_nb_params(Command * cmd, int nb_str, int nb_int, int nb_flt) {
     return 1;
 }
 
+int check_nb_params_polygon(Command * cmd) {
+  if (cmd->str_size != 1)
+    return 0;
+  if ((cmd->int_size == 0) || (cmd->int_size >= 10) || (cmd->int_size % 2 != 0))
+    return 0;
+  if (cmd->flt_size !=  0)
+    return 0;
+  return 1;
+}
+
+
 int read_exec_command(Pixel_tracer_app * app) {
     error_num = 1;
     Command *cmd = create_commande();
@@ -237,6 +248,11 @@ int read_exec_command(Pixel_tracer_app * app) {
             error_num = 3;
             goto end;
         }
+        Shape *sh =
+          create_point_shape(cmd->int_params[0], cmd->int_params[1]);
+        add_shape_to_layer(app->current_layer, sh);
+        error_num = 0;
+
         error_num = 0;
     }
 
@@ -264,6 +280,44 @@ int read_exec_command(Pixel_tracer_app * app) {
         add_shape_to_layer(app->current_layer, sh);
         error_num = 0;
     }
+
+    else if (strcmp(cmd_name, "square") == 0) {
+      if (!check_nb_params(cmd, 1, 3, 0)) {
+        error_num = 3;
+        goto end;
+      }
+      Shape *sh =
+        create_square_shape(cmd->int_params[0], cmd->int_params[1],
+                            cmd->int_params[2]);
+      add_shape_to_layer(app->current_layer, sh);
+      error_num = 0;
+    }
+    else if (strcmp(cmd_name, "rectangle") == 0) {
+      if (!check_nb_params(cmd, 1, 4, 0)) {
+        error_num = 3;
+        goto end;
+      }
+      Shape *sh =
+        create_rectangle_shape(cmd->int_params[0], cmd->int_params[1],
+                               cmd->int_params[2], cmd->int_params[3]);
+      add_shape_to_layer(app->current_layer, sh);
+      error_num = 0;
+    }
+
+    else if (strcmp(cmd_name, "polygon") == 0) {
+      if (!check_nb_params_polygon(cmd)) {
+        error_num = 3;
+        goto end;
+      }
+      Shape *sh =
+        create_rectangle_shape(cmd->int_params[0], cmd->int_params[1],
+                               cmd->int_params[2], cmd->int_params[3]);
+      add_shape_to_layer(app->current_layer, sh);
+      error_num = 0;
+    }
+
+
+
 
     /* LIST commande  */
     else if (strcmp(cmd_name, "list") == 0) {

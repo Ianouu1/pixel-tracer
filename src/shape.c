@@ -162,7 +162,7 @@ Shape *create_line_shape(int px1, int py1, int px2, int py2) {
     return shp;
 }
 
-Shape *create_squar_shape(int px, int py, int length) {
+Shape *create_square_shape(int px, int py, int length) {
     Shape *shp = create_empty_shape(SQUAR);
     Point *p = create_point(px, py);
     shp->ptrShape = create_squar(p, length);
