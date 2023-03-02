@@ -157,15 +157,14 @@ void pixel_cercle(Shape * shape, list * lst) {
 }
 
 void pixel_rectangle(Shape * shape, list * lst) {
-  printf("rec \n");
+
   return;
 }
 
 void pixel_square(Shape * shape, list * lst) {
-  printf("square \n");
   Squar *p_sqaure = (Squar *) shape->ptrShape;
   int px1, py1, px2, py2, px3, py3, px4, py4;
-  int x, y, dx,dy;
+  int x, y, dx,dy, length;
   Line l1, l2, l3, l4;
 
   px1 = p_sqaure->p1->pos_x;
