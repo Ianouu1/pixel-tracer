@@ -100,7 +100,7 @@ void pixel_line(Shape * shape, list * lst) {
     int dx, dy, x, y;
 
     x = p_line->p1->pos_x;
-    y = p_line->p1->pos_y;;
+    y = p_line->p1->pos_y;
     dx = p_line->p2->pos_x - p_line->p1->pos_x;
     dy = p_line->p2->pos_y - p_line->p1->pos_y;
     draw_segment(x,y, dx,dy, shape->color,  lst);
@@ -163,17 +163,35 @@ void pixel_rectangle(Shape * shape, list * lst) {
 
 void pixel_square(Shape * shape, list * lst) {
   Squar *p_sqaure = (Squar *) shape->ptrShape;
-  int px1, py1, px2, py2, px3, py3, px4, py4;
   int x, y, dx,dy, length;
   Line l1, l2, l3, l4;
 
-  px1 = p_sqaure->p1->pos_x;
-  py1 = p_sqaure->p1->pos_y;
+  x = p_sqaure->p1->pos_x;
+  y = p_sqaure->p1->pos_y;
   length = p_sqaure->length;
 
+  x = x;
+  y = y;
+  dx = length;
+  dy = 0;
   draw_segment(x,y, dx,dy, shape->color, lst);
+
+  x = x;
+  y = y;
+  dx = 0;
+  dy = length;
   draw_segment(x,y, dx,dy, shape->color, lst);
+
+  x = x;
+  y = y+length;
+  dx = length;
+  dy = 0;
   draw_segment(x,y, dx,dy, shape->color, lst);
+
+  x = x+length;
+  y = y;
+  dx = 0;
+  dy = length;;
   draw_segment(x,y, dx,dy, shape->color, lst);
 
 }

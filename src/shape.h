@@ -55,7 +55,6 @@ struct shape {
     Color color;
     double rotation;
 };
-
 typedef struct shape Shape;
 
 
