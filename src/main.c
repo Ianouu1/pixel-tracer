@@ -16,14 +16,14 @@ int main() {
         int err = read_exec_command(&app);
         if (err == 0 || err == 6) {
             clear_screen();
-            draw_all_layers(app.current_area); // make pixels
-            draw_area(app.current_area);  // render
+            draw_all_layers(app.current_area);  // make pixels
+            draw_area(app.current_area);        // render
         }
         if (err == 4) {
             break;
         }
         if (err == 5) {
-          clear_screen();
+            clear_screen();
         }
         if (err == 7 || err == 8) {
             continue;
