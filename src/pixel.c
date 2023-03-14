@@ -205,11 +205,7 @@ void pixel_polygon(Shape * shape, list * lst) {
 }
 
 
-
-
-
-
-Point calculateIntermediatePoint(Point * p1, Point * p2, double t) {
+Point calc_point_median(Point * p1, Point * p2, double t) {
     double x = p1->pos_x * (1 - t) + p2->pos_x * t;
     double y = p1->pos_y * (1 - t) + p2->pos_y * t;
     Point result = { x, y };
@@ -225,8 +221,7 @@ Point cj_calc(Point ** points, int numPoints, double t) {
     for (int i = numPoints - 1; i > 0; --i) {
         for (int j = 0; j < i; ++j) {
             tempPoints[j] =
-                calculateIntermediatePoint(&tempPoints[j],
-                                           &tempPoints[j + 1], t);
+                calc_point_median(&tempPoints[j], &tempPoints[j + 1], t);
         }
     }
     return tempPoints[0];
@@ -235,8 +230,6 @@ Point cj_calc(Point ** points, int numPoints, double t) {
 
 void pixel_curve(Shape * shape, list * lst) {
     Curve *p_curve = (Curve *) shape->ptrShape;
-
-
     Point *points[] =
         { p_curve->p1, p_curve->p2, p_curve->p3, p_curve->p4 };
     int numPoints = sizeof(points) / sizeof(Point);
@@ -245,14 +238,11 @@ void pixel_curve(Shape * shape, list * lst) {
     for (t = 0; t <= 1.0; t = t + 0.02) {
         Point cjp1 = cj_calc(points, numPoints, t);
         Point cjp2 = cj_calc(points, numPoints, t + 0.02);
-
         int dx, dy, x, y;
         x = cjp1.pos_x;
         y = cjp1.pos_y;
         dx = cjp2.pos_x - cjp1.pos_x;
         dy = cjp2.pos_y - cjp1.pos_y;
         draw_segment(x, y, dx, dy, shape->color, lst);
-
     }
-
 }
