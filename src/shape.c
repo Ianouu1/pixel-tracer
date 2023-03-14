@@ -86,6 +86,23 @@ void delete_polygon(Polygon * polygon) {
 }
 
 
+Curve *create_curve(Point * p1, Point * p2, Point * p3, Point * p4) {
+    Curve *cur = (Curve *) malloc(sizeof(Curve));
+    cur->p1 = p1;
+    cur->p2 = p2;
+    cur->p3 = p3;
+    cur->p4 = p4;
+    return cur;
+}
+
+void delete_curve(Curve * curve) {
+    delete_point(curve->p1);
+    delete_point(curve->p2);
+    delete_point(curve->p3);
+    delete_point(curve->p4);
+    free(curve);
+}
+
 
 Shape *create_empty_shape(Shape_type shape_type) {
     Shape *shp = (Shape *) malloc(sizeof(Shape));
@@ -144,6 +161,15 @@ void sprint_polygon(Polygon * polygon, char *str) {
     sprintf(str, str_res);
 }
 
+void sprint_curve(Curve * curve, char *str) {
+    char str1[50], str2[50], str3[50], str4[50];
+    sprint_point(curve->p1, str1);
+    sprint_point(curve->p2, str2);
+    sprint_point(curve->p3, str3);
+    sprint_point(curve->p4, str4);
+    sprintf(str, "Curve(%s,%s,%s,%s)", str1, str2, str3, str4);
+}
+
 /**
  * Export Only 
  */
@@ -200,9 +226,21 @@ Shape *create_polygon_shape(int n, ...) {
     }
     shp->ptrShape = poly;
     va_end(ptr);
-
     return shp;
 }
+
+
+Shape *create_curve_shape(int px1, int py1, int px2, int py2, int px3,
+                          int py3, int px4, int py4) {
+    Shape *shp = create_empty_shape(CURVE);
+    Point *p1 = create_point(px1, py1);
+    Point *p2 = create_point(px2, py2);
+    Point *p3 = create_point(px3, py3);
+    Point *p4 = create_point(px4, py4);
+    shp->ptrShape = create_curve(p1, p2, p3, p4);
+    return shp;
+}
+
 
 void delete_shape(Shape * shape) {
     if (shape->ptrShape == NULL) {
@@ -227,6 +265,9 @@ void delete_shape(Shape * shape) {
         break;
     case POLYGON:
         delete_polygon(shape->ptrShape);
+        break;
+    case CURVE:
+        delete_curve(shape->ptrShape);
         break;
     }
     free(shape);
@@ -255,6 +296,9 @@ void sprint_shape(Shape * shape, char *str) {
         break;
     case POLYGON:
         sprint_polygon(shape->ptrShape, str);
+        break;
+    case CURVE:
+        sprint_curve(shape->ptrShape, str);
         break;
     }
 }

@@ -316,6 +316,19 @@ int read_exec_command(Pixel_tracer_app * app) {
         error_num = 0;
     }
 
+    else if (strcmp(cmd_name, "curve") == 0) {
+        if (!check_nb_params(cmd, 1, 8, 0)) {
+            error_num = 3;
+            goto end;
+        }
+        Shape *sh =
+            create_curve_shape(cmd->int_params[0], cmd->int_params[1],
+                               cmd->int_params[2], cmd->int_params[3],
+                               cmd->int_params[4], cmd->int_params[5],
+                               cmd->int_params[6], cmd->int_params[7]);
+        add_shape_to_layer(app->current_layer, sh);
+        error_num = 0;
+    }
 
 
 

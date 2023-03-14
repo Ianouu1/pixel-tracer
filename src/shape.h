@@ -2,7 +2,7 @@
 #  define _SHAPE_H_
 
 typedef enum shape_type { POINT, LINE, SQUAR, RECTANGLE, CERCLE,
-    POLYGON
+    POLYGON, CURVE
 } Shape_type;
 typedef enum color { BLACK, WIGHT, RED, GREEN } Color;
 
@@ -46,6 +46,16 @@ struct polygon {
 typedef struct polygon Polygon;
 
 
+struct curve {
+    Point *p1;
+    Point *p2;
+    Point *p3;
+    Point *p4;
+};
+typedef struct curve Curve;
+
+
+
 struct shape {
     unsigned long long int id;
     Shape_type shape_type;
@@ -70,6 +80,9 @@ Cercle *create_cercle(Point * center, int radus);
 void delete_cercle(Cercle * cercle);
 Polygon *create_polygon(int n);
 void delete_polygon(Polygon * polygon);
+Curve *create_curve(Point * p1, Point * p2, Point * p3, Point * p4);
+void delete_curve(Curve * curve);
+
 Shape *create_empty_shape(Shape_type shape_type);
 
 void sprint_point(Point * p, char *str);
@@ -78,6 +91,7 @@ void sprint_squar(Squar * squar, char *str);
 void sprint_rectangle(Rectangle * rectangle, char *str);
 void sprint_cercle(Cercle * cercle, char *str);
 void sprint_polygon(Polygon * polygon, char *str);
+void sprint_curve(Curve * curve, char *str);
 
 
 /**
@@ -89,6 +103,8 @@ Shape *create_square_shape(int px, int py, int length);
 Shape *create_rectangle_shape(int px, int py, int width, int height);
 Shape *create_cercle_shape(int px, int py, int radus);
 Shape *create_polygon_shape(int n, ...);
+Shape *create_curve_shape(int px1, int py1, int px2, int py2, int px3,
+                          int py3, int px4, int py4);
 
 void delete_shape(Shape * shape);
 void sprint_shape(Shape * shape, char *str);

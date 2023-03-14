@@ -39,7 +39,7 @@ void pixel_square(Shape * shape, list * lst);
 
 void pixel_polygon(Shape * shape, list * lst);
 
-
+void pixel_curve(Shape * shape, list * lst);
 
 
 
