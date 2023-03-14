@@ -235,9 +235,9 @@ void pixel_curve(Shape * shape, list * lst) {
     int numPoints = sizeof(points) / sizeof(Point);
     double t = 0;
 
-    for (t = 0; t <= 1.0; t = t + 0.02) {
+    for (t = 0; t < 1.0; t = t + 0.02) {
         Point cjp1 = cj_calc(points, numPoints, t);
-        Point cjp2 = cj_calc(points, numPoints, t + 0.02);
+        Point cjp2 = cj_calc(points, numPoints, t + 0.01);
         int dx, dy, x, y;
         x = cjp1.pos_x;
         y = cjp1.pos_y;

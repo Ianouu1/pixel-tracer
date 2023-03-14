@@ -168,6 +168,7 @@ void sprint_curve(Curve * curve, char *str) {
     sprint_point(curve->p3, str3);
     sprint_point(curve->p4, str4);
     sprintf(str, "Curve(%s,%s,%s,%s)", str1, str2, str3, str4);
+    printf("%s\n", str);
 }
 
 /**
