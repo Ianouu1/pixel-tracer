@@ -1,6 +1,5 @@
 #include "pixel.h"
 
-
 Pixel *create_pixel(int px, int py, int color) {
     Pixel *pixel = (Pixel *) malloc(sizeof(Pixel));
     pixel->px = px;
@@ -223,10 +222,7 @@ void pixel_curve(Shape * shape, list * lst) {
 
     for (t = 0; t < 1.0; t = t + 0.0001) {
         Point cjp1 = cj_calc(points, num_pt, t);
-        int dx, dy, x, y;
-        x = cjp1.pos_x;
-        y = cjp1.pos_y;
-        Pixel *px = create_pixel(x, y, shape->color);
+        Pixel *px = create_pixel(cjp1.pos_x, cjp1.pos_y, shape->color);
         lst_insert_tail(lst, lst_create_lnode(px));
     }
 }
