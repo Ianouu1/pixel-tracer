@@ -161,20 +161,30 @@ void pixel_cercle(Shape * shape, list * lst) {
 }
 
 void pixel_rectangle(Shape * shape, list * lst) {
-  Rectangle *p_rec = (Rectangle *) shape->ptrShape;
-    draw_segment(p_rec->p1->pos_x, p_rec->p1->pos_y, 0, p_rec->width-1, shape->color, lst);
-    draw_segment(p_rec->p1->pos_x, p_rec->p1->pos_y, p_rec->height-1, 0, shape->color, lst);
-    draw_segment(p_rec->p1->pos_x, p_rec->p1->pos_y + p_rec->width-1, p_rec->height-1, 0, shape->color, lst);
-    draw_segment(p_rec->p1->pos_x + p_rec->height-1, p_rec->p1->pos_y, 0, p_rec->width-1, shape->color, lst);
+    Rectangle *p_rec = (Rectangle *) shape->ptrShape;
+    draw_segment(p_rec->p1->pos_x, p_rec->p1->pos_y, 0, p_rec->width - 1,
+                 shape->color, lst);
+    draw_segment(p_rec->p1->pos_x, p_rec->p1->pos_y, p_rec->height - 1, 0,
+                 shape->color, lst);
+    draw_segment(p_rec->p1->pos_x, p_rec->p1->pos_y + p_rec->width - 1,
+                 p_rec->height - 1, 0, shape->color, lst);
+    draw_segment(p_rec->p1->pos_x + p_rec->height - 1, p_rec->p1->pos_y, 0,
+                 p_rec->width - 1, shape->color, lst);
 
 }
 
 void pixel_square(Shape * shape, list * lst) {
     Squar *p_sqaure = (Squar *) shape->ptrShape;
-    draw_segment(p_sqaure->p1->pos_x, p_sqaure->p1->pos_y, p_sqaure->length-1, 0, shape->color, lst);
-    draw_segment(p_sqaure->p1->pos_x, p_sqaure->p1->pos_y, 0, p_sqaure->length-1, shape->color, lst);
-    draw_segment(p_sqaure->p1->pos_x, p_sqaure->p1->pos_y  +  p_sqaure->length  -1 , p_sqaure->length-1, 0, shape->color, lst);
-    draw_segment(p_sqaure->p1->pos_x + p_sqaure->length -1 , p_sqaure->p1->pos_y   , 0, p_sqaure->length - 1 , shape->color, lst);
+    draw_segment(p_sqaure->p1->pos_x, p_sqaure->p1->pos_y,
+                 p_sqaure->length - 1, 0, shape->color, lst);
+    draw_segment(p_sqaure->p1->pos_x, p_sqaure->p1->pos_y, 0,
+                 p_sqaure->length - 1, shape->color, lst);
+    draw_segment(p_sqaure->p1->pos_x,
+                 p_sqaure->p1->pos_y + p_sqaure->length - 1,
+                 p_sqaure->length - 1, 0, shape->color, lst);
+    draw_segment(p_sqaure->p1->pos_x + p_sqaure->length - 1,
+                 p_sqaure->p1->pos_y, 0, p_sqaure->length - 1,
+                 shape->color, lst);
 }
 
 void pixel_polygon(Shape * shape, list * lst) {
@@ -197,8 +207,7 @@ Point cj_calc(Point ** points, int num_pt, double t) {
     }
     for (int i = num_pt - 1; i > 0; --i) {
         for (int j = 0; j < i; ++j) {
-            tmp_pt[j] =
-                calc_point_median(&tmp_pt[j], &tmp_pt[j + 1], t);
+            tmp_pt[j] = calc_point_median(&tmp_pt[j], &tmp_pt[j + 1], t);
         }
     }
     return tmp_pt[0];
@@ -212,14 +221,12 @@ void pixel_curve(Shape * shape, list * lst) {
     int num_pt = sizeof(points) / sizeof(Point);
     double t = 0;
 
-    for (t = 0; t < 1.0; t = t + 0.0002) {
+    for (t = 0; t < 1.0; t = t + 0.0001) {
         Point cjp1 = cj_calc(points, num_pt, t);
-        Point cjp2 = cj_calc(points, num_pt, t + 0.0001);
         int dx, dy, x, y;
         x = cjp1.pos_x;
         y = cjp1.pos_y;
-        dx = cjp2.pos_x - cjp1.pos_x;
-        dy = cjp2.pos_y - cjp1.pos_y;
-        draw_segment(x, y, dx, dy, shape->color, lst);
+        Pixel *px = create_pixel(x, y, shape->color);
+        lst_insert_tail(lst, lst_create_lnode(px));
     }
 }
