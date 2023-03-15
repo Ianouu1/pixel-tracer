@@ -162,7 +162,6 @@ void pixel_cercle(Shape * shape, list * lst) {
 
 void pixel_rectangle(Shape * shape, list * lst) {
   Rectangle *p_rec = (Rectangle *) shape->ptrShape;
-
     draw_segment(p_rec->p1->pos_x, p_rec->p1->pos_y, 0, p_rec->width-1, shape->color, lst);
     draw_segment(p_rec->p1->pos_x, p_rec->p1->pos_y, p_rec->height-1, 0, shape->color, lst);
     draw_segment(p_rec->p1->pos_x, p_rec->p1->pos_y + p_rec->width-1, p_rec->height-1, 0, shape->color, lst);
@@ -190,7 +189,7 @@ Point calc_point_median(Point * p1, Point * p2, double t) {
     return result;
 }
 
-// Fonction pour calculer un point sur une courbe de Bézier à l'aide de l'algorithme de Casteljau
+// calc courbe de Bezier avec  Casteljau
 Point cj_calc(Point ** points, int num_pt, double t) {
     Point tmp_pt[num_pt];
     for (int i = 0; i < num_pt; ++i) {
@@ -213,9 +212,9 @@ void pixel_curve(Shape * shape, list * lst) {
     int num_pt = sizeof(points) / sizeof(Point);
     double t = 0;
 
-    for (t = 0; t < 1.0; t = t + 0.002) {
+    for (t = 0; t < 1.0; t = t + 0.0002) {
         Point cjp1 = cj_calc(points, num_pt, t);
-        Point cjp2 = cj_calc(points, num_pt, t + 0.001);
+        Point cjp2 = cj_calc(points, num_pt, t + 0.0001);
         int dx, dy, x, y;
         x = cjp1.pos_x;
         y = cjp1.pos_y;
