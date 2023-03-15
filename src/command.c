@@ -12,7 +12,7 @@ static char *error_messages[] = {
     "~~~ Help ~~~",
     "done",
     "id inconnu dans la list"
-        /* liste à compléter */
+    /* liste à compléter */
 };
 
 Command *create_commande() {
@@ -54,7 +54,7 @@ void free_cmd(Command * cmd) {
     }
 }
 
-void strlwr(char *str) {
+void strlwr2(char *str) {
     int i;
     for (i = 0; i < strlen(str); i++) {
         if ((str[i] >= 'A') && (str[i] <= 'Z')) {
@@ -90,7 +90,7 @@ int is_float(const char *str) {
 
 void clean_text(char *str) {
     int i = 0;
-    strlwr(str);
+    strlwr2(str);
     while (str[i] != '\0') {
         if (str[i] == '#' || str[i] == '\n') {
             str[i] = '\0';

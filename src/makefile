@@ -14,6 +14,8 @@ draw: $(OBJ)
 	$(CC) -o $@ -c $< $(CFLAGS)
 
 
+win:
+	x86_64-w64-mingw32-gcc *.c -I"../readline/include/" -L"../readline/lib/" -lreadline -o draw.exe
 
 .PHONY: clean mrproper
 
