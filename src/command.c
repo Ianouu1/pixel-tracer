@@ -173,7 +173,7 @@ void print_help() {
     printf("\t%s\n", "line x1 y1 x2 x2 : draw line from (x1, y1) to (x1, y1)");
     printf("\t%s\n", "square x1 y1 l : draw square (x1, y1)  length ");
     printf("\t%s\n", "rectangle x1 y1 w h : draw square (x1, y1)  width height ");
-    printf("\t%s\n", "cercle x y r : center at (x, y) radus r");
+    printf("\t%s\n", "circle x y r : center at (x, y) radus r");
     printf("\t%s\n", "polygon x1 y1 x2 y2 ... : draw polygon ");
     printf("\t%s\n", "curve x1 y1 x2 y2 x3 y3 x4 y4 : draw Bezier curve ");
 
@@ -284,7 +284,7 @@ int read_exec_command(Pixel_tracer_app * app) {
     }
 
 
-    else if (strcmp(cmd_name, "cercle") == 0) {
+    else if (strcmp(cmd_name, "circle") == 0) {
         if (!check_nb_params(cmd, 1, 3, 0)) {
             error_num = 3;
             goto end;

@@ -4,8 +4,10 @@
 #include "command.h"
 
 
-int main() {
 
+
+
+int main() {
     Pixel_tracer_app app;
     init_app(&app);
     clear_screen();
