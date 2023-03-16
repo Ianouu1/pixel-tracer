@@ -12,7 +12,7 @@ static char *error_messages[] = {
     "~~~ Help ~~~",
     "done",
     "id inconnu dans la list"
-    /* liste à compléter */
+        /* liste à compléter */
 };
 
 Command *create_commande() {
@@ -170,9 +170,11 @@ void print_help() {
     printf("\t%s\n", "==== Draw shapes ====");
 
     printf("\t%s\n", "point px py : create point a position (px, px)");
-    printf("\t%s\n", "line x1 y1 x2 x2 : draw line from (x1, y1) to (x1, y1)");
+    printf("\t%s\n",
+           "line x1 y1 x2 x2 : draw line from (x1, y1) to (x1, y1)");
     printf("\t%s\n", "square x1 y1 l : draw square (x1, y1)  length ");
-    printf("\t%s\n", "rectangle x1 y1 w h : draw square (x1, y1)  width height ");
+    printf("\t%s\n",
+           "rectangle x1 y1 w h : draw square (x1, y1)  width height ");
     printf("\t%s\n", "circle x y r : center at (x, y) radus r");
     printf("\t%s\n", "polygon x1 y1 x2 y2 ... : draw polygon ");
     printf("\t%s\n", "curve x1 y1 x2 y2 x3 y3 x4 y4 : draw Bezier curve ");
@@ -201,7 +203,7 @@ int check_nb_params(Command * cmd, int nb_str, int nb_int, int nb_flt) {
 int check_nb_params_polygon(Command * cmd) {
     if (cmd->str_size != 1)
         return 0;
-    if ((cmd->int_size == 0) || (cmd->int_size >= 10)
+    if ((cmd->int_size == 0) || (cmd->int_size >= MAX_PARAM)
         || (cmd->int_size % 2 != 0))
         return 0;
     if (cmd->flt_size != 0)
@@ -324,7 +326,7 @@ int read_exec_command(Pixel_tracer_app * app) {
             goto end;
         }
 
-        Shape *sh = create_polygon_shape(cmd->int_size ,cmd->int_params);
+        Shape *sh = create_polygon_shape(cmd->int_size, cmd->int_params);
 
         add_shape_to_layer(app->current_layer, sh);
         error_num = 0;

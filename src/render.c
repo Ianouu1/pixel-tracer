@@ -29,9 +29,9 @@ void draw_area(Area * area) {
 void clear_screen() {
 
 #ifdef __linux__
-  printf("\033[H\033[J");
+    printf("\033[H\033[J");
 #elif _WIN32
-  system("cls");
+    system("cls");
 #else
 
 #endif

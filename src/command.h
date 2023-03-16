@@ -1,7 +1,7 @@
 #ifndef _COMMAND_H_
 #  define _COMMAND_H_
 
-#  define MAX_PARAM 10
+#  define MAX_PARAM 30
 
 #  include <stdlib.h>
 #  include <string.h>
@@ -15,11 +15,11 @@
 struct command {
     char name[50];
     int int_size;
-    int int_params[10];
+    int int_params[MAX_PARAM];
     int str_size;
-    char *str_params[10];
+    char *str_params[MAX_PARAM];
     int flt_size;
-    float flt_params[10];
+    float flt_params[MAX_PARAM];
 };
 
 typedef struct command Command;

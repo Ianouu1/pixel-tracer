@@ -137,8 +137,7 @@ void sprint_squar(Squar * squar, char *str) {
 void sprint_rectangle(Rectangle * rectangle, char *str) {
     char str1[50];
     sprint_point(rectangle->p1, str1);
-    sprintf(str, "%s %d %d ", str1, rectangle->width,
-            rectangle->height);
+    sprintf(str, "%s %d %d ", str1, rectangle->width, rectangle->height);
 }
 
 void sprint_cercle(Cercle * cercle, char *str) {
@@ -208,19 +207,19 @@ Shape *create_cercle_shape(int px, int py, int radus) {
     return shp;
 }
 
-Shape *create_polygon_shape(int n, int* tab){
-  if (n % 2 != 0) {
-    return NULL;
-  }
-  Shape *shp = create_empty_shape(POLYGON);
-  Polygon *poly = create_polygon(n/2);
-  int k = 0;
-  for (int i = 0; i < n; i=i+2) {
-    Point *point = create_point(tab[i], tab[i+1]);
-    poly->points[k++] = point;
-  }
-  shp->ptrShape = poly;
-  return shp;
+Shape *create_polygon_shape(int n, int *tab) {
+    if (n % 2 != 0) {
+        return NULL;
+    }
+    Shape *shp = create_empty_shape(POLYGON);
+    Polygon *poly = create_polygon(n / 2);
+    int k = 0;
+    for (int i = 0; i < n; i = i + 2) {
+        Point *point = create_point(tab[i], tab[i + 1]);
+        poly->points[k++] = point;
+    }
+    shp->ptrShape = poly;
+    return shp;
 }
 
 /*

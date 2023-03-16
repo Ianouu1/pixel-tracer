@@ -187,19 +187,19 @@ void pixel_square(Shape * shape, list * lst) {
 }
 
 void pixel_polygon(Shape * shape, list * lst) {
- 
-  Polygon* poly  = (Polygon*)shape->ptrShape;
-  int i;
-  for(i=1 ; i < poly->n ; i++){
-    Point *p1 = poly->points[i-1];
-    Point *p2 = poly->points[i];
-    int dx, dy, x, y;
-    x = p1->pos_x;
-    y = p1->pos_y;
-    dx = p2->pos_x - p1->pos_x;
-    dy = p2->pos_y - p1->pos_y;
-    draw_segment(x, y, dx, dy, shape->color, lst);
-  }
+
+    Polygon *poly = (Polygon *) shape->ptrShape;
+    int i;
+    for (i = 1; i < poly->n; i++) {
+        Point *p1 = poly->points[i - 1];
+        Point *p2 = poly->points[i];
+        int dx, dy, x, y;
+        x = p1->pos_x;
+        y = p1->pos_y;
+        dx = p2->pos_x - p1->pos_x;
+        dy = p2->pos_y - p1->pos_y;
+        draw_segment(x, y, dx, dy, shape->color, lst);
+    }
 }
 
 

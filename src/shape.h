@@ -103,7 +103,7 @@ Shape *create_square_shape(int px, int py, int length);
 Shape *create_rectangle_shape(int px, int py, int width, int height);
 Shape *create_cercle_shape(int px, int py, int radus);
 //Shape *create_polygon_shape(int n, ...);
-Shape *create_polygon_shape(int n, int* tab);
+Shape *create_polygon_shape(int n, int *tab);
 
 Shape *create_curve_shape(int px1, int py1, int px2, int py2, int px3,
                           int py3, int px4, int py4);

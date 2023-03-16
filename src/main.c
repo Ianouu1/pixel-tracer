@@ -22,9 +22,9 @@ int main() {
             draw_area(app.current_area);        // render
         }
         if (err == 6) {
-          clear_screen();
-          draw_all_layers(app.current_area);  // make pixels
-          draw_area(app.current_area);        // render
+            clear_screen();
+            draw_all_layers(app.current_area);  // make pixels
+            draw_area(app.current_area);        // render
         }
         if (err == 4) {
             break;
