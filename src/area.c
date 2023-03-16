@@ -8,6 +8,8 @@ Area *create_area(unsigned int width,
     ptr_area->height = height;
     ptr_area->lst_layers = create_layers_list();
     ptr_area->id = id;
+    ptr_area->empty_char = '.';
+    ptr_area->full_char = '@';
     strcpy(ptr_area->name, name);
     ptr_area->area = (char **) malloc(height * sizeof(char *));
     for (unsigned int i = 0; i < ptr_area->height; i++) {

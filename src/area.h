@@ -14,6 +14,8 @@ struct area {
     unsigned int height;
     char **area;
     LayersList *lst_layers;
+  char empty_char;
+  char full_char;
 };
 
 typedef struct area Area;

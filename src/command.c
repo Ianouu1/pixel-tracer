@@ -542,6 +542,22 @@ int read_exec_command(Pixel_tracer_app * app) {
             error_num = 9;
         }
     }
+    /* end SET commande  */
+    else if ( strcmp(cmd_name, "set") == 0) {
+      if (!check_nb_params(cmd, 2, 1, 0)) {
+        error_num = 3;
+        goto end;
+      }
+      if (strcmp(cmd->str_params[1], "fullchar") == 0) {
+        app->current_area->full_char = cmd->int_params[0];
+        error_num = 0;
+        goto end;
+      }
+    }
+
+
+    /*set commannd */
+
 
   end:
     printf("%s\n", error_messages[error_num]);

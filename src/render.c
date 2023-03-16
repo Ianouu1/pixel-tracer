@@ -14,10 +14,10 @@ void draw_area(Area * area) {
         for (unsigned int j = 0; j < area->width; j++) {
             switch (area->area[i][j]) {
             case EMPTY_CELL:
-                printf("%c", EMPTY_CHAR);
+                printf("%c", area->empty_char);
                 break;
             case FULL_CHAR:
-                printf("%c", FULL_CHAR);
+              printf("%c", area->full_char);
                 break;
             }
         }
