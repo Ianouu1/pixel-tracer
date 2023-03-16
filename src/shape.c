@@ -210,6 +210,22 @@ Shape *create_cercle_shape(int px, int py, int radus) {
     return shp;
 }
 
+Shape *create_polygon_shape(int n, int* tab){
+  if (n % 2 != 0) {
+    return NULL;
+  }
+  Shape *shp = create_empty_shape(POLYGON);
+  Polygon *poly = create_polygon(n/2);
+  int k = 0;
+  for (int i = 0; i < n; i=i+2) {
+    Point *point = create_point(tab[i], tab[i+1]);
+    poly->points[k++] = point;
+  }
+  shp->ptrShape = poly;
+  return shp;
+}
+
+/*
 Shape *create_polygon_shape(int n, ...) {
     if (n % 2 != 0) {
         return NULL;
@@ -229,7 +245,7 @@ Shape *create_polygon_shape(int n, ...) {
     va_end(ptr);
     return shp;
 }
-
+*/
 
 Shape *create_curve_shape(int px1, int py1, int px2, int py2, int px3,
                           int py3, int px4, int py4) {

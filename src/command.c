@@ -309,9 +309,9 @@ int read_exec_command(Pixel_tracer_app * app) {
             error_num = 3;
             goto end;
         }
-        Shape *sh =
-            create_rectangle_shape(cmd->int_params[0], cmd->int_params[1],
-                                   cmd->int_params[2], cmd->int_params[3]);
+
+        Shape *sh = create_polygon_shape(cmd->int_size ,cmd->int_params);
+
         add_shape_to_layer(app->current_layer, sh);
         error_num = 0;
     }
