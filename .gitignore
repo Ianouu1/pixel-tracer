@@ -1,5 +1,8 @@
 # -*- mode: gitignore; -*-
 
+!/lib
+!/win
+
 # Compiled source #
 ###################
 *.com

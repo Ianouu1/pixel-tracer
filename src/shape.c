@@ -116,7 +116,7 @@ Shape *create_empty_shape(Shape_type shape_type) {
 }
 
 void sprint_point(Point * p, char *str) {
-    sprintf(str, "p(%d,%d)", p->pos_x, p->pos_y);
+    sprintf(str, "%d %d", p->pos_x, p->pos_y);
 }
 
 void sprint_line(Line * line, char *str) {
@@ -124,39 +124,38 @@ void sprint_line(Line * line, char *str) {
     char str2[50];
     sprint_point(line->p1, str1);
     sprint_point(line->p2, str2);
-    sprintf(str, "Line(%s,%s)", str1, str2);
+    sprintf(str, "%s %s", str1, str2);
 }
 
 void sprint_squar(Squar * squar, char *str) {
     char str1[50];
     sprint_point(squar->p1, str1);
-    sprintf(str, "Squar(%s,%d, %d)", str1, squar->length, squar->length);
+    sprintf(str, "%s %d %d", str1, squar->length, squar->length);
 
 }
 
 void sprint_rectangle(Rectangle * rectangle, char *str) {
     char str1[50];
     sprint_point(rectangle->p1, str1);
-    sprintf(str, "Rectangle(%s,%d,%d)", str1, rectangle->width,
+    sprintf(str, "%s %d %d ", str1, rectangle->width,
             rectangle->height);
 }
 
 void sprint_cercle(Cercle * cercle, char *str) {
     char str1[50];
     sprint_point(cercle->center, str1);
-    sprintf(str, "Cercle(%s,%d)", str1, cercle->radus);
+    sprintf(str, "%s %d", str1, cercle->radus);
 }
 
 void sprint_polygon(Polygon * polygon, char *str) {
     char str_res[200] = { 0 };
     char str1[50];
-    sprintf(str1, "%s", "Polygon(");
     strcat(str_res, str1);
     for (int i = 0; i < polygon->n; i++) {
         sprint_point(polygon->points[i], str1);
         strcat(str_res, str1);
+        strcat(str_res, " ");
     }
-    sprintf(str1, "%s", ")");
     strcat(str_res, str1);
     sprintf(str, str_res);
 }
@@ -167,8 +166,7 @@ void sprint_curve(Curve * curve, char *str) {
     sprint_point(curve->p2, str2);
     sprint_point(curve->p3, str3);
     sprint_point(curve->p4, str4);
-    sprintf(str, "Curve(%s,%s,%s,%s)", str1, str2, str3, str4);
-    printf("%s\n", str);
+    sprintf(str, "%s %s %s %s", str1, str2, str3, str4);
 }
 
 /**

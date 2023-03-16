@@ -158,17 +158,31 @@ void debug_cmd(Command * cmd) {
 
 
 void print_help() {
-    printf("%s\n", "plot");
-    printf("%s\n", "clear");
-    printf("%s\n", "exit");
-    printf("%s\n", "point");
-    printf("%s\n", "line x1 y1 x2 x2");
-    printf("%s\n", "cercle x y r");
+    printf("\t%s\n", "**************************************************");
+    printf("\t%s\n", "****               PIXEL TRACER               ****");
+    printf("\t%s\n", "**************************************************");
+    printf("\t%s\n", "==== Control ====");
 
-    printf("%s\n", "list {layers, arias, shapes}");
-    printf("%s\n", "select {aria, layer, shape}");
-    printf("%s\n", "delete {aria, layer, shape} {id}");
-    printf("%s\n", "new {aria, layer}");
+    printf("\t%s\n", "plot : draw dcreen");
+    printf("\t%s\n", "clear : clear screen ");
+    printf("\t%s\n", "exit : quitter le programme ");
+
+    printf("\t%s\n", "==== Draw shapes ====");
+
+    printf("\t%s\n", "point px py : create point a position (px, px)");
+    printf("\t%s\n", "line x1 y1 x2 x2 : draw line from (x1, y1) to (x1, y1)");
+    printf("\t%s\n", "square x1 y1 l : draw square (x1, y1)  length ");
+    printf("\t%s\n", "rectangle x1 y1 w h : draw square (x1, y1)  width height ");
+    printf("\t%s\n", "cercle x y r : center at (x, y) radus r");
+    printf("\t%s\n", "polygon x1 y1 x2 y2 ... : draw polygon ");
+    printf("\t%s\n", "curve x1 y1 x2 y2 x3 y3 x4 y4 : draw Bezier curve ");
+
+    printf("\t%s\n", "==== Draw manager ====");
+
+    printf("\t%s\n", "list {layers, arias, shapes}");
+    printf("\t%s\n", "select {aria, layer} {id}");
+    printf("\t%s\n", "delete {aria, layer, shape} {id}");
+    printf("\t%s\n", "new {aria, layer}");
 
     printf("%s\n", "...");
 }
@@ -391,7 +405,7 @@ int read_exec_command(Pixel_tracer_app * app) {
                 }
                 char info[200];
                 sprint_shape(shp, info);
-                printf("%3d %s [%s])\n", shp->id,
+                printf("%3d : %s %s\n", shp->id,
                        tab_shape[shp->shape_type], info);
                 shape_node = get_next_node(&shape_list, shape_node);
             }
