@@ -399,7 +399,7 @@ int read_exec_command(Pixel_tracer_app * app) {
             list shape_list = app->current_layer->shapes;
             lnode *shape_node = get_first_node(&shape_list);
             char *tab_shape[] =
-                { "POINT", "LINE", "SQUAR", "RECTANGLE", "CERCLE",
+                { "POINT", "LINE", "SQUAR", "RECTANGLE", "CIRCLE",
                 "POLYGON", "CURVE"
             };
             while (shape_node != NULL) {
