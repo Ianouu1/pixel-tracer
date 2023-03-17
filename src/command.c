@@ -159,7 +159,7 @@ void debug_cmd(Command * cmd) {
 
 void print_help() {
     printf("\t%s\n", "**************************************************");
-    printf("\t%s\n", "****               PIXEL TRACER               ****");
+    printf("\t%s\n", "****         VECTOR TEXT-BASED EDITOR         ****");
     printf("\t%s\n", "**************************************************");
     printf("\t%s\n", "==== Control ====");
 
@@ -187,7 +187,7 @@ void print_help() {
     printf("\t%s\n", "new {aria, layer}");
 
     printf("\t%s\n", "==== Set ====");
-    printf("\t%s\n", "set char {full, empty} ascii_code");
+    printf("\t%s\n", "set char {border, background} ascii_code");
     printf("\t%s\n", "set layer {visible, unvisible} {id}");
 
     printf("%s\n", "...");
@@ -554,12 +554,12 @@ int read_exec_command(Pixel_tracer_app * app) {
         }
         // char 
         if (strcmp(cmd->str_params[1], "char") == 0) {
-            if (strcmp(cmd->str_params[2], "full") == 0) {
+            if (strcmp(cmd->str_params[2], "border") == 0) {
                 app->current_area->full_char = cmd->int_params[0];
                 error_num = 0;
                 goto end;
             }
-            if (strcmp(cmd->str_params[2], "empty") == 0) {
+            if (strcmp(cmd->str_params[2], "background") == 0) {
                 app->current_area->empty_char = cmd->int_params[0];
                 error_num = 0;
                 goto end;
