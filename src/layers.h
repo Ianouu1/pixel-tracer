@@ -6,6 +6,9 @@
 #ifndef _LAYERS_H_
 #  define _LAYERS_H_
 
+#define LAYER_VISIBLE 1
+#define LAYER_UNVISIBLE 0
+
 
 struct layer {
     unsigned int id;

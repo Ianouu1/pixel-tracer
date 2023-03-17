@@ -34,11 +34,11 @@ void remove_layer_from_list(LayersList * layer_list, Layer * layer) {
 }
 
 void set_layer_visible(Layer * layer) {
-    layer->visible = 1;
+  layer->visible = LAYER_VISIBLE;
 }
 
 void set_layer_unvisible(Layer * layer) {
-    layer->visible = 0;
+  layer->visible = LAYER_UNVISIBLE;
 }
 
 void add_shape_to_layer(Layer * layer, Shape * shape) {

@@ -17,7 +17,7 @@ void draw_area(Area * area) {
                 printf("%c", area->empty_char);
                 break;
             case FULL_CHAR:
-              printf("%c", area->full_char);
+                printf("%c", area->full_char);
                 break;
             }
         }
@@ -45,10 +45,9 @@ void draw_all_layers(Area * area) {
     lnode *layer_node = get_first_node(layer_list);
     while (layer_node != NULL) {
         Layer *layer = (Layer *) layer_node->data;
-        if (layer->visible == 0) {
-            break;
+        if (layer->visible == LAYER_VISIBLE) {
+            draw_layer_shapes(area, layer);
         }
-        draw_layer_shapes(area, layer);
         layer_node = get_next_node(layer_list, layer_node);
     }
 

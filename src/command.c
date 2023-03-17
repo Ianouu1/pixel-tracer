@@ -186,6 +186,10 @@ void print_help() {
     printf("\t%s\n", "delete {aria, layer, shape} {id}");
     printf("\t%s\n", "new {aria, layer}");
 
+    printf("\t%s\n", "==== Set ====");
+    printf("\t%s\n", "set char {full, empty} ascii_code");
+    printf("\t%s\n", "set layer {visible, unvisible} {id}");
+
     printf("%s\n", "...");
 }
 
@@ -543,19 +547,55 @@ int read_exec_command(Pixel_tracer_app * app) {
         }
     }
     /* end SET commande  */
-    else if ( strcmp(cmd_name, "set") == 0) {
-      if (!check_nb_params(cmd, 2, 1, 0)) {
+    else if (strcmp(cmd_name, "set") == 0) {
+        if (!check_nb_params(cmd, 3, 1, 0)) {
+            error_num = 3;
+            goto end;
+        }
+        // char 
+        if (strcmp(cmd->str_params[1], "char") == 0) {
+            if (strcmp(cmd->str_params[2], "full") == 0) {
+                app->current_area->full_char = cmd->int_params[0];
+                error_num = 0;
+                goto end;
+            }
+            if (strcmp(cmd->str_params[2], "empty") == 0) {
+                app->current_area->empty_char = cmd->int_params[0];
+                error_num = 0;
+                goto end;
+            }
+            error_num = 3;
+            goto end;
+        }
+        // layer visibility
+        if (strcmp(cmd->str_params[1], "layer") == 0) {
+            if (strcmp(cmd->str_params[2], "visible") == 0
+                || strcmp(cmd->str_params[2], "unvisible") == 0) {
+
+                // HERER
+                list *layer_list = app->current_area->lst_layers;
+                lnode *layer_node = get_first_node(layer_list);
+                while (layer_node != NULL) {
+                    Layer *layer = (Layer *) layer_node->data;
+                    if (layer->id == cmd->int_params[0]) {
+                        if (strcmp(cmd->str_params[2], "visible") == 0) {
+                            set_layer_visible(layer);
+                        } else {
+                          set_layer_unvisible(layer);
+                        }
+                        error_num = 0;
+                        goto end;
+                    }
+                    layer_node = get_next_node(layer_list, layer_node);
+                }
+                error_num = 9;
+                goto end;
+            }
+
+        }
         error_num = 3;
         goto end;
-      }
-      if (strcmp(cmd->str_params[1], "fullchar") == 0) {
-        app->current_area->full_char = cmd->int_params[0];
-        error_num = 0;
-        goto end;
-      }
     }
-
-
     /*set commannd */
 
 
