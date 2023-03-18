@@ -33,7 +33,7 @@ void clear_screen() {
 #elif _WIN32
     system("cls");
 #else
-
+    printf("\033[H\033[J");
 #endif
 
 }

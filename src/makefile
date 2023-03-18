@@ -38,6 +38,13 @@ $(WINEXE): $(OBJ2)
 indent:
 	indent -kr -brf -as -nut -ppi 2 *.c *.h
 
+deploy:
+	cp draw ../bin/linux
+	strip --strip-debug ../bin/linux/draw
+	cp draw.exe ../bin/win
+	strip --strip-debug ../bin/win/draw.exe
+
+
 clean:
 	rm -rf *.o
 	rm draw

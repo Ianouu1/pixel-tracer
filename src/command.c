@@ -120,7 +120,8 @@ void read_from_stdin(Command * cmd) {
 
     token = strtok(line_read, " ");
     while (token != NULL) {
-        if (cmd->str_size > 9 || cmd->int_size > 9 || cmd->flt_size > 9)
+        if (cmd->str_size > MAX_PARAM || cmd->int_size > MAX_PARAM
+            || cmd->flt_size > MAX_PARAM)
             return;             /* nb max args */
 
         if (is_word(token)) {
@@ -161,11 +162,13 @@ void print_help() {
     printf("\t%s\n", "**************************************************");
     printf("\t%s\n", "****         VECTOR TEXT-BASED EDITOR         ****");
     printf("\t%s\n", "**************************************************");
+
     printf("\t%s\n", "==== Control ====");
 
-    printf("\t%s\n", "plot : draw dcreen");
     printf("\t%s\n", "clear : clear screen ");
-    printf("\t%s\n", "exit : quitter le programme ");
+    printf("\t%s\n", "exit : exit the program ");
+    printf("\t%s\n", "help : print this help ");
+    printf("\t%s\n", "plot : draw dcreen");
 
     printf("\t%s\n", "==== Draw shapes ====");
 
@@ -189,8 +192,9 @@ void print_help() {
     printf("\t%s\n", "==== Set ====");
     printf("\t%s\n", "set char {border, background} ascii_code");
     printf("\t%s\n", "set layer {visible, unvisible} {id}");
-
-    printf("%s\n", "...");
+    printf("\t%s\n", "==== Bugs ====");
+    printf("\t%s\n",
+           "If you find any bug please send an email to : hdd@halim.info");
 }
 
 
@@ -581,7 +585,7 @@ int read_exec_command(Pixel_tracer_app * app) {
                         if (strcmp(cmd->str_params[2], "visible") == 0) {
                             set_layer_visible(layer);
                         } else {
-                          set_layer_unvisible(layer);
+                            set_layer_unvisible(layer);
                         }
                         error_num = 0;
                         goto end;
