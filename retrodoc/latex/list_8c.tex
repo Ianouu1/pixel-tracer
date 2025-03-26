@@ -4,8 +4,7 @@
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$string.\+h$>$}\newline
 {\ttfamily \#include "{}list.\+h"{}}\newline
-Include dependency graph for list.\+c\+:
-\nopagebreak
+Include dependency graph for list.\+c\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,33 +15,33 @@ Include dependency graph for list.\+c\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8c_ae601318c758e55737363c7445bcb1b8f}{lst\+\_\+create\+\_\+lnode}} (void \texorpdfstring{$\ast$}{*}dat)
-\item 
+\begin{DoxyCompactList}\small\item\em Crée un nœud dans la liste. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8c_afec467a8af7733df57ff079150c68032}{lst\+\_\+create\+\_\+list}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Crée une nouvelle liste. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{list_8c_afc417a1f2ab316e3c96c35bad7471533}{lst\+\_\+delete\+\_\+list}} (\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}lst)
-\item 
+\begin{DoxyCompactList}\small\item\em Supprime une liste. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{list_8c_a8f8a8044852f8f0cf7d990da33bfc745}{lst\+\_\+insert\+\_\+head}} (\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}lst, \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}pnew)
-\item 
+\begin{DoxyCompactList}\small\item\em Insère un nœud au début de la liste. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{list_8c_a8f0a81e76357062b9b85825cd0bf7669}{lst\+\_\+insert\+\_\+tail}} (\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}lst, \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}pnew)
-\item 
+\begin{DoxyCompactList}\small\item\em Insère un nœud à la fin de la liste. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{list_8c_a5aa1ad2575a4ea67d7128ee2a294d98f}{lst\+\_\+insert\+\_\+after}} (\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}lst, \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}pnew, \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}ptr)
-\item 
+\begin{DoxyCompactList}\small\item\em Insère un nœud juste après un autre nœud. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{list_8c_a1a043629fa2858488c88d31c266c7e29}{lst\+\_\+delete\+\_\+head}} (\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}lst)
-\item 
+\begin{DoxyCompactList}\small\item\em Supprime le premier nœud de la liste. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{list_8c_af652156d81ac0ee367992d9825f31451}{lst\+\_\+delete\+\_\+tail}} (\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}lst)
-\item 
+\begin{DoxyCompactList}\small\item\em Supprime le dernier nœud de la liste. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{list_8c_a9915060f37b2f612a5431868e93aa4ac}{lst\+\_\+delete\+\_\+lnode}} (\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}lst, \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}ptr)
-\item 
+\begin{DoxyCompactList}\small\item\em Supprime un nœud spécifique de la liste. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{list_8c_ad86c7b552877ce30d52c5e5845741bbe}{lst\+\_\+erase}} (\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}lst)
-\item 
+\begin{DoxyCompactList}\small\item\em Supprime tous les nœuds de la liste. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8c_aa94f272997d853b524e0f4d5b1f3ee8b}{get\+\_\+first\+\_\+node}} (\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}lst)
-\item 
+\begin{DoxyCompactList}\small\item\em Retourne le premier nœud de la liste. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8c_a9570078f2690ea9255c77dd6dae62f04}{get\+\_\+last\+\_\+node}} (\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}lst)
-\item 
+\begin{DoxyCompactList}\small\item\em Retourne le dernier nœud de la liste. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8c_a24e54c1388bec46264923c4116a0e787}{get\+\_\+next\+\_\+node}} (\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}lst, \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}})
-\item 
+\begin{DoxyCompactList}\small\item\em Retourne le nœud suivant dans la liste. \end{DoxyCompactList}\item 
 void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8c_aba320aea27ad605db5263b7e45727ad6}{get\+\_\+previous\+\_\+elem}} (\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}lst, \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Retourne le nœud précédent dans la liste. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -52,8 +51,19 @@ void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8c_aba320aea27ad605db5263b
 {\footnotesize\ttfamily \label{list_8c_aa94f272997d853b524e0f4d5b1f3ee8b} 
 \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*} get\+\_\+first\+\_\+node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}}]{lst}{}\end{DoxyParamCaption})}
 
-retourne le premier node s\textquotesingle{}il existe sinon NULL Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Retourne le premier nœud de la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Pointeur vers la liste dont on veut obtenir le premier nœud. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur vers le premier nœud, ou {\ttfamily NULL} si la liste est vide. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -66,8 +76,19 @@ retourne le premier node s\textquotesingle{}il existe sinon NULL Here is the cal
 {\footnotesize\ttfamily \label{list_8c_a9570078f2690ea9255c77dd6dae62f04} 
 \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*} get\+\_\+last\+\_\+node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}}]{lst}{}\end{DoxyParamCaption})}
 
-retourne le denier node s\textquotesingle{}il existe sinon NULL Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Retourne le dernier nœud de la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Pointeur vers la liste dont on veut obtenir le dernier nœud. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur vers le dernier nœud, ou {\ttfamily NULL} si la liste est vide. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -80,8 +101,21 @@ retourne le denier node s\textquotesingle{}il existe sinon NULL Here is the call
 {\footnotesize\ttfamily \label{list_8c_a24e54c1388bec46264923c4116a0e787} 
 \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*} get\+\_\+next\+\_\+node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{\mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}}]{lnode}{}\end{DoxyParamCaption})}
 
-retourne le node suivant Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Retourne le nœud suivant dans la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Pointeur vers la liste. \\
+\hline
+{\em lnode} & Pointeur vers le nœud actuel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur vers le nœud suivant, ou {\ttfamily NULL} si le nœud actuel est le dernier. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -94,13 +128,36 @@ retourne le node suivant Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{list_8c_aba320aea27ad605db5263b7e45727ad6} 
 void \texorpdfstring{$\ast$}{*} get\+\_\+previous\+\_\+elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{\mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}}]{lnode}{}\end{DoxyParamCaption})}
 
-retourne le node precedent \Hypertarget{list_8c_afec467a8af7733df57ff079150c68032}\index{list.c@{list.c}!lst\_create\_list@{lst\_create\_list}}
+
+
+Retourne le nœud précédent dans la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Pointeur vers la liste. \\
+\hline
+{\em lnode} & Pointeur vers le nœud actuel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur vers le nœud précédent, ou {\ttfamily NULL} si le nœud actuel est le premier. 
+\end{DoxyReturn}
+\Hypertarget{list_8c_afec467a8af7733df57ff079150c68032}\index{list.c@{list.c}!lst\_create\_list@{lst\_create\_list}}
 \index{lst\_create\_list@{lst\_create\_list}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{lst\_create\_list()}{lst\_create\_list()}}
 {\footnotesize\ttfamily \label{list_8c_afec467a8af7733df57ff079150c68032} 
 \mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*} lst\+\_\+create\+\_\+list (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-crée la liste et retourne un pointeur sur cette dernière Here is the caller graph for this function\+:
+
+
+Crée une nouvelle liste. 
+
+Alloue de la mémoire pour une liste et initialise ses pointeurs {\ttfamily head} et {\ttfamily tail} à {\ttfamily NULL}.
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers la nouvelle liste créée. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -114,8 +171,21 @@ crée la liste et retourne un pointeur sur cette dernière Here is the caller gr
 {\footnotesize\ttfamily \label{list_8c_ae601318c758e55737363c7445bcb1b8f} 
 \mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*} lst\+\_\+create\+\_\+lnode (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{dat}{}\end{DoxyParamCaption})}
 
-création d\textquotesingle{}un noeud Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Crée un nœud dans la liste. 
+
+Alloue de la mémoire pour un nœud et initialise ses valeurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dat} & Pointeur vers les données à stocker dans le nœud. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur vers le nœud créé. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -128,8 +198,18 @@ création d\textquotesingle{}un noeud Here is the caller graph for this function
 {\footnotesize\ttfamily \label{list_8c_a1a043629fa2858488c88d31c266c7e29} 
 void lst\+\_\+delete\+\_\+head (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}}]{lst}{}\end{DoxyParamCaption})}
 
-Supprime le premier élément de la liste Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Supprime le premier nœud de la liste. 
+
+Libère la mémoire du premier nœud et met à jour les pointeurs {\ttfamily head} et {\ttfamily tail} si nécessaire.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Pointeur vers la liste dont on veut supprimer le premier nœud. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -142,16 +222,25 @@ Supprime le premier élément de la liste Here is the caller graph for this func
 {\footnotesize\ttfamily \label{list_8c_afc417a1f2ab316e3c96c35bad7471533} 
 void lst\+\_\+delete\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}}]{lst}{}\end{DoxyParamCaption})}
 
-supprimer la liste Here is the call graph for this function\+:
-\nopagebreak
+
+
+Supprime une liste. 
+
+Libère la mémoire allouée pour tous les éléments de la liste et pour la liste elle-\/même.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Pointeur vers la liste à supprimer. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=248pt]{list_8c_afc417a1f2ab316e3c96c35bad7471533_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -164,16 +253,27 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{list_8c_a9915060f37b2f612a5431868e93aa4ac} 
 void lst\+\_\+delete\+\_\+lnode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{\mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}}]{ptr}{}\end{DoxyParamCaption})}
 
-Supprime le lnode pointé par ptr Here is the call graph for this function\+:
-\nopagebreak
+
+
+Supprime un nœud spécifique de la liste. 
+
+Libère la mémoire du nœud spécifié et met à jour les pointeurs des nœuds voisins.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Pointeur vers la liste dont on veut supprimer le nœud. \\
+\hline
+{\em ptr} & Pointeur vers le nœud à supprimer. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=287pt]{list_8c_a9915060f37b2f612a5431868e93aa4ac_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -186,8 +286,18 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{list_8c_af652156d81ac0ee367992d9825f31451} 
 void lst\+\_\+delete\+\_\+tail (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}}]{lst}{}\end{DoxyParamCaption})}
 
-Supprime le dernier élément de la liste Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Supprime le dernier nœud de la liste. 
+
+Libère la mémoire du dernier nœud et met à jour les pointeurs {\ttfamily head} et {\ttfamily tail} si nécessaire.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Pointeur vers la liste dont on veut supprimer le dernier nœud. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -200,8 +310,18 @@ Supprime le dernier élément de la liste Here is the caller graph for this func
 {\footnotesize\ttfamily \label{list_8c_ad86c7b552877ce30d52c5e5845741bbe} 
 void lst\+\_\+erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}}]{lst}{}\end{DoxyParamCaption})}
 
-Supprime tous les éléments de la liste lst Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Supprime tous les nœuds de la liste. 
+
+Libère la mémoire de tous les nœuds dans la liste et réinitialise les pointeurs {\ttfamily head} et {\ttfamily tail}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Pointeur vers la liste dont on veut supprimer tous les nœuds. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -214,8 +334,22 @@ Supprime tous les éléments de la liste lst Here is the caller graph for this f
 {\footnotesize\ttfamily \label{list_8c_a5aa1ad2575a4ea67d7128ee2a294d98f} 
 void lst\+\_\+insert\+\_\+after (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{\mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}}]{pnew}{, }\item[{\mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}}]{ptr}{}\end{DoxyParamCaption})}
 
-Insère l\textquotesingle{}élément pnew juste après ptr dans la liste lst Here is the call graph for this function\+:
-\nopagebreak
+
+
+Insère un nœud juste après un autre nœud. 
+
+Insère un nœud juste après le nœud spécifié dans la liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Pointeur vers la liste dans laquelle insérer le nœud. \\
+\hline
+{\em pnew} & Pointeur vers le nœud à insérer. \\
+\hline
+{\em ptr} & Pointeur vers le nœud après lequel insérer le nouveau nœud. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -228,14 +362,39 @@ Insère l\textquotesingle{}élément pnew juste après ptr dans la liste lst Her
 {\footnotesize\ttfamily \label{list_8c_a8f8a8044852f8f0cf7d990da33bfc745} 
 void lst\+\_\+insert\+\_\+head (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{\mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}}]{pnew}{}\end{DoxyParamCaption})}
 
-Insère pnew au début de la liste lst \Hypertarget{list_8c_a8f0a81e76357062b9b85825cd0bf7669}\index{list.c@{list.c}!lst\_insert\_tail@{lst\_insert\_tail}}
+
+
+Insère un nœud au début de la liste. 
+
+Insère un nœud dans la liste, juste avant le premier nœud actuel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Pointeur vers la liste dans laquelle insérer le nœud. \\
+\hline
+{\em pnew} & Pointeur vers le nœud à insérer. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{list_8c_a8f0a81e76357062b9b85825cd0bf7669}\index{list.c@{list.c}!lst\_insert\_tail@{lst\_insert\_tail}}
 \index{lst\_insert\_tail@{lst\_insert\_tail}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{lst\_insert\_tail()}{lst\_insert\_tail()}}
 {\footnotesize\ttfamily \label{list_8c_a8f0a81e76357062b9b85825cd0bf7669} 
 void lst\+\_\+insert\+\_\+tail (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{\mbox{\hyperlink{list_8h_a298c10f10e87e22810c762b707f615ba}{lnode}} \texorpdfstring{$\ast$}{*}}]{pnew}{}\end{DoxyParamCaption})}
 
-Insère pnew à la fin de la liste lst Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Insère un nœud à la fin de la liste. 
+
+Insère un nœud dans la liste, juste après le dernier nœud actuel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & Pointeur vers la liste dans laquelle insérer le nœud. \\
+\hline
+{\em pnew} & Pointeur vers le nœud à insérer. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

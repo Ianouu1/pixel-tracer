@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['calc_5fpoint_5fmedian_0',['calc_point_median',['../pixel_8c.html#ab70bfd04ebb4770aa9fbc3c828c15d74',1,'pixel.c']]],
+  ['calc_5fpoint_5fmedian_0',['calc_point_median',['../pixel_8c.html#ab70bfd04ebb4770aa9fbc3c828c15d74',1,'calc_point_median(Point *p1, Point *p2, double t):&#160;pixel.c'],['../pixel_8h.html#ab70bfd04ebb4770aa9fbc3c828c15d74',1,'calc_point_median(Point *p1, Point *p2, double t):&#160;pixel.c']]],
   ['check_5fnb_5fparams_1',['check_nb_params',['../command_8c.html#ac24e877cdc99defea900df54423e33fd',1,'command.c']]],
   ['check_5fnb_5fparams_5fpolygon_2',['check_nb_params_polygon',['../command_8c.html#a6bc227008457940d9005875f3c8dae46',1,'command.c']]],
-  ['cj_5fcalc_3',['cj_calc',['../pixel_8c.html#a5f5b30d66d93f7fce626c1547736471c',1,'pixel.c']]],
+  ['cj_5fcalc_3',['cj_calc',['../pixel_8c.html#a5f5b30d66d93f7fce626c1547736471c',1,'cj_calc(Point **points, int num_pt, double t):&#160;pixel.c'],['../pixel_8h.html#a5f5b30d66d93f7fce626c1547736471c',1,'cj_calc(Point **points, int num_pt, double t):&#160;pixel.c']]],
   ['clean_5ftext_4',['clean_text',['../command_8c.html#a038516a235e9d99f4b126c6f662fd2d4',1,'command.c']]],
-  ['clear_5farea_5',['clear_area',['../area_8h.html#aea91d73a0878801b1968d245ccd4a94d',1,'clear_area(Area *area):&#160;render.c'],['../render_8c.html#aea91d73a0878801b1968d245ccd4a94d',1,'clear_area(Area *area):&#160;render.c']]],
+  ['clear_5farea_5',['clear_area',['../render_8c.html#aea91d73a0878801b1968d245ccd4a94d',1,'render.c']]],
   ['clear_5fscreen_6',['clear_screen',['../render_8c.html#a4953d1edcbbfc7e420c423ded1d5621a',1,'clear_screen():&#160;render.c'],['../render_8h.html#a4953d1edcbbfc7e420c423ded1d5621a',1,'clear_screen():&#160;render.c']]],
   ['create_5farea_7',['create_area',['../area_8c.html#af034993a93f0c6b103a0f88fc2f1ab34',1,'create_area(unsigned int width, unsigned int height, unsigned char id, char *name):&#160;area.c'],['../area_8h.html#af034993a93f0c6b103a0f88fc2f1ab34',1,'create_area(unsigned int width, unsigned int height, unsigned char id, char *name):&#160;area.c']]],
   ['create_5farea_5flist_8',['create_area_list',['../area_8c.html#ab5f9940349ea7e9717c769a1f6da0c04',1,'create_area_list():&#160;area.c'],['../area_8h.html#ab5f9940349ea7e9717c769a1f6da0c04',1,'create_area_list():&#160;area.c']]],
@@ -27,6 +27,6 @@ var searchData=
   ['create_5frectangle_24',['create_rectangle',['../shape_8c.html#a73699118b7346b270993b7da411b3fac',1,'create_rectangle(Point *point, int width, int height):&#160;shape.c'],['../shape_8h.html#a73699118b7346b270993b7da411b3fac',1,'create_rectangle(Point *point, int width, int height):&#160;shape.c']]],
   ['create_5frectangle_5fshape_25',['create_rectangle_shape',['../shape_8c.html#a6c0b8dee946e1a62917c8a3b098f7691',1,'create_rectangle_shape(int px, int py, int width, int height):&#160;shape.c'],['../shape_8h.html#a6c0b8dee946e1a62917c8a3b098f7691',1,'create_rectangle_shape(int px, int py, int width, int height):&#160;shape.c']]],
   ['create_5fshape_5fto_5fpixel_26',['create_shape_to_pixel',['../pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8',1,'create_shape_to_pixel(Shape *shape):&#160;pixel.c'],['../pixel_8h.html#af2b24bb22e3d5a45d19efc4c547034e8',1,'create_shape_to_pixel(Shape *shape):&#160;pixel.c']]],
-  ['create_5fsquar_27',['create_squar',['../shape_8c.html#a9256811d2c05d6f4b422136ad73975e9',1,'create_squar(Point *point, int length):&#160;shape.c'],['../shape_8h.html#a83413fc68532ff4b56e74c609089be32',1,'create_squar(Point *point, int legth):&#160;shape.c']]],
+  ['create_5fsquar_27',['create_squar',['../shape_8c.html#a9256811d2c05d6f4b422136ad73975e9',1,'create_squar(Point *point, int length):&#160;shape.c'],['../shape_8h.html#a9256811d2c05d6f4b422136ad73975e9',1,'create_squar(Point *point, int length):&#160;shape.c']]],
   ['create_5fsquare_5fshape_28',['create_square_shape',['../shape_8c.html#afdc8591882c4c221dfa8d7c6bda15953',1,'create_square_shape(int px, int py, int length):&#160;shape.c'],['../shape_8h.html#afdc8591882c4c221dfa8d7c6bda15953',1,'create_square_shape(int px, int py, int length):&#160;shape.c']]]
 ];

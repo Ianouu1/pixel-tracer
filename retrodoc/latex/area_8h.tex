@@ -1,5 +1,10 @@
 \doxysection{src/area.h File Reference}
 \hypertarget{area_8h}{}\label{area_8h}\index{src/area.h@{src/area.h}}
+
+
+Déclarations des structures et fonctions pour la gestion des zones et de leurs couches.  
+
+
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include "{}layers.\+h"{}}\newline
@@ -8,7 +13,7 @@ Include dependency graph for area.\+h\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=317pt]{area_8h__incl}
+\includegraphics[width=259pt]{area_8h__incl}
 \end{center}
 \end{figure}
 This graph shows which files directly or indirectly include this file\+:
@@ -23,7 +28,7 @@ This graph shows which files directly or indirectly include this file\+:
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structarea}{area}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Structure représentant une zone dans l\textquotesingle{}espace. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
@@ -35,20 +40,23 @@ typedef \mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \mbox
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{area_8h_af034993a93f0c6b103a0f88fc2f1ab34}{create\+\_\+area}} (unsigned int width, unsigned int height, unsigned char id, char \texorpdfstring{$\ast$}{*}name)
-\item 
+\begin{DoxyCompactList}\small\item\em Crée une nouvelle zone avec les dimensions et le nom spécifiés. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{area_8h_a00bf57aac2acf3b2b140c38a10f07644}{delete\+\_\+area}} (\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structarea}{area}})
-\item 
-void \mbox{\hyperlink{area_8h_aea91d73a0878801b1968d245ccd4a94d}{clear\+\_\+area}} (\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structarea}{area}})
-\item 
+\begin{DoxyCompactList}\small\item\em Supprime une zone et libère la mémoire associée. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{area_8h_a3f11068b915d1d0a005aa2a1bc764f08}{Area\+List}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{area_8h_ab5f9940349ea7e9717c769a1f6da0c04}{create\+\_\+area\+\_\+list}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Crée une nouvelle liste de zones. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{area_8h_a90d22265cf606b715a58b96cf33ac782}{delete\+\_\+area\+\_\+list}} (\mbox{\hyperlink{area_8h_a3f11068b915d1d0a005aa2a1bc764f08}{Area\+List}} \texorpdfstring{$\ast$}{*}area\+\_\+list)
-\item 
+\begin{DoxyCompactList}\small\item\em Supprime une liste de zones et libère la mémoire associée. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{area_8h_a83dc095cf944e02fad182ff383880d2f}{add\+\_\+area\+\_\+to\+\_\+list}} (\mbox{\hyperlink{area_8h_a3f11068b915d1d0a005aa2a1bc764f08}{Area\+List}} \texorpdfstring{$\ast$}{*}area\+\_\+list, \mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structarea}{area}})
-\item 
+\begin{DoxyCompactList}\small\item\em Ajoute une zone à une liste de zones. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{area_8h_a3836b8e2e44c3a032fe7b6dc57d4369d}{remove\+\_\+area\+\_\+from\+\_\+list}} (\mbox{\hyperlink{area_8h_a3f11068b915d1d0a005aa2a1bc764f08}{Area\+List}} \texorpdfstring{$\ast$}{*}area\+\_\+list, \mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structarea}{area}})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Supprime une zone d\textquotesingle{}une liste de zones. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Déclarations des structures et fonctions pour la gestion des zones et de leurs couches. 
+
+Ce fichier définit les structures nécessaires à la gestion d\textquotesingle{}une "{}zone"{} (une matrice bidimensionnelle), ainsi que les fonctions permettant de créer, supprimer et manipuler ces zones. Une zone peut contenir plusieurs couches, et chaque cellule de la zone peut être vide ou pleine. 
 
 \doxysubsection{Typedef Documentation}
 \Hypertarget{area_8h_aba4c6e70b571ffd4b4c74248207f0183}\index{area.h@{area.h}!Area@{Area}}
@@ -57,13 +65,13 @@ void \mbox{\hyperlink{area_8h_a3836b8e2e44c3a032fe7b6dc57d4369d}{remove\+\_\+are
 {\footnotesize\ttfamily \label{area_8h_aba4c6e70b571ffd4b4c74248207f0183} 
 typedef struct \mbox{\hyperlink{structarea}{area}} \mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}}}
 
-\Hypertarget{area_8h_a3f11068b915d1d0a005aa2a1bc764f08}\index{area.h@{area.h}!AreaList@{AreaList}}
+Alias pour la structure area représentant une zone. \Hypertarget{area_8h_a3f11068b915d1d0a005aa2a1bc764f08}\index{area.h@{area.h}!AreaList@{AreaList}}
 \index{AreaList@{AreaList}!area.h@{area.h}}
 \doxysubsubsection{\texorpdfstring{AreaList}{AreaList}}
 {\footnotesize\ttfamily \label{area_8h_a3f11068b915d1d0a005aa2a1bc764f08} 
 typedef \mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \mbox{\hyperlink{area_8h_a3f11068b915d1d0a005aa2a1bc764f08}{Area\+List}}}
 
-
+Liste de zones. 
 
 \doxysubsection{Function Documentation}
 \Hypertarget{area_8h_a83dc095cf944e02fad182ff383880d2f}\index{area.h@{area.h}!add\_area\_to\_list@{add\_area\_to\_list}}
@@ -72,42 +80,31 @@ typedef \mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} \mbox
 {\footnotesize\ttfamily \label{area_8h_a83dc095cf944e02fad182ff383880d2f} 
 void add\+\_\+area\+\_\+to\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{area_8h_a3f11068b915d1d0a005aa2a1bc764f08}{Area\+List}} \texorpdfstring{$\ast$}{*}}]{area\+\_\+list}{, }\item[{\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}}]{area}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Ajoute une zone à une liste de zones. 
+
+Cette fonction insère une nouvelle zone à la fin de la liste de zones.
+
+
+\begin{DoxyParams}{Parameters}
+{\em area\+\_\+list} & Liste de zones dans laquelle ajouter la zone. \\
+\hline
+{\em area} & Pointeur vers la zone à ajouter à la liste. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=291pt]{area_8h_a83dc095cf944e02fad182ff383880d2f_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{area_8h_a83dc095cf944e02fad182ff383880d2f_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{area_8h_aea91d73a0878801b1968d245ccd4a94d}\index{area.h@{area.h}!clear\_area@{clear\_area}}
-\index{clear\_area@{clear\_area}!area.h@{area.h}}
-\doxysubsubsection{\texorpdfstring{clear\_area()}{clear\_area()}}
-{\footnotesize\ttfamily \label{area_8h_aea91d73a0878801b1968d245ccd4a94d} 
-void clear\+\_\+area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}}]{area}{}\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=237pt]{area_8h_aea91d73a0878801b1968d245ccd4a94d_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=334pt]{area_8h_aea91d73a0878801b1968d245ccd4a94d_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{area_8h_af034993a93f0c6b103a0f88fc2f1ab34}\index{area.h@{area.h}!create\_area@{create\_area}}
@@ -116,6 +113,26 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{area_8h_af034993a93f0c6b103a0f88fc2f1ab34} 
 \mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*} create\+\_\+area (\begin{DoxyParamCaption}\item[{unsigned int}]{width}{, }\item[{unsigned int}]{height}{, }\item[{unsigned char}]{id}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
 
+
+
+Crée une nouvelle zone avec les dimensions et le nom spécifiés. 
+
+Cette fonction alloue de la mémoire pour une nouvelle zone, initialise ses dimensions, son nom, et crée une matrice vide représentant l\textquotesingle{}état de la zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Largeur de la zone. \\
+\hline
+{\em height} & Hauteur de la zone. \\
+\hline
+{\em id} & Identifiant de la zone. \\
+\hline
+{\em name} & Nom de la zone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur vers la zone nouvellement créée. 
+\end{DoxyReturn}
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -138,6 +155,15 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{area_8h_ab5f9940349ea7e9717c769a1f6da0c04} 
 \mbox{\hyperlink{area_8h_a3f11068b915d1d0a005aa2a1bc764f08}{Area\+List}} \texorpdfstring{$\ast$}{*} create\+\_\+area\+\_\+list (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+
+
+Crée une nouvelle liste de zones. 
+
+Cette fonction alloue et initialise une liste vide qui pourra contenir des zones.
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers la nouvelle liste de zones. 
+\end{DoxyReturn}
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -160,8 +186,18 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{area_8h_a00bf57aac2acf3b2b140c38a10f07644} 
 void delete\+\_\+area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}}]{area}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Supprime une zone et libère la mémoire associée. 
+
+Cette fonction libère la mémoire allouée pour la matrice représentant la zone, ainsi que pour la zone elle-\/même.
+
+
+\begin{DoxyParams}{Parameters}
+{\em area} & Pointeur vers la zone à supprimer. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -174,16 +210,25 @@ Here is the call graph for this function\+:
 {\footnotesize\ttfamily \label{area_8h_a90d22265cf606b715a58b96cf33ac782} 
 void delete\+\_\+area\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{area_8h_a3f11068b915d1d0a005aa2a1bc764f08}{Area\+List}} \texorpdfstring{$\ast$}{*}}]{area\+\_\+list}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Supprime une liste de zones et libère la mémoire associée. 
+
+Cette fonction libère la mémoire associée à la liste des zones, mais ne supprime pas les zones elles-\/mêmes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em area\+\_\+list} & Pointeur vers la liste de zones à supprimer. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{area_8h_a90d22265cf606b715a58b96cf33ac782_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -196,3 +241,16 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{area_8h_a3836b8e2e44c3a032fe7b6dc57d4369d} 
 void remove\+\_\+area\+\_\+from\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{area_8h_a3f11068b915d1d0a005aa2a1bc764f08}{Area\+List}} \texorpdfstring{$\ast$}{*}}]{area\+\_\+list}{, }\item[{\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}}]{area}{}\end{DoxyParamCaption})}
 
+
+
+Supprime une zone d\textquotesingle{}une liste de zones. 
+
+Cette fonction est destinée à supprimer une zone spécifique de la liste. Elle nécessite d\textquotesingle{}être complétée pour effectuer l\textquotesingle{}opération de suppression.
+
+
+\begin{DoxyParams}{Parameters}
+{\em area\+\_\+list} & Liste de zones de laquelle retirer la zone. \\
+\hline
+{\em area} & Pointeur vers la zone à retirer de la liste. \\
+\hline
+\end{DoxyParams}

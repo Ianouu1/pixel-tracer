@@ -1,10 +1,10 @@
 <map id="create_layers_list" name="create_layers_list">
-<area shape="rect" id="Node000001" title=" " alt="" coords="433,31,557,57"/>
-<area shape="rect" id="Node000002" href="$area_8c.html#af034993a93f0c6b103a0f88fc2f1ab34" title=" " alt="" coords="296,31,385,57"/>
+<area shape="rect" id="Node000001" title="Crée une nouvelle liste de couches." alt="" coords="433,31,557,57"/>
+<area shape="rect" id="Node000002" href="$area_8c.html#af034993a93f0c6b103a0f88fc2f1ab34" title="Crée une nouvelle zone avec les dimensions et le nom spécifiés." alt="" coords="296,31,385,57"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="418,47,386,47,386,41,418,41"/>
-<area shape="rect" id="Node000003" href="$pixel__tracer_8c.html#ab0438ce252e17dfe737ec2c4715e4dea" title=" " alt="" coords="142,5,208,32"/>
+<area shape="rect" id="Node000003" href="$pixel__tracer_8c.html#ab0438ce252e17dfe737ec2c4715e4dea" title="Initialisation de l&#39;application Pixel Tracer." alt="" coords="142,5,208,32"/>
 <area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="430,29,385,21,289,17,209,19,209,14,289,11,386,16,431,24"/>
-<area shape="rect" id="Node000005" href="$command_8c.html#ab576f5b835e80a0ef9ba46654a6295cb" title=" " alt="" coords="103,56,248,83"/>
+<area shape="rect" id="Node000005" href="$command_8c.html#ab576f5b835e80a0ef9ba46654a6295cb" title="Lit et exécute une commande saisie par l&#39;utilisateur." alt="" coords="103,56,248,83"/>
 <area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="431,64,386,72,315,76,248,76,248,71,315,71,385,67,430,59"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="280,38,209,26,209,21,281,32"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="281,56,249,61,248,55,280,50"/>

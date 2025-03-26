@@ -1,7 +1,6 @@
 \doxysection{src/id.h File Reference}
 \hypertarget{id_8h}{}\label{id_8h}\index{src/id.h@{src/id.h}}
-This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -17,13 +16,13 @@ This graph shows which files directly or indirectly include this file\+:
 \begin{DoxyCompactItemize}
 \item 
 unsigned long long int \mbox{\hyperlink{id_8h_a0460b32f6c689432d3be850613333aab}{get\+\_\+next\+\_\+id}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Génère et retourne un nouvel identifiant unique. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{id_8h_adc1e04441abd8f352f2c893d5b2b568c}{set\+\_\+id}} (unsigned long long int id)
-\item 
+\begin{DoxyCompactList}\small\item\em Définit manuellement l\textquotesingle{}identifiant global. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{id_8h_ab782b6c59d7d33036ebaf90b3e6a211f}{save\+\_\+id}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Sauvegarde l\textquotesingle{}identifiant actuel dans un fichier. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{id_8h_ab94f25a6ba89f4a7717cdee1eb8b9895}{load\+\_\+id}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Charge l\textquotesingle{}identifiant depuis un fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Macro Definition Documentation}
@@ -42,8 +41,14 @@ void \mbox{\hyperlink{id_8h_ab94f25a6ba89f4a7717cdee1eb8b9895}{load\+\_\+id}} ()
 {\footnotesize\ttfamily \label{id_8h_a0460b32f6c689432d3be850613333aab} 
 unsigned long long int get\+\_\+next\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Génère et retourne un nouvel identifiant unique. 
+
+\begin{DoxyReturn}{Returns}
+Un identifiant unique de type unsigned long long int. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -56,11 +61,19 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{id_8h_ab94f25a6ba89f4a7717cdee1eb8b9895} 
 void load\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+
+
+Charge l\textquotesingle{}identifiant depuis un fichier. 
+
 \Hypertarget{id_8h_ab782b6c59d7d33036ebaf90b3e6a211f}\index{id.h@{id.h}!save\_id@{save\_id}}
 \index{save\_id@{save\_id}!id.h@{id.h}}
 \doxysubsubsection{\texorpdfstring{save\_id()}{save\_id()}}
 {\footnotesize\ttfamily \label{id_8h_ab782b6c59d7d33036ebaf90b3e6a211f} 
 void save\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sauvegarde l\textquotesingle{}identifiant actuel dans un fichier. 
 
 \Hypertarget{id_8h_adc1e04441abd8f352f2c893d5b2b568c}\index{id.h@{id.h}!set\_id@{set\_id}}
 \index{set\_id@{set\_id}!id.h@{id.h}}
@@ -68,3 +81,12 @@ void save\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 {\footnotesize\ttfamily \label{id_8h_adc1e04441abd8f352f2c893d5b2b568c} 
 void set\+\_\+id (\begin{DoxyParamCaption}\item[{unsigned long long int}]{id}{}\end{DoxyParamCaption})}
 
+
+
+Définit manuellement l\textquotesingle{}identifiant global. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & L\textquotesingle{}identifiant à définir. \\
+\hline
+\end{DoxyParams}

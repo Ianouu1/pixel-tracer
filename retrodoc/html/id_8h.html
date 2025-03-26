@@ -142,12 +142,16 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0460b32f6c689432d3be850613333aab" id="r_a0460b32f6c689432d3be850613333aab"><td class="memItemLeft" align="right" valign="top">unsigned long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0460b32f6c689432d3be850613333aab">get_next_id</a> ()</td></tr>
+<tr class="memdesc:a0460b32f6c689432d3be850613333aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère et retourne un nouvel identifiant unique.  <br /></td></tr>
 <tr class="separator:a0460b32f6c689432d3be850613333aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc1e04441abd8f352f2c893d5b2b568c" id="r_adc1e04441abd8f352f2c893d5b2b568c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc1e04441abd8f352f2c893d5b2b568c">set_id</a> (unsigned long long int id)</td></tr>
+<tr class="memdesc:adc1e04441abd8f352f2c893d5b2b568c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définit manuellement l'identifiant global.  <br /></td></tr>
 <tr class="separator:adc1e04441abd8f352f2c893d5b2b568c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab782b6c59d7d33036ebaf90b3e6a211f" id="r_ab782b6c59d7d33036ebaf90b3e6a211f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab782b6c59d7d33036ebaf90b3e6a211f">save_id</a> ()</td></tr>
+<tr class="memdesc:ab782b6c59d7d33036ebaf90b3e6a211f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sauvegarde l'identifiant actuel dans un fichier.  <br /></td></tr>
 <tr class="separator:ab782b6c59d7d33036ebaf90b3e6a211f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab94f25a6ba89f4a7717cdee1eb8b9895" id="r_ab94f25a6ba89f4a7717cdee1eb8b9895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab94f25a6ba89f4a7717cdee1eb8b9895">load_id</a> ()</td></tr>
+<tr class="memdesc:ab94f25a6ba89f4a7717cdee1eb8b9895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge l'identifiant depuis un fichier.  <br /></td></tr>
 <tr class="separator:ab94f25a6ba89f4a7717cdee1eb8b9895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -180,31 +184,34 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Génère et retourne un nouvel identifiant unique. </p>
+<dl class="section return"><dt>Returns</dt><dd>Un identifiant unique de type unsigned long long int. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="id_8h_a0460b32f6c689432d3be850613333aab_icgraph.png" border="0" usemap="#aid_8h_a0460b32f6c689432d3be850613333aab_icgraph" alt=""/></div>
 <map name="aid_8h_a0460b32f6c689432d3be850613333aab_icgraph" id="aid_8h_a0460b32f6c689432d3be850613333aab_icgraph">
-<area shape="rect" title=" " alt="" coords="694,360,782,387"/>
-<area shape="rect" href="shape_8c.html#aae294a5667c8e8b32e2b4af3fa98679a" title=" " alt="" coords="503,183,646,209"/>
+<area shape="rect" title="Génère et retourne un nouvel identifiant unique." alt="" coords="694,360,782,387"/>
+<area shape="rect" href="shape_8c.html#aae294a5667c8e8b32e2b4af3fa98679a" title="Crée une forme vide en fonction du type spécifié." alt="" coords="503,183,646,209"/>
 <area shape="poly" title=" " alt="" coords="712,350,586,212,590,208,716,347"/>
-<area shape="rect" href="command_8c.html#ab576f5b835e80a0ef9ba46654a6295cb" title=" " alt="" coords="103,208,248,235"/>
+<area shape="rect" href="command_8c.html#ab576f5b835e80a0ef9ba46654a6295cb" title="Lit et exécute une commande saisie par l&#39;utilisateur." alt="" coords="103,208,248,235"/>
 <area shape="poly" title=" " alt="" coords="678,378,584,379,473,377,369,368,327,361,295,350,257,326,225,294,183,237,187,234,229,291,260,322,297,346,328,356,369,363,473,371,584,374,678,373"/>
-<area shape="rect" href="pixel__tracer_8c.html#ab0438ce252e17dfe737ec2c4715e4dea" title=" " alt="" coords="142,360,208,387"/>
+<area shape="rect" href="pixel__tracer_8c.html#ab0438ce252e17dfe737ec2c4715e4dea" title="Initialisation de l&#39;application Pixel Tracer." alt="" coords="142,360,208,387"/>
 <area shape="poly" title=" " alt="" coords="679,390,646,395,548,403,471,405,296,395,209,382,209,377,296,389,471,400,547,398,645,389,678,384"/>
-<area shape="rect" href="shape_8c.html#a829c775df14dc9eec0a04894a3b62f78" title=" " alt="" coords="305,5,446,32"/>
+<area shape="rect" href="shape_8c.html#a829c775df14dc9eec0a04894a3b62f78" title="Crée une forme de type cercle." alt="" coords="305,5,446,32"/>
 <area shape="poly" title=" " alt="" coords="557,171,516,108,487,75,454,46,433,35,435,30,457,42,491,71,520,105,561,168"/>
-<area shape="rect" href="shape_8c.html#a55bd01d067a9668ed0f807817a3bf21d" title=" " alt="" coords="306,56,445,83"/>
+<area shape="rect" href="shape_8c.html#a55bd01d067a9668ed0f807817a3bf21d" title="Crée une forme de type courbe." alt="" coords="306,56,445,83"/>
 <area shape="poly" title=" " alt="" coords="549,173,507,134,454,97,429,86,431,81,457,92,510,130,552,169"/>
-<area shape="rect" href="shape_8c.html#aa5c6f398c4465b204e4266a41042f251" title=" " alt="" coords="312,107,439,133"/>
+<area shape="rect" href="shape_8c.html#aa5c6f398c4465b204e4266a41042f251" title="Crée une forme de type ligne." alt="" coords="312,107,439,133"/>
 <area shape="poly" title=" " alt="" coords="528,178,454,148,422,136,423,131,456,143,530,174"/>
-<area shape="rect" href="shape_8c.html#a80752be52322a61e81bf4e49390c008c" title=" " alt="" coords="308,157,443,184"/>
+<area shape="rect" href="shape_8c.html#a80752be52322a61e81bf4e49390c008c" title="Crée une forme de type point." alt="" coords="308,157,443,184"/>
 <area shape="poly" title=" " alt="" coords="487,188,443,182,444,177,488,182"/>
-<area shape="rect" href="shape_8c.html#a97f6c2418977ed6b87fe369afdff4909" title=" " alt="" coords="300,208,451,235"/>
+<area shape="rect" href="shape_8c.html#a97f6c2418977ed6b87fe369afdff4909" title="Crée une forme de type polygone." alt="" coords="300,208,451,235"/>
 <area shape="poly" title=" " alt="" coords="488,210,452,214,451,209,488,204"/>
-<area shape="rect" href="shape_8c.html#a6c0b8dee946e1a62917c8a3b098f7691" title=" " alt="" coords="296,259,455,285"/>
+<area shape="rect" href="shape_8c.html#a6c0b8dee946e1a62917c8a3b098f7691" title="Crée une forme de type rectangle." alt="" coords="296,259,455,285"/>
 <area shape="poly" title=" " alt="" coords="530,218,456,249,423,261,422,256,454,244,528,214"/>
-<area shape="rect" href="shape_8c.html#afdc8591882c4c221dfa8d7c6bda15953" title=" " alt="" coords="303,309,448,336"/>
+<area shape="rect" href="shape_8c.html#afdc8591882c4c221dfa8d7c6bda15953" title="Crée une forme de type carré." alt="" coords="303,309,448,336"/>
 <area shape="poly" title=" " alt="" coords="552,223,510,262,457,300,431,311,429,306,454,295,507,258,549,219"/>
 <area shape="poly" title=" " alt="" coords="304,42,298,46,257,86,224,132,200,176,185,209,180,206,195,173,219,129,253,82,294,42,301,37"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,259,55,285"/>
@@ -236,6 +243,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Charge l'identifiant depuis un fichier. </p>
+
 </div>
 </div>
 <a id="ab782b6c59d7d33036ebaf90b3e6a211f" name="ab782b6c59d7d33036ebaf90b3e6a211f"></a>
@@ -253,6 +262,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Sauvegarde l'identifiant actuel dans un fichier. </p>
+
 </div>
 </div>
 <a id="adc1e04441abd8f352f2c893d5b2b568c" name="adc1e04441abd8f352f2c893d5b2b568c"></a>
@@ -269,6 +280,14 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Définit manuellement l'identifiant global. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>L'identifiant à définir. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

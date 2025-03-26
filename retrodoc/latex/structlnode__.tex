@@ -2,12 +2,16 @@
 \hypertarget{structlnode__}{}\label{structlnode__}\index{lnode\_@{lnode\_}}
 
 
+Représente un élément de liste.  
+
+
+
+
 {\ttfamily \#include $<$list.\+h$>$}
 
 
 
-Collaboration diagram for lnode\+\_\+\+:
-\nopagebreak
+Collaboration diagram for lnode\+\_\+\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -26,7 +30,9 @@ struct \mbox{\hyperlink{structlnode__}{lnode\+\_\+}} \texorpdfstring{$\ast$}{*} 
 
 
 \doxysubsection{Detailed Description}
-Élément lnode 
+Représente un élément de liste. 
+
+Chaque élément de liste contient des données génériques et des pointeurs vers les éléments précédent et suivant dans la liste. 
 
 \doxysubsection{Field Documentation}
 \Hypertarget{structlnode___a735984d41155bc1032e09bece8f8d66d}\index{lnode\_@{lnode\_}!data@{data}}
@@ -35,19 +41,19 @@ struct \mbox{\hyperlink{structlnode__}{lnode\+\_\+}} \texorpdfstring{$\ast$}{*} 
 {\footnotesize\ttfamily \label{structlnode___a735984d41155bc1032e09bece8f8d66d} 
 void\texorpdfstring{$\ast$}{*} data}
 
-\Hypertarget{structlnode___a614f98050f1f394e122a41b5165afc1c}\index{lnode\_@{lnode\_}!next@{next}}
+Pointeur vers les données stockées dans le nœud. \Hypertarget{structlnode___a614f98050f1f394e122a41b5165afc1c}\index{lnode\_@{lnode\_}!next@{next}}
 \index{next@{next}!lnode\_@{lnode\_}}
 \doxysubsubsection{\texorpdfstring{next}{next}}
 {\footnotesize\ttfamily \label{structlnode___a614f98050f1f394e122a41b5165afc1c} 
 struct \mbox{\hyperlink{structlnode__}{lnode\+\_\+}}\texorpdfstring{$\ast$}{*} next}
 
-\Hypertarget{structlnode___a7a34c2bfb15f7d7cfca4edf24989647a}\index{lnode\_@{lnode\_}!prev@{prev}}
+Pointeur vers le nœud suivant. \Hypertarget{structlnode___a7a34c2bfb15f7d7cfca4edf24989647a}\index{lnode\_@{lnode\_}!prev@{prev}}
 \index{prev@{prev}!lnode\_@{lnode\_}}
 \doxysubsubsection{\texorpdfstring{prev}{prev}}
 {\footnotesize\ttfamily \label{structlnode___a7a34c2bfb15f7d7cfca4edf24989647a} 
 struct \mbox{\hyperlink{structlnode__}{lnode\+\_\+}}\texorpdfstring{$\ast$}{*} prev}
 
-
+Pointeur vers le nœud précédent. 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

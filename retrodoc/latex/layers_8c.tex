@@ -1,37 +1,36 @@
 \doxysection{src/layers.c File Reference}
 \hypertarget{layers_8c}{}\label{layers_8c}\index{src/layers.c@{src/layers.c}}
 {\ttfamily \#include "{}layers.\+h"{}}\newline
-Include dependency graph for layers.\+c\+:
-\nopagebreak
+Include dependency graph for layers.\+c\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=318pt]{layers_8c__incl}
+\includegraphics[width=147pt]{layers_8c__incl}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{layers_8c_a853dcca01b74d5b771a3c92c67f16a04}{create\+\_\+layer}} (int id, char \texorpdfstring{$\ast$}{*}name)
-\item 
+\begin{DoxyCompactList}\small\item\em Crée une nouvelle couche. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{layers_8c_ab3ed3647c3307a0911045c2afc1c36ab}{delete\+\_\+layer}} (\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structlayer}{layer}})
-\item 
+\begin{DoxyCompactList}\small\item\em Supprime une couche. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{layers_8h_a2678b532f1f9f199f7dd79f55410622e}{Layers\+List}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{layers_8c_a81a30ec832bc7c40ae8f8c7aa452e145}{create\+\_\+layers\+\_\+list}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Crée une nouvelle liste de couches. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{layers_8c_acc379be8abba3e431a40369dbdeed98d}{delete\+\_\+layers\+\_\+list}} (\mbox{\hyperlink{layers_8h_a2678b532f1f9f199f7dd79f55410622e}{Layers\+List}} \texorpdfstring{$\ast$}{*}layer\+\_\+list)
-\item 
+\begin{DoxyCompactList}\small\item\em Supprime une liste de couches. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{layers_8c_ab59217268dcc283a4942f7e3ed56e3c8}{add\+\_\+layer\+\_\+to\+\_\+list}} (\mbox{\hyperlink{layers_8h_a2678b532f1f9f199f7dd79f55410622e}{Layers\+List}} \texorpdfstring{$\ast$}{*}layer\+\_\+list, \mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structlayer}{layer}})
-\item 
+\begin{DoxyCompactList}\small\item\em Ajoute une couche à une liste de couches. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{layers_8c_a68278e8226ecbaf6bbe27addfb9152b6}{remove\+\_\+layer\+\_\+from\+\_\+list}} (\mbox{\hyperlink{layers_8h_a2678b532f1f9f199f7dd79f55410622e}{Layers\+List}} \texorpdfstring{$\ast$}{*}layer\+\_\+list, \mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structlayer}{layer}})
-\item 
+\begin{DoxyCompactList}\small\item\em Supprime une couche d\textquotesingle{}une liste de couches. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{layers_8c_a6a138d9be5f5e57bb32477ae04bf5696}{set\+\_\+layer\+\_\+visible}} (\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structlayer}{layer}})
-\item 
+\begin{DoxyCompactList}\small\item\em Rend une couche visible. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{layers_8c_ae65dbbb2e84affd3a5f58a1bf7974fa5}{set\+\_\+layer\+\_\+unvisible}} (\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structlayer}{layer}})
-\item 
+\begin{DoxyCompactList}\small\item\em Rend une couche invisible. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{layers_8c_a047dc1f75af9fbeee695b1dca8878c5e}{add\+\_\+shape\+\_\+to\+\_\+layer}} (\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structlayer}{layer}}, \mbox{\hyperlink{shape_8h_ac87c23c9a508e52f7077a7012fba9424}{Shape}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structshape}{shape}})
-\item 
+\begin{DoxyCompactList}\small\item\em Ajoute une forme à une couche. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{layers_8c_aca54ff31c800dfa70eb0ff3019b9f05c}{remove\+\_\+shape\+\_\+to\+\_\+from}} (\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structlayer}{layer}}, \mbox{\hyperlink{shape_8h_ac87c23c9a508e52f7077a7012fba9424}{Shape}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structshape}{shape}})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Supprime une forme d\textquotesingle{}une couche. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -41,16 +40,27 @@ void \mbox{\hyperlink{layers_8c_aca54ff31c800dfa70eb0ff3019b9f05c}{remove\+\_\+s
 {\footnotesize\ttfamily \label{layers_8c_ab59217268dcc283a4942f7e3ed56e3c8} 
 void add\+\_\+layer\+\_\+to\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{layers_8h_a2678b532f1f9f199f7dd79f55410622e}{Layers\+List}} \texorpdfstring{$\ast$}{*}}]{layer\+\_\+list}{, }\item[{\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}}]{layer}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Ajoute une couche à une liste de couches. 
+
+Insère une nouvelle couche à la fin de la liste des couches.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\+\_\+list} & La liste de couches à laquelle ajouter la couche. \\
+\hline
+{\em layer} & La couche à ajouter. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=293pt]{layers_8c_ab59217268dcc283a4942f7e3ed56e3c8_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -63,16 +73,27 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{layers_8c_a047dc1f75af9fbeee695b1dca8878c5e} 
 void add\+\_\+shape\+\_\+to\+\_\+layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}}]{layer}{, }\item[{\mbox{\hyperlink{shape_8h_ac87c23c9a508e52f7077a7012fba9424}{Shape}} \texorpdfstring{$\ast$}{*}}]{shape}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Ajoute une forme à une couche. 
+
+Insère une forme à la fin de la liste des formes dans la couche.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & La couche à laquelle ajouter la forme. \\
+\hline
+{\em shape} & La forme à ajouter. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=306pt]{layers_8c_a047dc1f75af9fbeee695b1dca8878c5e_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -85,16 +106,30 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{layers_8c_a853dcca01b74d5b771a3c92c67f16a04} 
 \mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*} create\+\_\+layer (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Crée une nouvelle couche. 
+
+Alloue de la mémoire pour une nouvelle couche et initialise ses propriétés.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & L\textquotesingle{}identifiant de la couche. \\
+\hline
+{\em name} & Le nom de la couche. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur vers la nouvelle couche. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=262pt]{layers_8c_a853dcca01b74d5b771a3c92c67f16a04_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -107,8 +142,16 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{layers_8c_a81a30ec832bc7c40ae8f8c7aa452e145} 
 \mbox{\hyperlink{layers_8h_a2678b532f1f9f199f7dd79f55410622e}{Layers\+List}} \texorpdfstring{$\ast$}{*} create\+\_\+layers\+\_\+list (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Crée une nouvelle liste de couches. 
+
+Alloue et initialise une nouvelle liste de couches.
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers la nouvelle liste de couches. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -129,8 +172,18 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{layers_8c_ab3ed3647c3307a0911045c2afc1c36ab} 
 void delete\+\_\+layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}}]{layer}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Supprime une couche. 
+
+Libère la mémoire allouée pour une couche et ses ressources associées.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & La couche à supprimer. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -143,8 +196,18 @@ Here is the call graph for this function\+:
 {\footnotesize\ttfamily \label{layers_8c_acc379be8abba3e431a40369dbdeed98d} 
 void delete\+\_\+layers\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{layers_8h_a2678b532f1f9f199f7dd79f55410622e}{Layers\+List}} \texorpdfstring{$\ast$}{*}}]{layer\+\_\+list}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Supprime une liste de couches. 
+
+Libère la mémoire allouée pour une liste de couches.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\+\_\+list} & La liste des couches à supprimer. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -157,20 +220,52 @@ Here is the call graph for this function\+:
 {\footnotesize\ttfamily \label{layers_8c_a68278e8226ecbaf6bbe27addfb9152b6} 
 void remove\+\_\+layer\+\_\+from\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{layers_8h_a2678b532f1f9f199f7dd79f55410622e}{Layers\+List}} \texorpdfstring{$\ast$}{*}}]{layer\+\_\+list}{, }\item[{\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}}]{layer}{}\end{DoxyParamCaption})}
 
+
+
+Supprime une couche d\textquotesingle{}une liste de couches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\+\_\+list} & La liste de couches d\textquotesingle{}où supprimer la couche. \\
+\hline
+{\em layer} & La couche à supprimer. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{layers_8c_aca54ff31c800dfa70eb0ff3019b9f05c}\index{layers.c@{layers.c}!remove\_shape\_to\_from@{remove\_shape\_to\_from}}
 \index{remove\_shape\_to\_from@{remove\_shape\_to\_from}!layers.c@{layers.c}}
 \doxysubsubsection{\texorpdfstring{remove\_shape\_to\_from()}{remove\_shape\_to\_from()}}
 {\footnotesize\ttfamily \label{layers_8c_aca54ff31c800dfa70eb0ff3019b9f05c} 
 void remove\+\_\+shape\+\_\+to\+\_\+from (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}}]{layer}{, }\item[{\mbox{\hyperlink{shape_8h_ac87c23c9a508e52f7077a7012fba9424}{Shape}} \texorpdfstring{$\ast$}{*}}]{shape}{}\end{DoxyParamCaption})}
 
+
+
+Supprime une forme d\textquotesingle{}une couche. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & La couche dont la forme doit être supprimée. \\
+\hline
+{\em shape} & La forme à supprimer. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{layers_8c_ae65dbbb2e84affd3a5f58a1bf7974fa5}\index{layers.c@{layers.c}!set\_layer\_unvisible@{set\_layer\_unvisible}}
 \index{set\_layer\_unvisible@{set\_layer\_unvisible}!layers.c@{layers.c}}
 \doxysubsubsection{\texorpdfstring{set\_layer\_unvisible()}{set\_layer\_unvisible()}}
 {\footnotesize\ttfamily \label{layers_8c_ae65dbbb2e84affd3a5f58a1bf7974fa5} 
 void set\+\_\+layer\+\_\+unvisible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}}]{layer}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Rend une couche invisible. 
+
+Change l\textquotesingle{}état de la visibilité de la couche pour la rendre invisible.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & La couche à rendre invisible. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -183,8 +278,18 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{layers_8c_a6a138d9be5f5e57bb32477ae04bf5696} 
 void set\+\_\+layer\+\_\+visible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}}]{layer}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Rend une couche visible. 
+
+Change l\textquotesingle{}état de la visibilité de la couche pour la rendre visible.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & La couche à rendre visible. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

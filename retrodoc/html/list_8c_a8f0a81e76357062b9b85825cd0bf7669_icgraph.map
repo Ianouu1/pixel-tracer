@@ -1,24 +1,24 @@
 <map id="lst_insert_tail" name="lst_insert_tail">
-<area shape="rect" id="Node000001" title=" " alt="" coords="1021,183,1120,209"/>
-<area shape="rect" id="Node000002" href="$area_8c.html#a83dc095cf944e02fad182ff383880d2f" title=" " alt="" coords="846,5,963,32"/>
+<area shape="rect" id="Node000001" title="Insère un nœud à la fin de la liste." alt="" coords="1021,183,1120,209"/>
+<area shape="rect" id="Node000002" href="$area_8c.html#a83dc095cf944e02fad182ff383880d2f" title="Ajoute une zone à une liste de zones." alt="" coords="846,5,963,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1056,169,1023,107,1000,75,972,46,953,35,956,30,975,42,1004,71,1028,105,1061,167"/>
-<area shape="rect" id="Node000006" href="$layers_8c.html#ab59217268dcc283a4942f7e3ed56e3c8" title=" " alt="" coords="845,56,964,83"/>
+<area shape="rect" id="Node000006" href="$layers_8c.html#ab59217268dcc283a4942f7e3ed56e3c8" title="Ajoute une couche à une liste de couches." alt="" coords="845,56,964,83"/>
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1048,172,1015,134,972,97,950,86,953,81,975,92,1019,130,1052,169"/>
-<area shape="rect" id="Node000007" href="$layers_8c.html#a047dc1f75af9fbeee695b1dca8878c5e" title=" " alt="" coords="836,107,973,133"/>
+<area shape="rect" id="Node000007" href="$layers_8c.html#a047dc1f75af9fbeee695b1dca8878c5e" title="Ajoute une forme à une couche." alt="" coords="836,107,973,133"/>
 <area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="1030,177,972,148,944,136,947,131,974,143,1033,172"/>
 <area shape="rect" id="Node000008" href="$pixel_8c.html#ada24bb1dd5c74df0c61ffd451a603da6" title=" " alt="" coords="852,259,958,285"/>
 <area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="1033,220,974,249,947,261,944,256,972,244,1030,215"/>
-<area shape="rect" id="Node000016" href="$list_8c.html#a5aa1ad2575a4ea67d7128ee2a294d98f" title=" " alt="" coords="851,360,958,387"/>
+<area shape="rect" id="Node000016" href="$list_8c.html#a5aa1ad2575a4ea67d7128ee2a294d98f" title="Insère un nœud juste après un autre nœud." alt="" coords="851,360,958,387"/>
 <area shape="poly" id="edge23_Node000001_Node000016" title=" " alt="" coords="1059,225,1026,283,1002,315,975,343,946,362,943,357,972,339,998,312,1021,280,1054,222"/>
-<area shape="rect" id="Node000017" href="$pixel_8c.html#ac4ab66e099c25ea772ebdc5f50b59847" title=" " alt="" coords="860,157,950,184"/>
+<area shape="rect" id="Node000017" href="$pixel_8c.html#a87abc331cfb87a9a9a56f1db0c1ca587" title="Fonction privée pour dessiner un cercle en pixels." alt="" coords="860,157,950,184"/>
 <area shape="poly" id="edge24_Node000001_Node000017" title=" " alt="" coords="1006,189,950,180,951,175,1007,184"/>
-<area shape="rect" id="Node000018" href="$pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147" title=" " alt="" coords="861,208,948,235"/>
+<area shape="rect" id="Node000018" href="$pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147" title="Fonction privée pour dessiner une courbe de Bézier en pixels." alt="" coords="861,208,948,235"/>
 <area shape="poly" id="edge26_Node000001_Node000018" title=" " alt="" coords="1007,208,949,217,948,212,1006,203"/>
-<area shape="rect" id="Node000019" href="$pixel_8c.html#ac5fdff7e509d6ede5e290a32044d4ae9" title=" " alt="" coords="674,411,757,437"/>
+<area shape="rect" id="Node000019" href="$pixel_8c.html#ac5fdff7e509d6ede5e290a32044d4ae9" title="Fonction privée pour dessiner un point en pixel." alt="" coords="674,411,757,437"/>
 <area shape="poly" id="edge28_Node000001_Node000019" title=" " alt="" coords="1052,223,1019,262,975,300,937,318,905,325,874,333,837,350,823,363,814,375,805,388,789,401,759,416,756,411,787,396,801,384,810,372,819,359,835,346,872,328,904,320,936,313,972,295,1015,258,1048,220"/>
-<area shape="rect" id="Node000003" href="$pixel__tracer_8c.html#ab0438ce252e17dfe737ec2c4715e4dea" title=" " alt="" coords="682,5,748,32"/>
+<area shape="rect" id="Node000003" href="$pixel__tracer_8c.html#ab0438ce252e17dfe737ec2c4715e4dea" title="Initialisation de l&#39;application Pixel Tracer." alt="" coords="682,5,748,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="831,21,749,21,749,16,831,16"/>
-<area shape="rect" id="Node000005" href="$command_8c.html#ab576f5b835e80a0ef9ba46654a6295cb" title=" " alt="" coords="643,56,788,83"/>
+<area shape="rect" id="Node000005" href="$command_8c.html#ab576f5b835e80a0ef9ba46654a6295cb" title="Lit et exécute une commande saisie par l&#39;utilisateur." alt="" coords="643,56,788,83"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="838,39,769,58,767,53,837,34"/>
 <area shape="rect" id="Node000004" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="667,21,424,24,264,34,103,53,55,64,54,59,102,48,264,29,424,19,667,15"/>
@@ -26,19 +26,19 @@
 <area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="836,54,748,30,749,25,838,49"/>
 <area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="830,72,788,72,788,67,830,67"/>
 <area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="837,105,767,86,769,81,838,99"/>
-<area shape="rect" id="Node000009" href="$pixel_8c.html#a49e9a749297e1988b199d7fb75c7f7cd" title=" " alt="" coords="678,309,753,336"/>
+<area shape="rect" id="Node000009" href="$pixel_8c.html#a49e9a749297e1988b199d7fb75c7f7cd" title="Fonction privée pour dessiner une ligne en pixels." alt="" coords="678,309,753,336"/>
 <area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="838,293,754,315,753,310,836,287"/>
-<area shape="rect" id="Node000013" href="$pixel_8c.html#a5667750b581fe21ec08d266b521b98f4" title=" " alt="" coords="665,360,766,387"/>
+<area shape="rect" id="Node000013" href="$pixel_8c.html#a5667750b581fe21ec08d266b521b98f4" title="Fonction privée pour dessiner un polygone en pixels." alt="" coords="665,360,766,387"/>
 <area shape="poly" id="edge17_Node000008_Node000013" title=" " alt="" coords="857,295,838,306,814,328,789,350,765,362,763,357,787,346,810,325,834,302,854,290"/>
-<area shape="rect" id="Node000014" href="$pixel_8c.html#a4be84707cddae4c88c715fc31a89db84" title=" " alt="" coords="661,208,770,235"/>
+<area shape="rect" id="Node000014" href="$pixel_8c.html#a4be84707cddae4c88c715fc31a89db84" title="Fonction privée pour dessiner un rectangle en pixels." alt="" coords="661,208,770,235"/>
 <area shape="poly" id="edge19_Node000008_Node000014" title=" " alt="" coords="837,257,767,238,769,233,838,251"/>
-<area shape="rect" id="Node000015" href="$pixel_8c.html#a33ac3154a410a7daf32aa794ed4c000a" title=" " alt="" coords="668,259,762,285"/>
+<area shape="rect" id="Node000015" href="$pixel_8c.html#a33ac3154a410a7daf32aa794ed4c000a" title="Fonction privée pour dessiner un carré en pixels." alt="" coords="668,259,762,285"/>
 <area shape="poly" id="edge21_Node000008_Node000015" title=" " alt="" coords="836,275,763,275,763,269,836,269"/>
-<area shape="rect" id="Node000010" href="$pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,240,595,267"/>
+<area shape="rect" id="Node000010" href="$pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,240,595,267"/>
 <area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="662,307,642,300,558,270,560,265,644,295,664,302"/>
-<area shape="rect" id="Node000011" href="$render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,220,395,247"/>
+<area shape="rect" id="Node000011" href="$render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,220,395,247"/>
 <area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="428,246,396,243,396,238,428,241"/>
-<area shape="rect" id="Node000012" href="$render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,144,214,171"/>
+<area shape="rect" id="Node000012" href="$render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,144,214,171"/>
 <area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="282,216,189,174,191,169,284,211"/>
 <area shape="poly" id="edge16_Node000012_Node000004" title=" " alt="" coords="124,137,50,85,53,81,127,133"/>
 <area shape="poly" id="edge18_Node000013_Node000010" title=" " alt="" coords="653,356,641,350,580,309,533,269,537,265,583,304,644,346,655,351"/>

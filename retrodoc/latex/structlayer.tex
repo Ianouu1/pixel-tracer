@@ -2,12 +2,16 @@
 \hypertarget{structlayer}{}\label{structlayer}\index{layer@{layer}}
 
 
+Représente une couche contenant des formes.  
+
+
+
+
 {\ttfamily \#include $<$layers.\+h$>$}
 
 
 
-Collaboration diagram for layer\+:
-\nopagebreak
+Collaboration diagram for layer\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -27,6 +31,11 @@ unsigned char \mbox{\hyperlink{structlayer_a63226973f6a9cd40c51a604af2e1a9a5}{vi
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Représente une couche contenant des formes. 
+
+Chaque couche a un identifiant, un nom, et une visibilité. Elle contient également une liste de formes. 
+
 \doxysubsection{Field Documentation}
 \Hypertarget{structlayer_ab7ce6f462afaf105224b0ca772a33c43}\index{layer@{layer}!id@{id}}
 \index{id@{id}!layer@{layer}}
@@ -34,25 +43,25 @@ unsigned char \mbox{\hyperlink{structlayer_a63226973f6a9cd40c51a604af2e1a9a5}{vi
 {\footnotesize\ttfamily \label{structlayer_ab7ce6f462afaf105224b0ca772a33c43} 
 unsigned int id}
 
-\Hypertarget{structlayer_a6db5324e662b3f6727875212f7aa6359}\index{layer@{layer}!name@{name}}
+Identifiant unique de la couche. \Hypertarget{structlayer_a6db5324e662b3f6727875212f7aa6359}\index{layer@{layer}!name@{name}}
 \index{name@{name}!layer@{layer}}
 \doxysubsubsection{\texorpdfstring{name}{name}}
 {\footnotesize\ttfamily \label{structlayer_a6db5324e662b3f6727875212f7aa6359} 
 char name\mbox{[}255\mbox{]}}
 
-\Hypertarget{structlayer_a4648fc62b82f26bbfe4c6cf88b7b2555}\index{layer@{layer}!shapes@{shapes}}
+Nom de la couche. \Hypertarget{structlayer_a4648fc62b82f26bbfe4c6cf88b7b2555}\index{layer@{layer}!shapes@{shapes}}
 \index{shapes@{shapes}!layer@{layer}}
 \doxysubsubsection{\texorpdfstring{shapes}{shapes}}
 {\footnotesize\ttfamily \label{structlayer_a4648fc62b82f26bbfe4c6cf88b7b2555} 
 \mbox{\hyperlink{list_8h_a19e9bc457e4d336b5719026a3256c86d}{list}} shapes}
 
-\Hypertarget{structlayer_a63226973f6a9cd40c51a604af2e1a9a5}\index{layer@{layer}!visible@{visible}}
+Liste des formes dans la couche. \Hypertarget{structlayer_a63226973f6a9cd40c51a604af2e1a9a5}\index{layer@{layer}!visible@{visible}}
 \index{visible@{visible}!layer@{layer}}
 \doxysubsubsection{\texorpdfstring{visible}{visible}}
 {\footnotesize\ttfamily \label{structlayer_a63226973f6a9cd40c51a604af2e1a9a5} 
 unsigned char visible}
 
-
+Visibilité de la couche (1 pour visible, 0 pour invisible). 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

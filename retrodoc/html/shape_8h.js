@@ -46,7 +46,7 @@ var shape_8h =
     [ "create_polygon_shape", "shape_8h.html#a97f6c2418977ed6b87fe369afdff4909", null ],
     [ "create_rectangle", "shape_8h.html#a73699118b7346b270993b7da411b3fac", null ],
     [ "create_rectangle_shape", "shape_8h.html#a6c0b8dee946e1a62917c8a3b098f7691", null ],
-    [ "create_squar", "shape_8h.html#a83413fc68532ff4b56e74c609089be32", null ],
+    [ "create_squar", "shape_8h.html#a9256811d2c05d6f4b422136ad73975e9", null ],
     [ "create_square_shape", "shape_8h.html#afdc8591882c4c221dfa8d7c6bda15953", null ],
     [ "delete_cercle", "shape_8h.html#a2a66a133e444cd75bcfd3aaba3639a74", null ],
     [ "delete_curve", "shape_8h.html#ab785bcd1ddf2cf76008057c1e3f71362", null ],

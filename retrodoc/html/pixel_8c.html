@@ -118,7 +118,7 @@ Include dependency graph for pixel.c:</div>
 <area shape="poly" title=" " alt="" coords="129,33,129,64,124,64,124,33"/>
 <area shape="rect" title=" " alt="" coords="5,155,69,181"/>
 <area shape="poly" title=" " alt="" coords="112,109,66,147,63,143,109,105"/>
-<area shape="rect" href="shape_8h.html" title=" " alt="" coords="93,155,160,181"/>
+<area shape="rect" href="shape_8h.html" title="Définition des structures de formes géométriques et des fonctions associées. Ce fichier contient des ..." alt="" coords="93,155,160,181"/>
 <area shape="poly" title=" " alt="" coords="129,107,129,139,124,139,124,107"/>
 <area shape="rect" href="list_8h.html" title=" " alt="" coords="184,155,234,181"/>
 <area shape="poly" title=" " alt="" coords="142,105,185,142,182,146,139,109"/>
@@ -128,32 +128,45 @@ Include dependency graph for pixel.c:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a88186143f92662a89216b505395926a0" id="r_a88186143f92662a89216b505395926a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pixel_8h.html#aa189e9477c486a6eef29d93821297ad5">Pixel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88186143f92662a89216b505395926a0">create_pixel</a> (int px, int py, int <a class="el" href="shape_8h.html#a37dbdc30935031c05304482e1be89d8f">color</a>)</td></tr>
+<tr class="memdesc:a88186143f92662a89216b505395926a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée un pixel avec des coordonnées et une couleur spécifiées.  <br /></td></tr>
 <tr class="separator:a88186143f92662a89216b505395926a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2719c50c617c53984ef5484ea011c9cf" id="r_a2719c50c617c53984ef5484ea011c9cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2719c50c617c53984ef5484ea011c9cf">delete_pixel</a> (<a class="el" href="pixel_8h.html#aa189e9477c486a6eef29d93821297ad5">Pixel</a> *<a class="el" href="structpixel.html">pixel</a>)</td></tr>
+<tr class="memdesc:a2719c50c617c53984ef5484ea011c9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère la mémoire allouée pour un pixel.  <br /></td></tr>
 <tr class="separator:a2719c50c617c53984ef5484ea011c9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2b24bb22e3d5a45d19efc4c547034e8" id="r_af2b24bb22e3d5a45d19efc4c547034e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2b24bb22e3d5a45d19efc4c547034e8">create_shape_to_pixel</a> (<a class="el" href="shape_8h.html#ac87c23c9a508e52f7077a7012fba9424">Shape</a> *<a class="el" href="structshape.html">shape</a>)</td></tr>
+<tr class="memdesc:af2b24bb22e3d5a45d19efc4c547034e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une liste de pixels à partir d'une forme.  <br /></td></tr>
 <tr class="separator:af2b24bb22e3d5a45d19efc4c547034e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa885a1c0aceaa86e24b2822756553f14" id="r_aa885a1c0aceaa86e24b2822756553f14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa885a1c0aceaa86e24b2822756553f14">remove_pixel_shape</a> (<a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *pixel_lst)</td></tr>
+<tr class="memdesc:aa885a1c0aceaa86e24b2822756553f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime les pixels associés à une forme.  <br /></td></tr>
 <tr class="separator:aa885a1c0aceaa86e24b2822756553f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5fdff7e509d6ede5e290a32044d4ae9" id="r_ac5fdff7e509d6ede5e290a32044d4ae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5fdff7e509d6ede5e290a32044d4ae9">pixel_point</a> (<a class="el" href="shape_8h.html#ac87c23c9a508e52f7077a7012fba9424">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:ac5fdff7e509d6ede5e290a32044d4ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction privée pour dessiner un point en pixel.  <br /></td></tr>
 <tr class="separator:ac5fdff7e509d6ede5e290a32044d4ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada24bb1dd5c74df0c61ffd451a603da6" id="r_ada24bb1dd5c74df0c61ffd451a603da6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada24bb1dd5c74df0c61ffd451a603da6">draw_segment</a> (int x, int y, int dx, int dy, <a class="el" href="shape_8h.html#af03b271da9a2fa2b56bab917f69c0808">Color</a> <a class="el" href="shape_8h.html#a37dbdc30935031c05304482e1be89d8f">color</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
 <tr class="separator:ada24bb1dd5c74df0c61ffd451a603da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e9a749297e1988b199d7fb75c7f7cd" id="r_a49e9a749297e1988b199d7fb75c7f7cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49e9a749297e1988b199d7fb75c7f7cd">pixel_line</a> (<a class="el" href="shape_8h.html#ac87c23c9a508e52f7077a7012fba9424">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a49e9a749297e1988b199d7fb75c7f7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction privée pour dessiner une ligne en pixels.  <br /></td></tr>
 <tr class="separator:a49e9a749297e1988b199d7fb75c7f7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4ab66e099c25ea772ebdc5f50b59847" id="r_ac4ab66e099c25ea772ebdc5f50b59847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4ab66e099c25ea772ebdc5f50b59847">pixel_cercle</a> (<a class="el" href="shape_8h.html#ac87c23c9a508e52f7077a7012fba9424">Shape</a> *shashapepe, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
-<tr class="separator:ac4ab66e099c25ea772ebdc5f50b59847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87abc331cfb87a9a9a56f1db0c1ca587" id="r_a87abc331cfb87a9a9a56f1db0c1ca587"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87abc331cfb87a9a9a56f1db0c1ca587">pixel_cercle</a> (<a class="el" href="shape_8h.html#ac87c23c9a508e52f7077a7012fba9424">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a87abc331cfb87a9a9a56f1db0c1ca587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction privée pour dessiner un cercle en pixels.  <br /></td></tr>
+<tr class="separator:a87abc331cfb87a9a9a56f1db0c1ca587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4be84707cddae4c88c715fc31a89db84" id="r_a4be84707cddae4c88c715fc31a89db84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4be84707cddae4c88c715fc31a89db84">pixel_rectangle</a> (<a class="el" href="shape_8h.html#ac87c23c9a508e52f7077a7012fba9424">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a4be84707cddae4c88c715fc31a89db84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction privée pour dessiner un rectangle en pixels.  <br /></td></tr>
 <tr class="separator:a4be84707cddae4c88c715fc31a89db84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33ac3154a410a7daf32aa794ed4c000a" id="r_a33ac3154a410a7daf32aa794ed4c000a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33ac3154a410a7daf32aa794ed4c000a">pixel_square</a> (<a class="el" href="shape_8h.html#ac87c23c9a508e52f7077a7012fba9424">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a33ac3154a410a7daf32aa794ed4c000a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction privée pour dessiner un carré en pixels.  <br /></td></tr>
 <tr class="separator:a33ac3154a410a7daf32aa794ed4c000a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5667750b581fe21ec08d266b521b98f4" id="r_a5667750b581fe21ec08d266b521b98f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5667750b581fe21ec08d266b521b98f4">pixel_polygon</a> (<a class="el" href="shape_8h.html#ac87c23c9a508e52f7077a7012fba9424">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a5667750b581fe21ec08d266b521b98f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction privée pour dessiner un polygone en pixels.  <br /></td></tr>
 <tr class="separator:a5667750b581fe21ec08d266b521b98f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab70bfd04ebb4770aa9fbc3c828c15d74" id="r_ab70bfd04ebb4770aa9fbc3c828c15d74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shape_8h.html#a68a5f2bb08a3778580f2bc60f9181585">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab70bfd04ebb4770aa9fbc3c828c15d74">calc_point_median</a> (<a class="el" href="shape_8h.html#a68a5f2bb08a3778580f2bc60f9181585">Point</a> *p1, <a class="el" href="shape_8h.html#a68a5f2bb08a3778580f2bc60f9181585">Point</a> *p2, double t)</td></tr>
+<tr class="memdesc:ab70bfd04ebb4770aa9fbc3c828c15d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule un point médian entre deux points avec un paramètre t.  <br /></td></tr>
 <tr class="separator:ab70bfd04ebb4770aa9fbc3c828c15d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f5b30d66d93f7fce626c1547736471c" id="r_a5f5b30d66d93f7fce626c1547736471c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shape_8h.html#a68a5f2bb08a3778580f2bc60f9181585">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f5b30d66d93f7fce626c1547736471c">cj_calc</a> (<a class="el" href="shape_8h.html#a68a5f2bb08a3778580f2bc60f9181585">Point</a> **points, int num_pt, double t)</td></tr>
+<tr class="memdesc:a5f5b30d66d93f7fce626c1547736471c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule un point sur une courbe de Bézier à l'aide de l'algorithme de Casteljau.  <br /></td></tr>
 <tr class="separator:a5f5b30d66d93f7fce626c1547736471c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a17e77b9983a5d25c11f697bb1f6147" id="r_a1a17e77b9983a5d25c11f697bb1f6147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a17e77b9983a5d25c11f697bb1f6147">pixel_curve</a> (<a class="el" href="shape_8h.html#ac87c23c9a508e52f7077a7012fba9424">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a1a17e77b9983a5d25c11f697bb1f6147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction privée pour dessiner une courbe de Bézier en pixels.  <br /></td></tr>
 <tr class="separator:a1a17e77b9983a5d25c11f697bb1f6147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -180,21 +193,33 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Calcule un point médian entre deux points avec un paramètre t. </p>
+<p>Cette fonction calcule un point médian entre deux points donnés, en fonction d'un paramètre t qui permet d'interpoler entre les deux points.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>Premier point. </td></tr>
+    <tr><td class="paramname">p2</td><td>Deuxième point. </td></tr>
+    <tr><td class="paramname">t</td><td>Paramètre d'interpolation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="shape_8h.html#a68a5f2bb08a3778580f2bc60f9181585">Point</a> médian calculé. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_ab70bfd04ebb4770aa9fbc3c828c15d74_icgraph.png" border="0" usemap="#apixel_8c_ab70bfd04ebb4770aa9fbc3c828c15d74_icgraph" alt=""/></div>
 <map name="apixel_8c_ab70bfd04ebb4770aa9fbc3c828c15d74_icgraph" id="apixel_8c_ab70bfd04ebb4770aa9fbc3c828c15d74_icgraph">
-<area shape="rect" title=" " alt="" coords="888,5,1018,32"/>
-<area shape="rect" href="pixel_8c.html#a5f5b30d66d93f7fce626c1547736471c" title=" " alt="" coords="778,5,840,32"/>
+<area shape="rect" title="Calcule un point médian entre deux points avec un paramètre t." alt="" coords="888,5,1018,32"/>
+<area shape="rect" href="pixel_8c.html#a5f5b30d66d93f7fce626c1547736471c" title="Calcule un point sur une courbe de Bézier à l&#39;aide de l&#39;algorithme de Casteljau." alt="" coords="778,5,840,32"/>
 <area shape="poly" title=" " alt="" coords="872,21,841,21,841,16,872,16"/>
-<area shape="rect" href="pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147" title=" " alt="" coords="643,5,730,32"/>
+<area shape="rect" href="pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147" title="Fonction privée pour dessiner une courbe de Bézier en pixels." alt="" coords="643,5,730,32"/>
 <area shape="poly" title=" " alt="" coords="762,21,730,21,730,16,762,16"/>
-<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,5,595,32"/>
+<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,5,595,32"/>
 <area shape="poly" title=" " alt="" coords="627,21,595,21,595,16,627,16"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,5,395,32"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,5,395,32"/>
 <area shape="poly" title=" " alt="" coords="428,21,396,21,396,16,428,16"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,5,214,32"/>
 <area shape="poly" title=" " alt="" coords="246,21,214,21,214,16,246,16"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -226,13 +251,25 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Calcule un point sur une courbe de Bézier à l'aide de l'algorithme de Casteljau. </p>
+<p>Cette fonction applique l'algorithme de Casteljau pour calculer un point sur une courbe de Bézier en fonction d'un paramètre t.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>Liste des points de contrôle de la courbe. </td></tr>
+    <tr><td class="paramname">num_pt</td><td>Nombre de points de contrôle. </td></tr>
+    <tr><td class="paramname">t</td><td>Paramètre de la courbe. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="shape_8h.html#a68a5f2bb08a3778580f2bc60f9181585">Point</a> calculé sur la courbe de Bézier. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a5f5b30d66d93f7fce626c1547736471c_cgraph.png" border="0" usemap="#apixel_8c_a5f5b30d66d93f7fce626c1547736471c_cgraph" alt=""/></div>
 <map name="apixel_8c_a5f5b30d66d93f7fce626c1547736471c_cgraph" id="apixel_8c_a5f5b30d66d93f7fce626c1547736471c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,68,32"/>
-<area shape="rect" href="pixel_8c.html#ab70bfd04ebb4770aa9fbc3c828c15d74" title=" " alt="" coords="116,5,245,32"/>
+<area shape="rect" title="Calcule un point sur une courbe de Bézier à l&#39;aide de l&#39;algorithme de Casteljau." alt="" coords="5,5,68,32"/>
+<area shape="rect" href="pixel_8c.html#ab70bfd04ebb4770aa9fbc3c828c15d74" title="Calcule un point médian entre deux points avec un paramètre t." alt="" coords="116,5,245,32"/>
 <area shape="poly" title=" " alt="" coords="68,16,100,16,100,21,68,21"/>
 </map>
 </div>
@@ -241,14 +278,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a5f5b30d66d93f7fce626c1547736471c_icgraph.png" border="0" usemap="#apixel_8c_a5f5b30d66d93f7fce626c1547736471c_icgraph" alt=""/></div>
 <map name="apixel_8c_a5f5b30d66d93f7fce626c1547736471c_icgraph" id="apixel_8c_a5f5b30d66d93f7fce626c1547736471c_icgraph">
-<area shape="rect" title=" " alt="" coords="778,5,840,32"/>
-<area shape="rect" href="pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147" title=" " alt="" coords="643,5,730,32"/>
+<area shape="rect" title="Calcule un point sur une courbe de Bézier à l&#39;aide de l&#39;algorithme de Casteljau." alt="" coords="778,5,840,32"/>
+<area shape="rect" href="pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147" title="Fonction privée pour dessiner une courbe de Bézier en pixels." alt="" coords="643,5,730,32"/>
 <area shape="poly" title=" " alt="" coords="762,21,730,21,730,16,762,16"/>
-<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,5,595,32"/>
+<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,5,595,32"/>
 <area shape="poly" title=" " alt="" coords="627,21,595,21,595,16,627,16"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,5,395,32"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,5,395,32"/>
 <area shape="poly" title=" " alt="" coords="428,21,396,21,396,16,428,16"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,5,214,32"/>
 <area shape="poly" title=" " alt="" coords="246,21,214,21,214,16,246,16"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -280,33 +317,45 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Crée un pixel avec des coordonnées et une couleur spécifiées. </p>
+<p>Cette fonction alloue de la mémoire pour un nouveau pixel, puis initialise ses coordonnées et sa couleur selon les paramètres fournis.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">px</td><td>Coordonnée X du pixel. </td></tr>
+    <tr><td class="paramname">py</td><td>Coordonnée Y du pixel. </td></tr>
+    <tr><td class="paramname">color</td><td>Couleur du pixel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointeur vers le pixel créé. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a88186143f92662a89216b505395926a0_icgraph.png" border="0" usemap="#apixel_8c_a88186143f92662a89216b505395926a0_icgraph" alt=""/></div>
 <map name="apixel_8c_a88186143f92662a89216b505395926a0_icgraph" id="apixel_8c_a88186143f92662a89216b505395926a0_icgraph">
-<area shape="rect" title=" " alt="" coords="953,233,1045,260"/>
+<area shape="rect" title="Crée un pixel avec des coordonnées et une couleur spécifiées." alt="" coords="953,233,1045,260"/>
 <area shape="rect" href="pixel_8c.html#ada24bb1dd5c74df0c61ffd451a603da6" title=" " alt="" coords="799,107,905,133"/>
 <area shape="poly" title=" " alt="" coords="969,225,867,136,871,132,973,221"/>
-<area shape="rect" href="pixel_8c.html#ac4ab66e099c25ea772ebdc5f50b59847" title=" " alt="" coords="807,208,897,235"/>
+<area shape="rect" href="pixel_8c.html#a87abc331cfb87a9a9a56f1db0c1ca587" title="Fonction privée pour dessiner un cercle en pixels." alt="" coords="807,208,897,235"/>
 <area shape="poly" title=" " alt="" coords="938,239,897,232,898,226,938,234"/>
-<area shape="rect" href="pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147" title=" " alt="" coords="808,259,896,285"/>
+<area shape="rect" href="pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147" title="Fonction privée pour dessiner une courbe de Bézier en pixels." alt="" coords="808,259,896,285"/>
 <area shape="poly" title=" " alt="" coords="938,260,897,267,896,262,938,255"/>
-<area shape="rect" href="pixel_8c.html#ac5fdff7e509d6ede5e290a32044d4ae9" title=" " alt="" coords="810,309,894,336"/>
+<area shape="rect" href="pixel_8c.html#ac5fdff7e509d6ede5e290a32044d4ae9" title="Fonction privée pour dessiner un point en pixel." alt="" coords="810,309,894,336"/>
 <area shape="poly" title=" " alt="" coords="961,270,907,300,884,311,881,306,904,295,959,266"/>
-<area shape="rect" href="pixel_8c.html#a49e9a749297e1988b199d7fb75c7f7cd" title=" " alt="" coords="659,5,734,32"/>
+<area shape="rect" href="pixel_8c.html#a49e9a749297e1988b199d7fb75c7f7cd" title="Fonction privée pour dessiner une ligne en pixels." alt="" coords="659,5,734,32"/>
 <area shape="poly" title=" " alt="" coords="821,99,750,46,729,35,731,30,752,42,825,94"/>
-<area shape="rect" href="pixel_8c.html#a5667750b581fe21ec08d266b521b98f4" title=" " alt="" coords="647,56,747,83"/>
+<area shape="rect" href="pixel_8c.html#a5667750b581fe21ec08d266b521b98f4" title="Fonction privée pour dessiner un polygone en pixels." alt="" coords="647,56,747,83"/>
 <area shape="poly" title=" " alt="" coords="793,104,739,86,741,81,795,99"/>
-<area shape="rect" href="pixel_8c.html#a4be84707cddae4c88c715fc31a89db84" title=" " alt="" coords="643,107,751,133"/>
+<area shape="rect" href="pixel_8c.html#a4be84707cddae4c88c715fc31a89db84" title="Fonction privée pour dessiner un rectangle en pixels." alt="" coords="643,107,751,133"/>
 <area shape="poly" title=" " alt="" coords="783,123,752,123,752,117,783,117"/>
-<area shape="rect" href="pixel_8c.html#a33ac3154a410a7daf32aa794ed4c000a" title=" " alt="" coords="650,157,744,184"/>
+<area shape="rect" href="pixel_8c.html#a33ac3154a410a7daf32aa794ed4c000a" title="Fonction privée pour dessiner un carré en pixels." alt="" coords="650,157,744,184"/>
 <area shape="poly" title=" " alt="" coords="795,141,741,159,739,154,793,136"/>
-<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,157,595,184"/>
+<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,157,595,184"/>
 <area shape="poly" title=" " alt="" coords="651,42,644,46,610,75,578,106,533,159,529,155,574,102,606,71,641,42,648,38"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,157,395,184"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,157,395,184"/>
 <area shape="poly" title=" " alt="" coords="428,173,396,173,396,168,428,168"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,157,214,184"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,157,214,184"/>
 <area shape="poly" title=" " alt="" coords="246,173,214,173,214,168,246,168"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,157,55,184"/>
 <area shape="poly" title=" " alt="" coords="87,173,55,173,55,168,87,168"/>
@@ -335,40 +384,50 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Crée une liste de pixels à partir d'une forme. </p>
+<p>Cette fonction génère une liste de pixels en fonction du type de forme (point, ligne, carré, etc.) et ajoute les pixels correspondants à la liste spécifiée.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme à convertir en pixels. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Liste des pixels générés. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_af2b24bb22e3d5a45d19efc4c547034e8_cgraph.png" border="0" usemap="#apixel_8c_af2b24bb22e3d5a45d19efc4c547034e8_cgraph" alt=""/></div>
 <map name="apixel_8c_af2b24bb22e3d5a45d19efc4c547034e8_cgraph" id="apixel_8c_af2b24bb22e3d5a45d19efc4c547034e8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,183,157,209"/>
-<area shape="rect" href="list_8c.html#afec467a8af7733df57ff079150c68032" title=" " alt="" coords="208,5,310,32"/>
+<area shape="rect" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="5,183,157,209"/>
+<area shape="rect" href="list_8c.html#afec467a8af7733df57ff079150c68032" title="Crée une nouvelle liste." alt="" coords="208,5,310,32"/>
 <area shape="poly" title=" " alt="" coords="89,181,135,120,167,83,203,49,217,38,220,42,206,53,171,87,139,124,94,184"/>
-<area shape="rect" href="pixel_8c.html#ac4ab66e099c25ea772ebdc5f50b59847" title=" " alt="" coords="369,157,459,184"/>
+<area shape="rect" href="pixel_8c.html#a87abc331cfb87a9a9a56f1db0c1ca587" title="Fonction privée pour dessiner un cercle en pixels." alt="" coords="369,157,459,184"/>
 <area shape="poly" title=" " alt="" coords="107,180,151,159,204,143,259,137,313,143,354,151,353,156,313,148,259,142,205,148,153,164,109,184"/>
-<area shape="rect" href="pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147" title=" " alt="" coords="370,107,458,133"/>
+<area shape="rect" href="pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147" title="Fonction privée pour dessiner une courbe de Bézier en pixels." alt="" coords="370,107,458,133"/>
 <area shape="poly" title=" " alt="" coords="98,180,144,149,173,133,204,121,243,113,282,110,355,111,355,116,283,115,243,119,205,127,175,138,146,153,101,184"/>
-<area shape="rect" href="pixel_8c.html#a49e9a749297e1988b199d7fb75c7f7cd" title=" " alt="" coords="221,259,296,285"/>
+<area shape="rect" href="pixel_8c.html#a49e9a749297e1988b199d7fb75c7f7cd" title="Fonction privée pour dessiner une ligne en pixels." alt="" coords="221,259,296,285"/>
 <area shape="poly" title=" " alt="" coords="116,207,213,250,211,255,113,212"/>
-<area shape="rect" href="pixel_8c.html#ac5fdff7e509d6ede5e290a32044d4ae9" title=" " alt="" coords="372,259,456,285"/>
+<area shape="rect" href="pixel_8c.html#ac5fdff7e509d6ede5e290a32044d4ae9" title="Fonction privée pour dessiner un point en pixel." alt="" coords="372,259,456,285"/>
 <area shape="poly" title=" " alt="" coords="91,209,106,239,131,278,164,317,184,333,206,346,234,356,258,359,282,355,312,346,355,323,389,294,392,298,358,327,314,350,284,360,258,364,233,362,204,350,181,337,161,320,127,281,102,242,86,211"/>
-<area shape="rect" href="pixel_8c.html#a5667750b581fe21ec08d266b521b98f4" title=" " alt="" coords="209,309,309,336"/>
+<area shape="rect" href="pixel_8c.html#a5667750b581fe21ec08d266b521b98f4" title="Fonction privée pour dessiner un polygone en pixels." alt="" coords="209,309,309,336"/>
 <area shape="poly" title=" " alt="" coords="98,208,145,249,206,295,214,300,211,304,203,300,141,253,95,212"/>
-<area shape="rect" href="pixel_8c.html#a4be84707cddae4c88c715fc31a89db84" title=" " alt="" coords="205,157,313,184"/>
+<area shape="rect" href="pixel_8c.html#a4be84707cddae4c88c715fc31a89db84" title="Fonction privée pour dessiner un rectangle en pixels." alt="" coords="205,157,313,184"/>
 <area shape="poly" title=" " alt="" coords="157,183,189,178,189,183,158,188"/>
-<area shape="rect" href="pixel_8c.html#a33ac3154a410a7daf32aa794ed4c000a" title=" " alt="" coords="212,208,306,235"/>
+<area shape="rect" href="pixel_8c.html#a33ac3154a410a7daf32aa794ed4c000a" title="Fonction privée pour dessiner un carré en pixels." alt="" coords="212,208,306,235"/>
 <area shape="poly" title=" " alt="" coords="158,204,197,210,196,215,157,209"/>
-<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title=" " alt="" coords="528,157,619,184"/>
+<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title="Crée un pixel avec des coordonnées et une couleur spécifiées." alt="" coords="528,157,619,184"/>
 <area shape="poly" title=" " alt="" coords="460,168,513,168,513,173,460,173"/>
-<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title=" " alt="" coords="515,208,632,235"/>
+<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title="Crée un nœud dans la liste." alt="" coords="515,208,632,235"/>
 <area shape="poly" title=" " alt="" coords="460,182,516,200,514,205,458,187"/>
-<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title=" " alt="" coords="524,259,623,285"/>
+<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title="Insère un nœud à la fin de la liste." alt="" coords="524,259,623,285"/>
 <area shape="poly" title=" " alt="" coords="450,182,469,194,484,207,493,220,503,232,517,245,524,249,521,254,514,249,499,236,489,223,480,211,466,198,447,187"/>
 <area shape="poly" title=" " alt="" coords="459,131,516,150,514,155,457,136"/>
 <area shape="poly" title=" " alt="" coords="450,132,469,143,484,157,493,169,503,181,517,194,524,198,521,203,514,198,499,185,489,172,480,160,466,147,447,136"/>
 <area shape="poly" title=" " alt="" coords="454,132,469,143,487,170,494,196,500,220,517,245,521,248,517,252,513,248,495,222,489,197,482,172,465,147,451,136"/>
-<area shape="rect" href="pixel_8c.html#a5f5b30d66d93f7fce626c1547736471c" title=" " alt="" coords="542,107,605,133"/>
+<area shape="rect" href="pixel_8c.html#a5f5b30d66d93f7fce626c1547736471c" title="Calcule un point sur une courbe de Bézier à l&#39;aide de l&#39;algorithme de Casteljau." alt="" coords="542,107,605,133"/>
 <area shape="poly" title=" " alt="" coords="458,117,527,117,527,123,458,123"/>
-<area shape="rect" href="pixel_8c.html#ab70bfd04ebb4770aa9fbc3c828c15d74" title=" " alt="" coords="680,107,809,133"/>
+<area shape="rect" href="pixel_8c.html#ab70bfd04ebb4770aa9fbc3c828c15d74" title="Calcule un point médian entre deux points avec un paramètre t." alt="" coords="680,107,809,133"/>
 <area shape="poly" title=" " alt="" coords="605,117,664,117,664,123,605,123"/>
 <area shape="rect" href="pixel_8c.html#ada24bb1dd5c74df0c61ffd451a603da6" title=" " alt="" coords="361,208,467,235"/>
 <area shape="poly" title=" " alt="" coords="296,257,356,237,358,242,298,262"/>
@@ -388,10 +447,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_af2b24bb22e3d5a45d19efc4c547034e8_icgraph.png" border="0" usemap="#apixel_8c_af2b24bb22e3d5a45d19efc4c547034e8_icgraph" alt=""/></div>
 <map name="apixel_8c_af2b24bb22e3d5a45d19efc4c547034e8_icgraph" id="apixel_8c_af2b24bb22e3d5a45d19efc4c547034e8_icgraph">
-<area shape="rect" title=" " alt="" coords="443,5,595,32"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,5,395,32"/>
+<area shape="rect" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,5,595,32"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,5,395,32"/>
 <area shape="poly" title=" " alt="" coords="428,21,396,21,396,16,428,16"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,5,214,32"/>
 <area shape="poly" title=" " alt="" coords="246,21,214,21,214,16,246,16"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -414,6 +473,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Libère la mémoire allouée pour un pixel. </p>
+<p>Cette fonction libère la mémoire associée à un pixel donné.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixel</td><td>Pointeur vers le pixel à libérer. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -461,11 +529,11 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="pixel_8c_ada24bb1dd5c74df0c61ffd451a603da6_cgraph.png" border="0" usemap="#apixel_8c_ada24bb1dd5c74df0c61ffd451a603da6_cgraph" alt=""/></div>
 <map name="apixel_8c_ada24bb1dd5c74df0c61ffd451a603da6_cgraph" id="apixel_8c_ada24bb1dd5c74df0c61ffd451a603da6_cgraph">
 <area shape="rect" title=" " alt="" coords="5,56,112,83"/>
-<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title=" " alt="" coords="172,5,264,32"/>
+<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title="Crée un pixel avec des coordonnées et une couleur spécifiées." alt="" coords="172,5,264,32"/>
 <area shape="poly" title=" " alt="" coords="102,53,158,35,160,40,104,58"/>
-<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title=" " alt="" coords="160,56,276,83"/>
+<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title="Crée un nœud dans la liste." alt="" coords="160,56,276,83"/>
 <area shape="poly" title=" " alt="" coords="112,67,144,67,144,72,112,72"/>
-<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title=" " alt="" coords="169,107,267,133"/>
+<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title="Insère un nœud à la fin de la liste." alt="" coords="169,107,267,133"/>
 <area shape="poly" title=" " alt="" coords="104,81,160,99,158,104,102,86"/>
 </map>
 </div>
@@ -475,19 +543,19 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="pixel_8c_ada24bb1dd5c74df0c61ffd451a603da6_icgraph.png" border="0" usemap="#apixel_8c_ada24bb1dd5c74df0c61ffd451a603da6_icgraph" alt=""/></div>
 <map name="apixel_8c_ada24bb1dd5c74df0c61ffd451a603da6_icgraph" id="apixel_8c_ada24bb1dd5c74df0c61ffd451a603da6_icgraph">
 <area shape="rect" title=" " alt="" coords="799,81,905,108"/>
-<area shape="rect" href="pixel_8c.html#a49e9a749297e1988b199d7fb75c7f7cd" title=" " alt="" coords="659,5,734,32"/>
+<area shape="rect" href="pixel_8c.html#a49e9a749297e1988b199d7fb75c7f7cd" title="Fonction privée pour dessiner une ligne en pixels." alt="" coords="659,5,734,32"/>
 <area shape="poly" title=" " alt="" coords="809,76,750,46,726,35,728,30,752,42,811,71"/>
-<area shape="rect" href="pixel_8c.html#a5667750b581fe21ec08d266b521b98f4" title=" " alt="" coords="647,56,747,83"/>
+<area shape="rect" href="pixel_8c.html#a5667750b581fe21ec08d266b521b98f4" title="Fonction privée pour dessiner un polygone en pixels." alt="" coords="647,56,747,83"/>
 <area shape="poly" title=" " alt="" coords="783,86,747,80,748,75,784,81"/>
-<area shape="rect" href="pixel_8c.html#a4be84707cddae4c88c715fc31a89db84" title=" " alt="" coords="643,107,751,133"/>
+<area shape="rect" href="pixel_8c.html#a4be84707cddae4c88c715fc31a89db84" title="Fonction privée pour dessiner un rectangle en pixels." alt="" coords="643,107,751,133"/>
 <area shape="poly" title=" " alt="" coords="784,108,752,114,751,109,783,103"/>
-<area shape="rect" href="pixel_8c.html#a33ac3154a410a7daf32aa794ed4c000a" title=" " alt="" coords="650,157,744,184"/>
+<area shape="rect" href="pixel_8c.html#a33ac3154a410a7daf32aa794ed4c000a" title="Fonction privée pour dessiner un carré en pixels." alt="" coords="650,157,744,184"/>
 <area shape="poly" title=" " alt="" coords="811,118,752,148,728,159,726,154,750,143,809,113"/>
-<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,81,595,108"/>
+<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,81,595,108"/>
 <area shape="poly" title=" " alt="" coords="651,41,553,83,551,78,649,36"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,81,395,108"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,81,395,108"/>
 <area shape="poly" title=" " alt="" coords="428,97,396,97,396,92,428,92"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,81,214,108"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,81,214,108"/>
 <area shape="poly" title=" " alt="" coords="246,97,214,97,214,92,246,92"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,55,108"/>
 <area shape="poly" title=" " alt="" coords="87,97,55,97,55,92,87,92"/>
@@ -499,8 +567,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ac4ab66e099c25ea772ebdc5f50b59847" name="ac4ab66e099c25ea772ebdc5f50b59847"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4ab66e099c25ea772ebdc5f50b59847">&#9670;&#160;</a></span>pixel_cercle()</h2>
+<a id="a87abc331cfb87a9a9a56f1db0c1ca587" name="a87abc331cfb87a9a9a56f1db0c1ca587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87abc331cfb87a9a9a56f1db0c1ca587">&#9670;&#160;</a></span>pixel_cercle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -508,7 +576,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void pixel_cercle </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="shape_8h.html#ac87c23c9a508e52f7077a7012fba9424">Shape</a> *</td>          <td class="paramname"><span class="paramname"><em>shashapepe</em></span>, </td>
+          <td class="paramtype"><a class="el" href="shape_8h.html#ac87c23c9a508e52f7077a7012fba9424">Shape</a> *</td>          <td class="paramname"><span class="paramname"><em>shape</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -517,31 +585,41 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Fonction privée pour dessiner un cercle en pixels. </p>
+<p>Cette fonction utilise l'algorithme de tracé de cercle pour générer les pixels correspondant à un cercle, puis les ajoute à la liste fournie.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme de type cercle. </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à remplir. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="pixel_8c_ac4ab66e099c25ea772ebdc5f50b59847_cgraph.png" border="0" usemap="#apixel_8c_ac4ab66e099c25ea772ebdc5f50b59847_cgraph" alt=""/></div>
-<map name="apixel_8c_ac4ab66e099c25ea772ebdc5f50b59847_cgraph" id="apixel_8c_ac4ab66e099c25ea772ebdc5f50b59847_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,96,83"/>
-<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title=" " alt="" coords="156,5,248,32"/>
+<div class="center"><img src="pixel_8c_a87abc331cfb87a9a9a56f1db0c1ca587_cgraph.png" border="0" usemap="#apixel_8c_a87abc331cfb87a9a9a56f1db0c1ca587_cgraph" alt=""/></div>
+<map name="apixel_8c_a87abc331cfb87a9a9a56f1db0c1ca587_cgraph" id="apixel_8c_a87abc331cfb87a9a9a56f1db0c1ca587_cgraph">
+<area shape="rect" title="Fonction privée pour dessiner un cercle en pixels." alt="" coords="5,56,96,83"/>
+<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title="Crée un pixel avec des coordonnées et une couleur spécifiées." alt="" coords="156,5,248,32"/>
 <area shape="poly" title=" " alt="" coords="92,53,145,35,146,40,94,58"/>
-<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title=" " alt="" coords="144,56,260,83"/>
+<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title="Crée un nœud dans la liste." alt="" coords="144,56,260,83"/>
 <area shape="poly" title=" " alt="" coords="96,67,129,67,129,72,96,72"/>
-<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title=" " alt="" coords="153,107,251,133"/>
+<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title="Insère un nœud à la fin de la liste." alt="" coords="153,107,251,133"/>
 <area shape="poly" title=" " alt="" coords="94,81,146,99,145,104,92,86"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="pixel_8c_ac4ab66e099c25ea772ebdc5f50b59847_icgraph.png" border="0" usemap="#apixel_8c_ac4ab66e099c25ea772ebdc5f50b59847_icgraph" alt=""/></div>
-<map name="apixel_8c_ac4ab66e099c25ea772ebdc5f50b59847_icgraph" id="apixel_8c_ac4ab66e099c25ea772ebdc5f50b59847_icgraph">
-<area shape="rect" title=" " alt="" coords="643,5,733,32"/>
-<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,5,595,32"/>
+<div class="center"><img src="pixel_8c_a87abc331cfb87a9a9a56f1db0c1ca587_icgraph.png" border="0" usemap="#apixel_8c_a87abc331cfb87a9a9a56f1db0c1ca587_icgraph" alt=""/></div>
+<map name="apixel_8c_a87abc331cfb87a9a9a56f1db0c1ca587_icgraph" id="apixel_8c_a87abc331cfb87a9a9a56f1db0c1ca587_icgraph">
+<area shape="rect" title="Fonction privée pour dessiner un cercle en pixels." alt="" coords="643,5,733,32"/>
+<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,5,595,32"/>
 <area shape="poly" title=" " alt="" coords="627,21,595,21,595,16,627,16"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,5,395,32"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,5,395,32"/>
 <area shape="poly" title=" " alt="" coords="428,21,396,21,396,16,428,16"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,5,214,32"/>
 <area shape="poly" title=" " alt="" coords="246,21,214,21,214,16,246,16"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -568,21 +646,31 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Fonction privée pour dessiner une courbe de Bézier en pixels. </p>
+<p>Cette fonction utilise l'algorithme de Casteljau pour calculer les points de la courbe de Bézier et ajoute les pixels correspondants à la liste fournie.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme de type courbe de Bézier. </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à remplir. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a1a17e77b9983a5d25c11f697bb1f6147_cgraph.png" border="0" usemap="#apixel_8c_a1a17e77b9983a5d25c11f697bb1f6147_cgraph" alt=""/></div>
 <map name="apixel_8c_a1a17e77b9983a5d25c11f697bb1f6147_cgraph" id="apixel_8c_a1a17e77b9983a5d25c11f697bb1f6147_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,93,108"/>
-<area shape="rect" href="pixel_8c.html#a5f5b30d66d93f7fce626c1547736471c" title=" " alt="" coords="168,5,230,32"/>
+<area shape="rect" title="Fonction privée pour dessiner une courbe de Bézier en pixels." alt="" coords="5,81,93,108"/>
+<area shape="rect" href="pixel_8c.html#a5f5b30d66d93f7fce626c1547736471c" title="Calcule un point sur une courbe de Bézier à l&#39;aide de l&#39;algorithme de Casteljau." alt="" coords="168,5,230,32"/>
 <area shape="poly" title=" " alt="" coords="73,78,139,42,152,35,155,40,142,46,75,83"/>
-<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title=" " alt="" coords="153,56,244,83"/>
+<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title="Crée un pixel avec des coordonnées et une couleur spécifiées." alt="" coords="153,56,244,83"/>
 <area shape="poly" title=" " alt="" coords="93,85,137,77,138,82,94,90"/>
-<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title=" " alt="" coords="141,107,257,133"/>
+<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title="Crée un nœud dans la liste." alt="" coords="141,107,257,133"/>
 <area shape="poly" title=" " alt="" coords="94,99,126,105,125,110,93,105"/>
-<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title=" " alt="" coords="150,157,248,184"/>
+<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title="Insère un nœud à la fin de la liste." alt="" coords="150,157,248,184"/>
 <area shape="poly" title=" " alt="" coords="75,106,142,143,152,148,150,153,139,148,73,111"/>
-<area shape="rect" href="pixel_8c.html#ab70bfd04ebb4770aa9fbc3c828c15d74" title=" " alt="" coords="305,5,434,32"/>
+<area shape="rect" href="pixel_8c.html#ab70bfd04ebb4770aa9fbc3c828c15d74" title="Calcule un point médian entre deux points avec un paramètre t." alt="" coords="305,5,434,32"/>
 <area shape="poly" title=" " alt="" coords="231,16,290,16,290,21,231,21"/>
 </map>
 </div>
@@ -591,12 +679,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a1a17e77b9983a5d25c11f697bb1f6147_icgraph.png" border="0" usemap="#apixel_8c_a1a17e77b9983a5d25c11f697bb1f6147_icgraph" alt=""/></div>
 <map name="apixel_8c_a1a17e77b9983a5d25c11f697bb1f6147_icgraph" id="apixel_8c_a1a17e77b9983a5d25c11f697bb1f6147_icgraph">
-<area shape="rect" title=" " alt="" coords="643,5,730,32"/>
-<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,5,595,32"/>
+<area shape="rect" title="Fonction privée pour dessiner une courbe de Bézier en pixels." alt="" coords="643,5,730,32"/>
+<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,5,595,32"/>
 <area shape="poly" title=" " alt="" coords="627,21,595,21,595,16,627,16"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,5,395,32"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,5,395,32"/>
 <area shape="poly" title=" " alt="" coords="428,21,396,21,396,16,428,16"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,5,214,32"/>
 <area shape="poly" title=" " alt="" coords="246,21,214,21,214,16,246,16"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -623,19 +711,29 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Fonction privée pour dessiner une ligne en pixels. </p>
+<p>Cette fonction utilise l'algorithme de tracé de segment pour dessiner une ligne entre deux points spécifiés dans la forme.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme de type ligne. </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à remplir. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a49e9a749297e1988b199d7fb75c7f7cd_cgraph.png" border="0" usemap="#apixel_8c_a49e9a749297e1988b199d7fb75c7f7cd_cgraph" alt=""/></div>
 <map name="apixel_8c_a49e9a749297e1988b199d7fb75c7f7cd_cgraph" id="apixel_8c_a49e9a749297e1988b199d7fb75c7f7cd_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,81,83"/>
+<area shape="rect" title="Fonction privée pour dessiner une ligne en pixels." alt="" coords="5,56,81,83"/>
 <area shape="rect" href="pixel_8c.html#ada24bb1dd5c74df0c61ffd451a603da6" title=" " alt="" coords="129,56,235,83"/>
 <area shape="poly" title=" " alt="" coords="81,67,113,67,113,72,81,72"/>
-<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title=" " alt="" coords="296,5,387,32"/>
+<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title="Crée un pixel avec des coordonnées et une couleur spécifiées." alt="" coords="296,5,387,32"/>
 <area shape="poly" title=" " alt="" coords="226,53,282,35,283,40,227,58"/>
-<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title=" " alt="" coords="283,56,399,83"/>
+<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title="Crée un nœud dans la liste." alt="" coords="283,56,399,83"/>
 <area shape="poly" title=" " alt="" coords="235,67,267,67,267,72,235,72"/>
-<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title=" " alt="" coords="292,107,390,133"/>
+<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title="Insère un nœud à la fin de la liste." alt="" coords="292,107,390,133"/>
 <area shape="poly" title=" " alt="" coords="227,81,283,99,282,104,226,86"/>
 </map>
 </div>
@@ -644,12 +742,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a49e9a749297e1988b199d7fb75c7f7cd_icgraph.png" border="0" usemap="#apixel_8c_a49e9a749297e1988b199d7fb75c7f7cd_icgraph" alt=""/></div>
 <map name="apixel_8c_a49e9a749297e1988b199d7fb75c7f7cd_icgraph" id="apixel_8c_a49e9a749297e1988b199d7fb75c7f7cd_icgraph">
-<area shape="rect" title=" " alt="" coords="643,5,718,32"/>
-<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,5,595,32"/>
+<area shape="rect" title="Fonction privée pour dessiner une ligne en pixels." alt="" coords="643,5,718,32"/>
+<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,5,595,32"/>
 <area shape="poly" title=" " alt="" coords="627,21,595,21,595,16,627,16"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,5,395,32"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,5,395,32"/>
 <area shape="poly" title=" " alt="" coords="428,21,396,21,396,16,428,16"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,5,214,32"/>
 <area shape="poly" title=" " alt="" coords="246,21,214,21,214,16,246,16"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -676,17 +774,27 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Fonction privée pour dessiner un point en pixel. </p>
+<p>Cette fonction convertit un point en pixel et l'ajoute à la liste de pixels.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme de type point. </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à remplir. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_ac5fdff7e509d6ede5e290a32044d4ae9_cgraph.png" border="0" usemap="#apixel_8c_ac5fdff7e509d6ede5e290a32044d4ae9_cgraph" alt=""/></div>
 <map name="apixel_8c_ac5fdff7e509d6ede5e290a32044d4ae9_cgraph" id="apixel_8c_ac5fdff7e509d6ede5e290a32044d4ae9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,89,83"/>
-<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title=" " alt="" coords="149,5,240,32"/>
+<area shape="rect" title="Fonction privée pour dessiner un point en pixel." alt="" coords="5,56,89,83"/>
+<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title="Crée un pixel avec des coordonnées et une couleur spécifiées." alt="" coords="149,5,240,32"/>
 <area shape="poly" title=" " alt="" coords="88,53,138,35,140,40,89,58"/>
-<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title=" " alt="" coords="137,56,253,83"/>
+<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title="Crée un nœud dans la liste." alt="" coords="137,56,253,83"/>
 <area shape="poly" title=" " alt="" coords="89,67,121,67,121,72,89,72"/>
-<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title=" " alt="" coords="146,107,244,133"/>
+<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title="Insère un nœud à la fin de la liste." alt="" coords="146,107,244,133"/>
 <area shape="poly" title=" " alt="" coords="89,81,140,99,138,104,88,86"/>
 </map>
 </div>
@@ -695,12 +803,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_ac5fdff7e509d6ede5e290a32044d4ae9_icgraph.png" border="0" usemap="#apixel_8c_ac5fdff7e509d6ede5e290a32044d4ae9_icgraph" alt=""/></div>
 <map name="apixel_8c_ac5fdff7e509d6ede5e290a32044d4ae9_icgraph" id="apixel_8c_ac5fdff7e509d6ede5e290a32044d4ae9_icgraph">
-<area shape="rect" title=" " alt="" coords="643,5,726,32"/>
-<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,5,595,32"/>
+<area shape="rect" title="Fonction privée pour dessiner un point en pixel." alt="" coords="643,5,726,32"/>
+<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,5,595,32"/>
 <area shape="poly" title=" " alt="" coords="627,21,595,21,595,16,627,16"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,5,395,32"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,5,395,32"/>
 <area shape="poly" title=" " alt="" coords="428,21,396,21,396,16,428,16"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,5,214,32"/>
 <area shape="poly" title=" " alt="" coords="246,21,214,21,214,16,246,16"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -727,19 +835,29 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Fonction privée pour dessiner un polygone en pixels. </p>
+<p>Cette fonction utilise l'algorithme de tracé de segment pour dessiner un polygone à partir des points de la forme.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme de type polygone. </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à remplir. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a5667750b581fe21ec08d266b521b98f4_cgraph.png" border="0" usemap="#apixel_8c_a5667750b581fe21ec08d266b521b98f4_cgraph" alt=""/></div>
 <map name="apixel_8c_a5667750b581fe21ec08d266b521b98f4_cgraph" id="apixel_8c_a5667750b581fe21ec08d266b521b98f4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,106,83"/>
+<area shape="rect" title="Fonction privée pour dessiner un polygone en pixels." alt="" coords="5,56,106,83"/>
 <area shape="rect" href="pixel_8c.html#ada24bb1dd5c74df0c61ffd451a603da6" title=" " alt="" coords="154,56,260,83"/>
 <area shape="poly" title=" " alt="" coords="106,67,138,67,138,72,106,72"/>
-<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title=" " alt="" coords="320,5,412,32"/>
+<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title="Crée un pixel avec des coordonnées et une couleur spécifiées." alt="" coords="320,5,412,32"/>
 <area shape="poly" title=" " alt="" coords="251,53,307,35,308,40,252,58"/>
-<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title=" " alt="" coords="308,56,424,83"/>
+<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title="Crée un nœud dans la liste." alt="" coords="308,56,424,83"/>
 <area shape="poly" title=" " alt="" coords="260,67,292,67,292,72,260,72"/>
-<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title=" " alt="" coords="317,107,415,133"/>
+<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title="Insère un nœud à la fin de la liste." alt="" coords="317,107,415,133"/>
 <area shape="poly" title=" " alt="" coords="252,81,308,99,307,104,251,86"/>
 </map>
 </div>
@@ -748,12 +866,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a5667750b581fe21ec08d266b521b98f4_icgraph.png" border="0" usemap="#apixel_8c_a5667750b581fe21ec08d266b521b98f4_icgraph" alt=""/></div>
 <map name="apixel_8c_a5667750b581fe21ec08d266b521b98f4_icgraph" id="apixel_8c_a5667750b581fe21ec08d266b521b98f4_icgraph">
-<area shape="rect" title=" " alt="" coords="643,5,743,32"/>
-<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,5,595,32"/>
+<area shape="rect" title="Fonction privée pour dessiner un polygone en pixels." alt="" coords="643,5,743,32"/>
+<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,5,595,32"/>
 <area shape="poly" title=" " alt="" coords="627,21,595,21,595,16,627,16"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,5,395,32"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,5,395,32"/>
 <area shape="poly" title=" " alt="" coords="428,21,396,21,396,16,428,16"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,5,214,32"/>
 <area shape="poly" title=" " alt="" coords="246,21,214,21,214,16,246,16"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -780,19 +898,29 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Fonction privée pour dessiner un rectangle en pixels. </p>
+<p>Cette fonction utilise l'algorithme de tracé de segment pour dessiner un rectangle à partir de la forme de type rectangle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme de type rectangle. </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à remplir. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a4be84707cddae4c88c715fc31a89db84_cgraph.png" border="0" usemap="#apixel_8c_a4be84707cddae4c88c715fc31a89db84_cgraph" alt=""/></div>
 <map name="apixel_8c_a4be84707cddae4c88c715fc31a89db84_cgraph" id="apixel_8c_a4be84707cddae4c88c715fc31a89db84_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,114,83"/>
+<area shape="rect" title="Fonction privée pour dessiner un rectangle en pixels." alt="" coords="5,56,114,83"/>
 <area shape="rect" href="pixel_8c.html#ada24bb1dd5c74df0c61ffd451a603da6" title=" " alt="" coords="162,56,268,83"/>
 <area shape="poly" title=" " alt="" coords="114,67,146,67,146,72,114,72"/>
-<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title=" " alt="" coords="328,5,420,32"/>
+<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title="Crée un pixel avec des coordonnées et une couleur spécifiées." alt="" coords="328,5,420,32"/>
 <area shape="poly" title=" " alt="" coords="259,53,315,35,316,40,260,58"/>
-<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title=" " alt="" coords="316,56,432,83"/>
+<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title="Crée un nœud dans la liste." alt="" coords="316,56,432,83"/>
 <area shape="poly" title=" " alt="" coords="268,67,300,67,300,72,268,72"/>
-<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title=" " alt="" coords="325,107,423,133"/>
+<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title="Insère un nœud à la fin de la liste." alt="" coords="325,107,423,133"/>
 <area shape="poly" title=" " alt="" coords="260,81,316,99,315,104,259,86"/>
 </map>
 </div>
@@ -801,12 +929,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a4be84707cddae4c88c715fc31a89db84_icgraph.png" border="0" usemap="#apixel_8c_a4be84707cddae4c88c715fc31a89db84_icgraph" alt=""/></div>
 <map name="apixel_8c_a4be84707cddae4c88c715fc31a89db84_icgraph" id="apixel_8c_a4be84707cddae4c88c715fc31a89db84_icgraph">
-<area shape="rect" title=" " alt="" coords="643,5,751,32"/>
-<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,5,595,32"/>
+<area shape="rect" title="Fonction privée pour dessiner un rectangle en pixels." alt="" coords="643,5,751,32"/>
+<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,5,595,32"/>
 <area shape="poly" title=" " alt="" coords="627,21,595,21,595,16,627,16"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,5,395,32"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,5,395,32"/>
 <area shape="poly" title=" " alt="" coords="428,21,396,21,396,16,428,16"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,5,214,32"/>
 <area shape="poly" title=" " alt="" coords="246,21,214,21,214,16,246,16"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -833,19 +961,29 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Fonction privée pour dessiner un carré en pixels. </p>
+<p>Cette fonction utilise l'algorithme de tracé de segment pour dessiner un carré à partir de la forme de type carré.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme de type carré. </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à remplir. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a33ac3154a410a7daf32aa794ed4c000a_cgraph.png" border="0" usemap="#apixel_8c_a33ac3154a410a7daf32aa794ed4c000a_cgraph" alt=""/></div>
 <map name="apixel_8c_a33ac3154a410a7daf32aa794ed4c000a_cgraph" id="apixel_8c_a33ac3154a410a7daf32aa794ed4c000a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,100,83"/>
+<area shape="rect" title="Fonction privée pour dessiner un carré en pixels." alt="" coords="5,56,100,83"/>
 <area shape="rect" href="pixel_8c.html#ada24bb1dd5c74df0c61ffd451a603da6" title=" " alt="" coords="148,56,254,83"/>
 <area shape="poly" title=" " alt="" coords="100,67,132,67,132,72,100,72"/>
-<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title=" " alt="" coords="314,5,406,32"/>
+<area shape="rect" href="pixel_8c.html#a88186143f92662a89216b505395926a0" title="Crée un pixel avec des coordonnées et une couleur spécifiées." alt="" coords="314,5,406,32"/>
 <area shape="poly" title=" " alt="" coords="245,53,301,35,302,40,246,58"/>
-<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title=" " alt="" coords="302,56,418,83"/>
+<area shape="rect" href="list_8c.html#ae601318c758e55737363c7445bcb1b8f" title="Crée un nœud dans la liste." alt="" coords="302,56,418,83"/>
 <area shape="poly" title=" " alt="" coords="254,67,286,67,286,72,254,72"/>
-<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title=" " alt="" coords="311,107,409,133"/>
+<area shape="rect" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669" title="Insère un nœud à la fin de la liste." alt="" coords="311,107,409,133"/>
 <area shape="poly" title=" " alt="" coords="246,81,302,99,301,104,245,86"/>
 </map>
 </div>
@@ -854,12 +992,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_a33ac3154a410a7daf32aa794ed4c000a_icgraph.png" border="0" usemap="#apixel_8c_a33ac3154a410a7daf32aa794ed4c000a_icgraph" alt=""/></div>
 <map name="apixel_8c_a33ac3154a410a7daf32aa794ed4c000a_icgraph" id="apixel_8c_a33ac3154a410a7daf32aa794ed4c000a_icgraph">
-<area shape="rect" title=" " alt="" coords="643,5,737,32"/>
-<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,5,595,32"/>
+<area shape="rect" title="Fonction privée pour dessiner un carré en pixels." alt="" coords="643,5,737,32"/>
+<area shape="rect" href="pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,5,595,32"/>
 <area shape="poly" title=" " alt="" coords="627,21,595,21,595,16,627,16"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,5,395,32"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,5,395,32"/>
 <area shape="poly" title=" " alt="" coords="428,21,396,21,396,16,428,16"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,5,214,32"/>
 <area shape="poly" title=" " alt="" coords="246,21,214,21,214,16,246,16"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -882,15 +1020,24 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Supprime les pixels associés à une forme. </p>
+<p>Cette fonction supprime les pixels générés pour une forme donnée en libérant la mémoire associée aux pixels dans la liste fournie.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixel_lst</td><td>Liste des pixels à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pixel_8c_aa885a1c0aceaa86e24b2822756553f14_icgraph.png" border="0" usemap="#apixel_8c_aa885a1c0aceaa86e24b2822756553f14_icgraph" alt=""/></div>
 <map name="apixel_8c_aa885a1c0aceaa86e24b2822756553f14_icgraph" id="apixel_8c_aa885a1c0aceaa86e24b2822756553f14_icgraph">
-<area shape="rect" title=" " alt="" coords="443,5,584,32"/>
-<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,5,395,32"/>
+<area shape="rect" title="Supprime les pixels associés à une forme." alt="" coords="443,5,584,32"/>
+<area shape="rect" href="render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,5,395,32"/>
 <area shape="poly" title=" " alt="" coords="428,21,396,21,396,16,428,16"/>
-<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" href="render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,5,214,32"/>
 <area shape="poly" title=" " alt="" coords="246,21,214,21,214,16,246,16"/>
 <area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>

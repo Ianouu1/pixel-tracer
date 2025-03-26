@@ -14,8 +14,7 @@ Include dependency graph for command.\+h\+:
 \includegraphics[width=350pt]{command_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -26,7 +25,7 @@ This graph shows which files directly or indirectly include this file\+:
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structcommand}{command}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Structure représentant une commande avec des paramètres de différents types. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,19 +40,19 @@ typedef struct \mbox{\hyperlink{structcommand}{command}} \mbox{\hyperlink{comman
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{command_8h_a6b63852b135aad68545f0a04ccb1b966}{create\+\_\+commande}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Crée une nouvelle commande vide. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{command_8h_aaf5356b7d3e00e352c0e55e07e728ea2}{add\+\_\+int\+\_\+param}} (\mbox{\hyperlink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command}} \texorpdfstring{$\ast$}{*}cmd, int p)
-\item 
+\begin{DoxyCompactList}\small\item\em Ajoute un paramètre entier à une commande. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{command_8h_a97d0318f3c3d640783b5c1efa2187e0e}{add\+\_\+float\+\_\+param}} (\mbox{\hyperlink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command}} \texorpdfstring{$\ast$}{*}cmd, float p)
-\item 
+\begin{DoxyCompactList}\small\item\em Ajoute un paramètre flottant à une commande. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{command_8h_adfb1fa24d5d651505e1e71b10344fd03}{add\+\_\+str\+\_\+param}} (\mbox{\hyperlink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command}} \texorpdfstring{$\ast$}{*}cmd, char \texorpdfstring{$\ast$}{*}p)
-\item 
+\begin{DoxyCompactList}\small\item\em Ajoute un paramètre chaîne à une commande. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{command_8h_aad98ce99863879716cbb6f748b12b75d}{free\+\_\+cmd}} (\mbox{\hyperlink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command}} \texorpdfstring{$\ast$}{*}cmd)
-\item 
+\begin{DoxyCompactList}\small\item\em Libère la mémoire allouée pour une commande. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{command_8h_ab576f5b835e80a0ef9ba46654a6295cb}{read\+\_\+exec\+\_\+command}} (\mbox{\hyperlink{pixel__tracer_8h_a3368475f13d6bd69e1f77cd1c7c5f032}{Pixel\+\_\+tracer\+\_\+app}} \texorpdfstring{$\ast$}{*}app)
-\item 
+\begin{DoxyCompactList}\small\item\em Lit et exécute une commande saisie par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{command_8h_a3ee388bf58d7da98c66b98d3d2ee63c5}{read\+\_\+from\+\_\+stdin}} (\mbox{\hyperlink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command}} \texorpdfstring{$\ast$}{*}cmd)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Lit une commande depuis l\textquotesingle{}entrée standard. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Macro Definition Documentation}
@@ -81,8 +80,18 @@ typedef struct \mbox{\hyperlink{structcommand}{command}} \mbox{\hyperlink{comman
 {\footnotesize\ttfamily \label{command_8h_a97d0318f3c3d640783b5c1efa2187e0e} 
 void add\+\_\+float\+\_\+param (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command}} \texorpdfstring{$\ast$}{*}}]{cmd}{, }\item[{float}]{p}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Ajoute un paramètre flottant à une commande. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & Pointeur vers la commande. \\
+\hline
+{\em p} & Valeur flottante à ajouter. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -95,8 +104,18 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{command_8h_aaf5356b7d3e00e352c0e55e07e728ea2} 
 void add\+\_\+int\+\_\+param (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command}} \texorpdfstring{$\ast$}{*}}]{cmd}{, }\item[{int}]{p}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Ajoute un paramètre entier à une commande. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & Pointeur vers la commande. \\
+\hline
+{\em p} & Valeur entière à ajouter. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -109,8 +128,18 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{command_8h_adfb1fa24d5d651505e1e71b10344fd03} 
 void add\+\_\+str\+\_\+param (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command}} \texorpdfstring{$\ast$}{*}}]{cmd}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Ajoute un paramètre chaîne à une commande. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & Pointeur vers la commande. \\
+\hline
+{\em p} & Chaîne de caractères à ajouter (copie du pointeur fourni). \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -123,8 +152,14 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{command_8h_a6b63852b135aad68545f0a04ccb1b966} 
 \mbox{\hyperlink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command}} \texorpdfstring{$\ast$}{*} create\+\_\+commande (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Crée une nouvelle commande vide. 
+
+\begin{DoxyReturn}{Returns}
+Un pointeur vers une structure \doxylink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command} initialisée. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -137,8 +172,16 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{command_8h_aad98ce99863879716cbb6f748b12b75d} 
 void free\+\_\+cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command}} \texorpdfstring{$\ast$}{*}}]{cmd}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Libère la mémoire allouée pour une commande. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & Pointeur vers la commande à libérer. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -151,6 +194,18 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{command_8h_ab576f5b835e80a0ef9ba46654a6295cb} 
 int read\+\_\+exec\+\_\+command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pixel__tracer_8h_a3368475f13d6bd69e1f77cd1c7c5f032}{Pixel\+\_\+tracer\+\_\+app}} \texorpdfstring{$\ast$}{*}}]{app}{}\end{DoxyParamCaption})}
 
+
+
+Lit et exécute une commande saisie par l\textquotesingle{}utilisateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & Pointeur vers l\textquotesingle{}application \doxylink{pixel_8h_aa189e9477c486a6eef29d93821297ad5}{Pixel} Tracer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, ou un code d\textquotesingle{}erreur. 
+\end{DoxyReturn}
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -159,8 +214,7 @@ Here is the call graph for this function\+:
 \includegraphics[height=550pt]{command_8h_ab576f5b835e80a0ef9ba46654a6295cb_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -173,16 +227,23 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{command_8h_a3ee388bf58d7da98c66b98d3d2ee63c5} 
 void read\+\_\+from\+\_\+stdin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{command_8h_a0c87688e472cb20dcda9af493bbdd6f2}{Command}} \texorpdfstring{$\ast$}{*}}]{cmd}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Lit une commande depuis l\textquotesingle{}entrée standard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & Pointeur vers la commande à remplir. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{command_8h_a3ee388bf58d7da98c66b98d3d2ee63c5_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

@@ -16,13 +16,13 @@ Include dependency graph for render.\+c\+:
 void \mbox{\hyperlink{render_8c_aea91d73a0878801b1968d245ccd4a94d}{clear\+\_\+area}} (\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structarea}{area}})
 \item 
 void \mbox{\hyperlink{render_8c_abc0a81dcc0de7f785c914d4e63355764}{draw\+\_\+area}} (\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structarea}{area}})
-\item 
+\begin{DoxyCompactList}\small\item\em Dessine la zone spécifiée. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{render_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\+\_\+screen}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Efface l\textquotesingle{}écran en fonction du système d\textquotesingle{}exploitation. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{render_8c_a806efbe893839426da6aab797dcdb568}{draw\+\_\+all\+\_\+layers}} (\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structarea}{area}})
-\item 
+\begin{DoxyCompactList}\small\item\em Dessine toutes les couches visibles sur la zone. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{render_8c_abd298d7e1cef8783b3407d92e31d6e79}{draw\+\_\+layer\+\_\+shapes}} (\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structarea}{area}}, \mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structlayer}{layer}})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Dessine les formes d\textquotesingle{}une couche sur la zone. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -54,8 +54,11 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{render_8c_a4953d1edcbbfc7e420c423ded1d5621a} 
 void clear\+\_\+screen (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+
+
+Efface l\textquotesingle{}écran en fonction du système d\textquotesingle{}exploitation. 
+
+Cette fonction utilise des séquences de commandes spécifiques à l\textquotesingle{}OS pour effacer l\textquotesingle{}écran. Elle utilise des codes d\textquotesingle{}échappement pour les systèmes Unix/\+Linux et la commande {\ttfamily cls} pour Windows. Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -68,6 +71,17 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{render_8c_a806efbe893839426da6aab797dcdb568} 
 void draw\+\_\+all\+\_\+layers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}}]{area}{}\end{DoxyParamCaption})}
 
+
+
+Dessine toutes les couches visibles sur la zone. 
+
+Cette fonction commence par effacer la zone, puis parcourt toutes les couches visibles dans la liste des couches et dessine les formes qu\textquotesingle{}elles contiennent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em area} & Pointeur vers la zone sur laquelle les couches sont dessinées. \\
+\hline
+\end{DoxyParams}
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -76,8 +90,7 @@ Here is the call graph for this function\+:
 \includegraphics[width=350pt]{render_8c_a806efbe893839426da6aab797dcdb568_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -90,16 +103,25 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{render_8c_abc0a81dcc0de7f785c914d4e63355764} 
 void draw\+\_\+area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}}]{area}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Dessine la zone spécifiée. 
+
+Cette fonction affiche les caractères correspondant à chaque cellule de la zone en fonction de son état (vide ou pleine). Elle utilise les caractères définis par {\ttfamily EMPTY\+\_\+\+CHAR} et {\ttfamily FULL\+\_\+\+CHAR}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em area} & Pointeur vers la zone à dessiner. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=237pt]{render_8c_abc0a81dcc0de7f785c914d4e63355764_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -112,16 +134,27 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{render_8c_abd298d7e1cef8783b3407d92e31d6e79} 
 void draw\+\_\+layer\+\_\+shapes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{area_8h_aba4c6e70b571ffd4b4c74248207f0183}{Area}} \texorpdfstring{$\ast$}{*}}]{area}{, }\item[{\mbox{\hyperlink{layers_8h_ac894abb99eed76ecef180978024a023a}{Layer}} \texorpdfstring{$\ast$}{*}}]{layer}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Dessine les formes d\textquotesingle{}une couche sur la zone. 
+
+Cette fonction parcourt toutes les formes de la couche spécifiée et les dessine dans la zone, en modifiant les cellules de la zone en fonction des pixels de chaque forme.
+
+
+\begin{DoxyParams}{Parameters}
+{\em area} & Pointeur vers la zone où les formes seront dessinées. \\
+\hline
+{\em layer} & Pointeur vers la couche contenant les formes à dessiner. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{render_8c_abd298d7e1cef8783b3407d92e31d6e79_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

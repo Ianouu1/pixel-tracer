@@ -6,7 +6,7 @@ var pixel_8c =
     [ "create_shape_to_pixel", "pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8", null ],
     [ "delete_pixel", "pixel_8c.html#a2719c50c617c53984ef5484ea011c9cf", null ],
     [ "draw_segment", "pixel_8c.html#ada24bb1dd5c74df0c61ffd451a603da6", null ],
-    [ "pixel_cercle", "pixel_8c.html#ac4ab66e099c25ea772ebdc5f50b59847", null ],
+    [ "pixel_cercle", "pixel_8c.html#a87abc331cfb87a9a9a56f1db0c1ca587", null ],
     [ "pixel_curve", "pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147", null ],
     [ "pixel_line", "pixel_8c.html#a49e9a749297e1988b199d7fb75c7f7cd", null ],
     [ "pixel_point", "pixel_8c.html#ac5fdff7e509d6ede5e290a32044d4ae9", null ],

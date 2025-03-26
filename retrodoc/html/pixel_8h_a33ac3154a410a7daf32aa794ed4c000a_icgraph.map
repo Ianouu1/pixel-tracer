@@ -1,10 +1,10 @@
 <map id="pixel_square" name="pixel_square">
-<area shape="rect" id="Node000001" title=" " alt="" coords="643,5,737,32"/>
-<area shape="rect" id="Node000002" href="$pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title=" " alt="" coords="443,5,595,32"/>
+<area shape="rect" id="Node000001" title="Fonction privée pour dessiner un carré en pixels." alt="" coords="643,5,737,32"/>
+<area shape="rect" id="Node000002" href="$pixel_8c.html#af2b24bb22e3d5a45d19efc4c547034e8" title="Crée une liste de pixels à partir d&#39;une forme." alt="" coords="443,5,595,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="627,21,595,21,595,16,627,16"/>
-<area shape="rect" id="Node000003" href="$render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title=" " alt="" coords="262,5,395,32"/>
+<area shape="rect" id="Node000003" href="$render_8c.html#abd298d7e1cef8783b3407d92e31d6e79" title="Dessine les formes d&#39;une couche sur la zone." alt="" coords="262,5,395,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="428,21,396,21,396,16,428,16"/>
-<area shape="rect" id="Node000004" href="$render_8c.html#a806efbe893839426da6aab797dcdb568" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" id="Node000004" href="$render_8c.html#a806efbe893839426da6aab797dcdb568" title="Dessine toutes les couches visibles sur la zone." alt="" coords="103,5,214,32"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="246,21,214,21,214,16,246,16"/>
 <area shape="rect" id="Node000005" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>

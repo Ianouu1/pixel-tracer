@@ -1,8 +1,8 @@
 <map id="layer" name="layer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="10,208,60,235"/>
-<area shape="rect" id="Node000002" href="$structlist__.html" title=" " alt="" coords="12,117,58,144"/>
+<area shape="rect" id="Node000001" title="Représente une couche contenant des formes." alt="" coords="10,208,60,235"/>
+<area shape="rect" id="Node000002" href="$structlist__.html" title="Représente une liste doublement chaînée." alt="" coords="12,117,58,144"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="38,160,38,207,32,207,32,160"/>
-<area shape="rect" id="Node000003" href="$structlnode__.html" title=" " alt="" coords="5,8,65,35"/>
+<area shape="rect" id="Node000003" href="$structlnode__.html" title="Représente un élément de liste." alt="" coords="5,8,65,35"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="38,51,38,117,32,117,32,51"/>
 <area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="81,10,88,14,91,22,83,32,65,34,64,29,80,27,86,21,84,18,79,15"/>
 </map>
