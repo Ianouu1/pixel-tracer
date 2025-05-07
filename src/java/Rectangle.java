@@ -3,7 +3,7 @@
 /**
  * Class Rectangle
  */
-public class Rectangle {
+public class Rectangle extends Shape{
 
   //
   // Fields
@@ -16,7 +16,11 @@ public class Rectangle {
   //
   // Constructors
   //
-  public Rectangle () { };
+  public Rectangle (Point p1, int width, int height) {
+    this.p1 = p1;
+    this.width = width;
+    this.height = height;
+  };
   
   //
   // Methods
@@ -80,12 +84,11 @@ public class Rectangle {
   //
 
   /**
+   * @return
    */
-  public void print()
+  public String print()
   {
-    System.out.println("p1 : " + p1);
-    System.out.println("height : " + height);
-    System.out.println("width : " + width);
+    return "p1 : " + p1.print() + "\nwidth : " + width + "\nheight : " + height;
   }
 
 

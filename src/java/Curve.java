@@ -3,7 +3,7 @@
 /**
  * Class Curve
  */
-public class Curve {
+public class Curve extends Shape{
 
   //
   // Fields
@@ -17,7 +17,12 @@ public class Curve {
   //
   // Constructors
   //
-  public Curve () { };
+  public Curve(Point p1, Point p2, Point p3, Point p4) {
+    this.p1 = p1;
+    this.p2 = p2;
+    this.p3 = p3;
+    this.p4 = p4;
+  }
   
   //
   // Methods
@@ -97,14 +102,11 @@ public class Curve {
   //
 
   /**
+   * @return
    */
-  public void print()
+  public String print()
   {
-    ;System.out.println("p1 : " +p1);
-    System.out.println("p2 : " +p2);
-    System.out.println("p3 : " +p3);
-    System.out.println("p4 : " +p4);
-    
+    return "points :\np1 : " + p1.print() + "\np2 : " + p2.print() + "\np3 : " + p3.print() + "\np4 : " + p4.print();
   }
 
 

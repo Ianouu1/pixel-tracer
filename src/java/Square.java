@@ -1,9 +1,7 @@
-
-
 /**
  * Class Square
  */
-public class Square {
+public class Square extends Shape {
 
   //
   // Fields
@@ -15,7 +13,11 @@ public class Square {
   //
   // Constructors
   //
-  public Square () { };
+  public Square(Point p1, int length) {
+    this.p1 = p1;
+    this.length = length;
+  }
+
   
   //
   // Methods
@@ -63,11 +65,11 @@ public class Square {
   //
 
   /**
+   * @return
    */
-  public void print()
+  public String print()
   {
-    System.out.println("p1 : " + p1);
-    System.out.println("length : " + length);
+    return "p1 : " + p1.print() + "\nlength : " + length;
   }
 
 

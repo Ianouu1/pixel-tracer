@@ -3,7 +3,7 @@
 /**
  * Class Line
  */
-public class Line {
+public class Line extends Shape{
 
   //
   // Fields
@@ -15,7 +15,10 @@ public class Line {
   //
   // Constructors
   //
-  public Line () { };
+  public Line(Point p1, Point p2) {
+    this.p1 = p1;
+    this.p2 = p2;
+  }
   
   //
   // Methods
@@ -63,10 +66,11 @@ public class Line {
   //
 
   /**
+   * @return
    */
-  public void print()
+  public String print()
   {
-    System.out.println("p1 :" + p1 + "p2 :" + p2);
+    return "points :\np1 : " + p1.print() + "\np2 : " + p2.print();
   }
 
 

@@ -3,7 +3,7 @@
 /**
  * Class Circle
  */
-public class Circle {
+public class Circle extends Shape{
 
   //
   // Fields
@@ -15,7 +15,15 @@ public class Circle {
   //
   // Constructors
   //
-  public Circle () { };
+  public Circle(int px, int py, int radius){
+    this.center = new Point(px,py);
+    this.radius = radius;
+  }
+
+  public Circle(Point center, int radius) {
+    this.center = center;
+    this.radius = radius;
+  }
   
   //
   // Methods
@@ -63,10 +71,12 @@ public class Circle {
   //
 
   /**
+   * @return
    */
-  public void print()
+
+  public String print()
   {
-    System.out.println("center radius : " + center + radius);
+    return "center : " + center.print() + "\nradius : " + radius;
   }
 
 

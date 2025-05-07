@@ -15,8 +15,12 @@ public class Point extends Shape {
   //
   // Constructors
   //
-  public Point () { };
-  
+  public Point(int x, int y) {
+    this.px = x;
+    this.py = y;
+  }
+
+
   //
   // Methods
   //
@@ -63,10 +67,11 @@ public class Point extends Shape {
   //
 
   /**
+   * @return
    */
-  public void print()
-  {
-    System.out.println("px : " + px + "py : " +py);
+
+  public String print(){
+    return "(px : " + px + " - py : " + py + ")";
   }
 
 

@@ -3,25 +3,74 @@
 /**
  * Class Shape
  */
-public class Shape {
+public abstract class Shape {
 
   //
   // Fields
   //
+  private static int nextId = 1;
 
-  protected int id;
+  int id;
+  ShapeType type;
+  Object content;  // peut être Point, Line, etc.
+  String color = "BLACK";
+  float thickness = 1.0f;
+  float rotation = 0.0f;
   protected boolean fill;
-  protected String color;
   
   //
   // Constructors
   //
-  public Shape () { };
-  
+  public Shape(ShapeType type, Object content) {
+    this.id = nextId++;
+    this.type = type;
+    this.content = content;
+  }
+
+  public Shape() {
+  }
+
   //
   // Methods
   //
+  public static Shape createPointShape(int x, int y) {
+    return new Point(x, y);
+  }
 
+  public static Shape createLineShape(int x1, int y1, int x2, int y2) {
+    return new Line(new Point(x1, y1), new Point(x2, y2));
+  }
+
+  public static Shape createSquareShape(int x, int y, int length) {
+    return new Square(new Point(x, y), length);
+  }
+
+  public static Shape createRectangleShape(int x, int y, int w, int h) {
+    return new Rectangle(new Point(x, y), w, h);
+  }
+
+  public static Shape createCircleShape(int x, int y, int r) {
+    return new Circle(new Point(x, y), r);
+  }
+
+  public static Shape createPolygonShape(int[] coords) {
+    if (coords.length % 2 != 0) return null;
+    Polygon poly = new Polygon(coords.length / 2);
+    for (int i = 0; i < coords.length; i += 2) {
+      poly.addPoint(new Point(coords[i], coords[i + 1]));
+    }
+    return poly;
+  }
+
+  public static Shape createCurveShape(int[] coords) {
+    if (coords.length != 8) return null;
+    return new Curve(
+            new Point(coords[0], coords[1]),
+            new Point(coords[2], coords[3]),
+            new Point(coords[4], coords[5]),
+            new Point(coords[6], coords[7])
+    );
+  }
 
   //
   // Accessor methods
@@ -81,10 +130,12 @@ public class Shape {
 
   /**
    */
-  public void print()
+  public String print_shape()
   {
-    this.print();
+    return this.print();
   }
 
+
+  public abstract String print();
 
 }
