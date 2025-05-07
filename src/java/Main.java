@@ -18,6 +18,7 @@ class Main{
             System.out.println(shapes[i].print_shape());
         }
         System.out.println("------------------------");
+
     }
 
 }
